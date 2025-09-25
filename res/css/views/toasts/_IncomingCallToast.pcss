@@ -22,17 +22,17 @@ Please see LICENSE files in the repository root for full details.
         width: 100%;
         overflow: hidden;
 
-        .mx_IncomingCallToast_message {
+            .mx_IncomingCallToast_message {
             font-size: var(--cpd-font-size-body-lg);
             line-height: var(--cpd-font-size-heading-sm);
             width: calc(100% - $closeButtonSize - 2 * var(--cpd-space-1x));
             font-weight: var(--cpd-font-weight-semibold);
         }
 
-        .mx_LiveContentSummary_participants::before {
-            width: 15px;
-            height: 15px;
-        }
+                .mx_LiveContentSummary_participants::before {
+                    width: 15px;
+                    height: 15px;
+                }
 
         .mx_IncomingCallToast_buttons {
             display: flex;
@@ -73,12 +73,6 @@ Please see LICENSE files in the repository root for full details.
             mask-repeat: no-repeat;
             mask-size: contain;
             mask-position: center;
-        }
-    }
-    .mx_IncomingCallToast_toggleWithLabel {
-        display: flex;
-        span {
-            flex-grow: 1;
         }
     }
 }

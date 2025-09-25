@@ -140,7 +140,7 @@ code {
 }
 
 .mx_Verified {
-    color: $e2e-verified-color;
+    color: #0dbd8b;
 }
 
 .mx_Untrusted {
@@ -602,7 +602,6 @@ legend {
         .mx_AccessibleButton,
         .mx_IdentityServerPicker button,
         .mx_AccessSecretStorageDialog button,
-        .mx_InviteDialog_section button,
         [class|="maplibregl"]
     ),
 .mx_Dialog_buttons button:not(.mx_Dialog_nonDialogButton, .mx_AccessibleButton),
@@ -644,8 +643,7 @@ legend {
         .mx_ThemeChoicePanel_CustomTheme button,
         .mx_UnpinAllDialog button,
         .mx_ShareDialog button,
-        .mx_EncryptionUserSettingsTab button,
-        .mx_InviteDialog_section button
+        .mx_EncryptionUserSettingsTab button
     ):focus,
 .mx_Dialog input[type="submit"]:focus,
 .mx_Dialog_buttons button:not(.mx_Dialog_nonDialogButton, .mx_AccessibleButton):focus,
@@ -685,15 +683,15 @@ legend {
         .mx_EncryptionUserSettingsTab button
     ),
 .mx_Dialog_buttons input[type="submit"].danger {
-    background-color: var(--cpd-color-bg-critical-primary);
-    border: solid 1px var(--cpd-color-bg-critical-primary);
+    background-color: var(--cpd-color-bg-info-primary);
+    border: solid 1px var(--cpd-color-bg-info-primary);
     color: var(--cpd-color-text-on-solid-primary);
 }
 
 .mx_Dialog button.warning:not(.mx_Dialog_nonDialogButton, [class|="maplibregl"]),
 .mx_Dialog input[type="submit"].warning {
     border: solid 1px var(--cpd-color-border-critical-subtle);
-    color: var(--cpd-color-text-critical-primary);
+    color: var(--cpd-color-text-info-primary);
 }
 
 .mx_Dialog
@@ -950,4 +948,34 @@ legend {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: var(--mx-line-clamp, 1);
     overflow: hidden;
+}
+
+@layer compound.custom {
+    :root,
+    [class*="cpd-theme-"] {
+        --cpd-color-icon-accent-tertiary: #238cf5;
+        --cpd-color-bg-accent-rest: #238cf5;
+        --cpd-color-bg-accent-hovered: #238cf5;
+        --cpd-color-bg-accent-pressed: #238cf5;
+        --cpd-color-icon-accent-primary: #238cf5;
+        --cpd-color-icon-success-primary: #238cf5;
+        --cpd-color-text-action-accent: #238cf5;
+        --cpd-color-bg-action-primary-hovered: #0556b3;
+        --cpd-color-bg-action-primary-pressed: #044796;
+        --cpd-color-bg-accent-rest: #0665d0;
+        --cpd-color-bg-accent-hovered: #0556b3;
+        --cpd-color-bg-accent-pressed: #044796;
+        --cpd-color-text-action-accent: #0665d0;
+        --cpd-color-icon-accent-tertiary: #0665d0, 
+        --cpd-color-border-interactive-primary: #0665d0;
+        --cpd-color-blue-100: #e6f2ff;
+        --cpd-color-blue-200: #cce5ff;
+        --cpd-color-blue-300: #99ccff;
+        --cpd-color-blue-400: #66b3ff;
+        --cpd-color-blue-500: #0665d0;
+        --cpd-color-blue-600: #0556b3;
+        --cpd-color-blue-700: #044796;
+        --cpd-color-blue-800: #033979;
+        --cpd-color-blue-900: #022b5c;
+    }
 }

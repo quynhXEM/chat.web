@@ -22,6 +22,11 @@ Please see LICENSE files in the repository root for full details.
     margin-right: $spacing-12;
 }
 
+.mx_AuthPage .mx_AuthFooter > *,
+.mx_AuthPage .mx_Dropdown_menu {
+    -webkit-app-region: no-drag;
+}
+
 .mx_AuthPage .mx_LoginWithQR {
     .mx_AccessibleButton {
         display: block !important;
@@ -150,7 +155,7 @@ Please see LICENSE files in the repository root for full details.
         &.mx_LoginWithQR_icon--success {
             background-color: var(--cpd-color-bg-success-subtle);
             svg {
-                color: var(--cpd-color-icon-success-primary);
+                color: var(--cpd-color-text-link-external);
             }
         }
 
