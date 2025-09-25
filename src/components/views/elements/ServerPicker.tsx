@@ -78,7 +78,7 @@ const ServerPicker: React.FC<IProps> = ({ title, dialogTitle, serverConfig, onSe
                 setServer(result ?? [])
                 onLoading?.(false);
             } catch (e) {
-                console.error("Failed to load servers", e);
+                setServer([serverConfig]);
                 onLoading?.(false);
             }
         };

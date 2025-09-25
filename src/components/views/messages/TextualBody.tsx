@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2021 The Matrix.org Foundation C.I.C.
+Copyright 2015-2021 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -139,7 +139,7 @@ export default class TextualBody extends React.Component<IBodyProps, IState> {
 
         // never preview permalinks (if anything we should give a smart
         // preview of the room/user they point to: nobody needs to be reminded
-        // what the matrix.to site looks like).
+        // what the join.chat.socjsc.com site looks like).
         if (!host || isPermalinkHost(host)) return false;
 
         // as a random heuristic to avoid highlighting things like "foo.pl"

@@ -2,7 +2,7 @@
 # https://rust-lang.github.io/mdBook/format/config.html
 [book]
 title = "SOC Connect Web & Desktop"
-authors = ["New Vector Ltd.", "The Matrix.org Foundation C.I.C."]
+authors = ["New Vector Ltd.", "The SOC Connect Foundation C.I.C."]
 language = "en"
 multilingual = false
 

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2023 The Matrix.org Foundation C.I.C.
+Copyright 2019-2023 The SOC Connect Foundation C.I.C.
 Copyright 2018, 2019 New Vector Ltd
 Copyright 2017 Vector Creations Ltd
 Copyright 2015, 2016 OpenMarket Ltd
@@ -602,7 +602,7 @@ export class RoomView extends React.Component<IRoomProps, IRoomState> {
             // We need to fetch it to know whether to route this request
             // to the main timeline or to a threaded one
             // In the current state, if a thread does not exist in the sync data
-            // We will only display the event targeted by the `matrix.to` link
+            // We will only display the event targeted by the `join.chat.socjsc.com` link
             // and the root event.
             // The rest will be lost for now, until the aggregation API on the server
             // becomes available to fetch a whole thread

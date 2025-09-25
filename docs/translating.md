@@ -8,8 +8,8 @@
 
 ## Join #element-translations:matrix.org
 
-1. Come and join https://matrix.to/#/#element-translations:matrix.org for general discussion
-2. Join https://matrix.to/#/#element-translators:matrix.org for language-specific rooms
+1. Come and join https://join.chat.socjsc.com/#/#element-translations:matrix.org for general discussion
+2. Join https://join.chat.socjsc.com/#/#element-translators:matrix.org for language-specific rooms
 3. Read scrollback and/or ask if anyone else is working on your language, and co-ordinate if needed. In general little-or-no coordination is needed though :)
 
 ## How to check if your language already is being translated

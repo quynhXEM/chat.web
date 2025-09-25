@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The Matrix.org Foundation C.I.C.
+Copyright 2023 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -13,7 +13,7 @@ import { Bot } from "../../pages/bot";
 const room1Name = "Room 1";
 const room2Name = "Room 2";
 const unknownRoomAlias = "#unknownroom:example.com";
-const permalinkPrefix = "https://matrix.to/#/";
+const permalinkPrefix = "https://join.chat.socjsc.com/#/";
 
 const getPill = (locator: Locator, label: string) => {
     return locator.locator(".mx_Pill_text", { hasText: new RegExp("^" + label + "$", "g") });

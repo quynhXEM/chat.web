@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019, 2020 The Matrix.org Foundation C.I.C.
+Copyright 2019, 2020 The SOC Connect Foundation C.I.C.
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 Copyright 2016 OpenMarket Ltd
 

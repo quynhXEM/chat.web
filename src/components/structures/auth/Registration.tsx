@@ -567,22 +567,19 @@ export default class Registration extends React.Component<IProps, IState> {
         } else if (this.state.matrixClient && this.state.flows.length) {
             let ssoSection: JSX.Element | undefined;
             if (!this.props.mobileRegister && this.state.ssoFlow) {
-                let continueWithSection;
                 const providers = this.state.ssoFlow.identity_providers || [];
-                // when there is only a single (or 0) providers we show a wide button with `Continue with X` text
-                if (providers.length > 1) {
-                    // i18n: ssoButtons is a placeholder to help translators understand context
-                    continueWithSection = (
-                        <h2 className="mx_AuthBody_centered">
-                            {_t("auth|continue_with_sso", { ssoButtons: "" }).trim()}
-                        </h2>
-                    );
-                }
+
+                if (providers.length === 0) return null;
 
                 // i18n: ssoButtons & usernamePassword are placeholders to help translators understand context
                 ssoSection = (
                     <React.Fragment>
-                        {continueWithSection}
+                        <h2 className="mx_AuthBody_centered">
+                            {_t("auth|sso_or_username_password", {
+                                ssoButtons: "",
+                                usernamePassword: "",
+                            }).trim()}
+                        </h2>
                         <SSOButtons
                             matrixClient={this.loginLogic.createTemporaryClient()}
                             flow={this.state.ssoFlow}
@@ -590,18 +587,12 @@ export default class Registration extends React.Component<IProps, IState> {
                             fragmentAfterLogin={this.props.fragmentAfterLogin}
                             action={SSOAction.REGISTER}
                         />
-                        <h2 className="mx_AuthBody_centered">
-                            {_t("auth|sso_or_username_password", {
-                                ssoButtons: "",
-                                usernamePassword: "",
-                            }).trim()}
-                        </h2>
+                        
                     </React.Fragment>
                 );
             }
             return (
                 <React.Fragment>
-                    {ssoSection}
                     {!this.state.loading && <RegistrationForm
                         defaultUsername={this.state.formVals.username}
                         defaultEmail={this.state.formVals.email}
@@ -615,6 +606,7 @@ export default class Registration extends React.Component<IProps, IState> {
                         matrixClient={this.state.matrixClient}
                         mobileRegister={this.props.mobileRegister}
                     />}
+                    {ssoSection}
                 </React.Fragment>
             );
         }

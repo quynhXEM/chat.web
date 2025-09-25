@@ -14,7 +14,7 @@ configuration options depending on if you're hitting e.g. `app1.example.com` or 
 in any way, it either entirely uses the domain config, or entirely uses `config.json`.
 
 The possible configuration options are described here. If you run into issues, please visit
-[#element-web:matrix.org](https://matrix.to/#/#element-web:matrix.org) on Matrix.
+[#element-web:matrix.org](https://join.chat.socjsc.com/#/#element-web:matrix.org) on Matrix.
 
 For a good example of a production-tuned config, see https://app.element.io/config.json
 
@@ -124,7 +124,7 @@ complete re-branding/private labeling, a more personalised experience can be ach
    templated string. Note that this option does not support templating, currently.
 3. `brand`: Optional name for the app. Defaults to `SOC Connect`. This is used throughout the application in various strings/locations.
 4. `permalink_prefix`: An optional URL pointing to an SOC Connect Web deployment. For example, `https://app.element.io`. This will
-   change all permalinks (via the "Share" menus) to point at the SOC Connect Web deployment rather than `matrix.to`.
+   change all permalinks (via the "Share" menus) to point at the SOC Connect Web deployment rather than `join.chat.socjsc.com`.
 5. `desktop_builds`: Optional. Where the desktop builds for the application are, if available. This is explained in more detail
    down below.
 6. `mobile_builds`: Optional. Like `desktop_builds`, except for the mobile apps. Also described in more detail down below.

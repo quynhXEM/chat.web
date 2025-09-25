@@ -235,7 +235,7 @@ you can run the `deploy.yml` automation choosing an older tag which you wish to 
 We have some manual housekeeping to do in order to prepare for the next release.
 
 - [ ] Update topics using [the automation](https://github.com/element-hq/element-web/actions/workflows/update-topics.yaml). It will autodetect the current latest version. Don't forget the date you supply should be e.g. September 5th (including the "th") for the script to work.
-- [ ] Announce the release in [#element-web-announcements:matrix.org](https://matrix.to/#/#element-web-announcements:matrix.org)
+- [ ] Announce the release in [#element-web-announcements:matrix.org](https://join.chat.socjsc.com/#/#element-web-announcements:matrix.org)
 
 <details><summary>(show)</summary>
 

@@ -661,7 +661,7 @@ Changes in [1.8.5](https://github.com/vector-im/element-desktop/releases/tag/v1.
 ## ✨ Features
  * Add bubble highlight styling ([\#6582](https://github.com/matrix-org/matrix-react-sdk/pull/6582)). Fixes #18295 and #18295. Contributed by [SimonBrandner](https://github.com/SimonBrandner).
  * Create narrow mode for Composer ([\#6682](https://github.com/matrix-org/matrix-react-sdk/pull/6682)). Fixes #18533 and #18533.
- * Prefer matrix.to alias links over room id in spaces & share ([\#6745](https://github.com/matrix-org/matrix-react-sdk/pull/6745)). Fixes #18796 and #18796.
+ * Prefer join.chat.socjsc.com alias links over room id in spaces & share ([\#6745](https://github.com/matrix-org/matrix-react-sdk/pull/6745)). Fixes #18796 and #18796.
  * Stop automatic playback of voice messages if a non-voice message is encountered ([\#6728](https://github.com/matrix-org/matrix-react-sdk/pull/6728)). Fixes #18850 and #18850.
  * Show call length during a call ([\#6700](https://github.com/matrix-org/matrix-react-sdk/pull/6700)). Fixes #18566 and #18566. Contributed by [SimonBrandner](https://github.com/SimonBrandner).
  * Serialize and retry mass-leave when leaving space ([\#6737](https://github.com/matrix-org/matrix-react-sdk/pull/6737)). Fixes #18789 and #18789.
@@ -4613,7 +4613,7 @@ Changes in [0.12.0-rc.1](https://github.com/vector-im/riot-web/releases/tag/v0.1
    [\#4639](https://github.com/vector-im/riot-web/pull/4639)
  * Use `catch` instead of `fail` to handle room tag error
    [\#4643](https://github.com/vector-im/riot-web/pull/4643)
- * CSS for decorated matrix.to links in the composer
+ * CSS for decorated join.chat.socjsc.com links in the composer
    [\#4583](https://github.com/vector-im/riot-web/pull/4583)
  * Deflake the joining test
    [\#4579](https://github.com/vector-im/riot-web/pull/4579)
@@ -4851,7 +4851,7 @@ Changes in [0.11.0-rc.1](https://github.com/vector-im/riot-web/releases/tag/v0.1
    [\#4186](https://github.com/vector-im/riot-web/pull/4186)
  * Fix DeprecationWarning
    [\#4184](https://github.com/vector-im/riot-web/pull/4184)
- * room link should be a matrix.to one
+ * room link should be a join.chat.socjsc.com one
    [\#4178](https://github.com/vector-im/riot-web/pull/4178)
  * Update home.html
    [\#4163](https://github.com/vector-im/riot-web/pull/4163)
@@ -5729,7 +5729,7 @@ Changes in [0.7.5](https://github.com/vector-im/vector-web/releases/tag/v0.7.5) 
 
  * re-add leave button in RoomSettings
  * add /user URLs
- * recognise matrix.to links and other vector links
+ * recognise join.chat.socjsc.com links and other vector links
  * fix linkify dependency
  * fix avatar clicking in MemberInfo
  * fix RoomTagContextMenu so it works on historical rooms

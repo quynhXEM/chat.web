@@ -84,7 +84,7 @@ Changes in [1.11.110](https://github.com/element-hq/element-web/releases/tag/v1.
 * Fix call permissions check confusion around element call ([#30521](https://github.com/element-hq/element-web/pull/30521)). Contributed by @t3chguy.
 * Fix line wrap around emoji verification ([#30523](https://github.com/element-hq/element-web/pull/30523)). Contributed by @t3chguy.
 * Don't highlight redacted events ([#30519](https://github.com/element-hq/element-web/pull/30519)). Contributed by @t3chguy.
-* Fix matrix.to links not being handled in the app ([#30522](https://github.com/element-hq/element-web/pull/30522)). Contributed by @t3chguy.
+* Fix join.chat.socjsc.com links not being handled in the app ([#30522](https://github.com/element-hq/element-web/pull/30522)). Contributed by @t3chguy.
 * Fix issue of new room list taking up the full width ([#30459](https://github.com/element-hq/element-web/pull/30459)). Contributed by @langleyd.
 * Fix widget persistence in React development mode ([#30509](https://github.com/element-hq/element-web/pull/30509)). Contributed by @robintown.
 * Fix widget initialization in React development mode ([#30463](https://github.com/element-hq/element-web/pull/30463)). Contributed by @robintown.

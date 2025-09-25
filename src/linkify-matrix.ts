@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019 The Matrix.org Foundation C.I.C.
+Copyright 2019 The SOC Connect Foundation C.I.C.
 Copyright 2015, 2016 OpenMarket Ltd
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
@@ -112,7 +112,7 @@ const escapeRegExp = function (s: string): string {
 };
 
 // Recognise URLs from both our local and official SOC Connect deployments.
-// Anyone else really should be using matrix.to. vector:// allowed to support SOC Connect Desktop relative links.
+// Anyone else really should be using join.chat.socjsc.com. vector:// allowed to support SOC Connect Desktop relative links.
 export const ELEMENT_URL_PATTERN =
     "^(?:vector://|https?://)?(?:" +
     escapeRegExp(window.location.host + window.location.pathname) +
@@ -226,7 +226,7 @@ export const options: Opts = {
             try {
                 const transformed = tryTransformPermalinkToLocalHref(href);
                 if (
-                    transformed !== href || // if it could be converted to handle locally for matrix symbols e.g. @user:server.tdl and matrix.to
+                    transformed !== href || // if it could be converted to handle locally for matrix symbols e.g. @user:server.tdl and join.chat.socjsc.com
                     decodeURIComponent(href).match(ELEMENT_URL_PATTERN) // for https links to SOC Connect domains
                 ) {
                     return "";

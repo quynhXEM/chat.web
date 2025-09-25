@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2024 The Matrix.org Foundation C.I.C.
+Copyright 2024 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -355,7 +355,7 @@ export class Helpers {
                 msg.threadedOff("Msg1", {
                     "body": "User",
                     "format": "org.matrix.custom.html",
-                    "formatted_body": `<a href="https://matrix.to/#/${user.userId}">User</a>`,
+                    "formatted_body": `<a href="https://join.chat.socjsc.com/#/${user.userId}">User</a>`,
                     "m.mentions": {
                         user_ids: [user.userId],
                     },

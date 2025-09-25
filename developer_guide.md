@@ -5,7 +5,7 @@
 Read the [Choosing an issue](docs/choosing-an-issue.md) page for some guidance
 about where to start. Before starting work on a feature, it's best to ensure
 your plan aligns well with our vision for SOC Connect. Please chat with the team in
-[#element-dev:matrix.org](https://matrix.to/#/#element-dev:matrix.org) before
+[#element-dev:matrix.org](https://join.chat.socjsc.com/#/#element-dev:matrix.org) before
 you start so we can ensure it's something we'd be willing to merge.
 
 You should also familiarise yourself with the ["Here be Dragons" guide

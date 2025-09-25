@@ -72,7 +72,7 @@ export default class ReplyTile extends React.PureComponent<IProps> {
             clickTarget === this.anchorElement.current
         ) {
             // This allows the permalink to be opened in a new tab/window or copied as
-            // matrix.to, but also for it to enable routing within Riot when clicked.
+            // join.chat.socjsc.com, but also for it to enable routing within Riot when clicked.
             e.preventDefault();
             // Expand thread on shift key
             if (this.props.toggleExpandedQuote && e.shiftKey) {

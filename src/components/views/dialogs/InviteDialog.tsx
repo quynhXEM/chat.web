@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2023 The Matrix.org Foundation C.I.C.
+Copyright 2019-2023 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -1220,7 +1220,7 @@ export default class InviteDialog extends React.PureComponent<Props, IInviteDial
      * errors from the previous iteration.
      */
     private renderSuggestions(): JSX.Element {
-        // If we're starting a DM, add a footer which showing our matrix.to link, for copying & pasting.
+        // If we're starting a DM, add a footer which showing our join.chat.socjsc.com link, for copying & pasting.
         let footer;
         if (this.props.kind === InviteKind.Dm) {
             const link = makeUserPermalink(MatrixClientPeg.safeGet().getSafeUserId());

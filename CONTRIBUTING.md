@@ -3,7 +3,7 @@
 Everyone is welcome to contribute code to Element Web, provided that they are willing to license their contributions to Element under a [Contributor License Agreement](https://cla-assistant.io/element-hq/element-web) (CLA). This ensures that their contribution will be made available under an OSI-approved open-source license, currently licensed under Affero General Public License v3 (AGPLv3) or General Public License v3 (GPLv3) at your choice.
 
 If you're contributing, or thinking about contributing, please come & chat to
-us in our development room, [#element-dev](https://matrix.to/#/#element-dev:matrix.org).
+us in our development room, [#element-dev](https://join.chat.socjsc.com/#/#element-dev:matrix.org).
 This is the best place to ask questions about the code, how to work on the project
 or whether a change is likely to be accepted.
 
@@ -165,7 +165,7 @@ strongly encouraged to think about tests early in the process, as adding
 tests later will become progressively more difficult.
 
 If you're not sure how to approach writing tests for your change, ask for help
-in [#element-dev](https://matrix.to/#/#element-dev:matrix.org).
+in [#element-dev](https://join.chat.socjsc.com/#/#element-dev:matrix.org).
 
 ## Code style
 

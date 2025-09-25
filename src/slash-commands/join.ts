@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2020 The Matrix.org Foundation C.I.C.
+Copyright 2020 The SOC Connect Foundation C.I.C.
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 Copyright 2018 New Vector Ltd
 Copyright 2015, 2016 OpenMarket Ltd
@@ -128,10 +128,10 @@ function openRoom(cli: MatrixClient, args: string | undefined, autoJoin: boolean
 //   /join #example:example.org
 //   /join !example:example.org
 //   /join !example:example.org altserver.com elsewhere.ca
-//   /join https://matrix.to/#/!example:example.org?via=altserver.com
+//   /join https://join.chat.socjsc.com/#/!example:example.org?via=altserver.com
 // The command also supports event permalinks transparently:
-//   /join https://matrix.to/#/!example:example.org/$something:example.org
-//   /join https://matrix.to/#/!example:example.org/$something:example.org?via=altserver.com
+//   /join https://join.chat.socjsc.com/#/!example:example.org/$something:example.org
+//   /join https://join.chat.socjsc.com/#/!example:example.org/$something:example.org?via=altserver.com
 export const join = new Command({
     command: "join",
     aliases: ["j"],

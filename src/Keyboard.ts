@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019 The Matrix.org Foundation C.I.C.
+Copyright 2019 The SOC Connect Foundation C.I.C.
 Copyright 2017 New Vector Ltd
 Copyright 2016 OpenMarket Ltd
 

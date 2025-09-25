@@ -22,7 +22,7 @@ test.describe("Share dialog", () => {
         await page.getByRole("menuitem", { name: "Copy link" }).click();
 
         const dialog = page.getByRole("dialog", { name: "Share room" });
-        await expect(dialog.getByText(`https://matrix.to/#/${room.roomId}`)).toBeVisible();
+        await expect(dialog.getByText(`https://join.chat.socjsc.com/#/${room.roomId}`)).toBeVisible();
         await expect(dialog).toMatchScreenshot("share-dialog-room.png", {
             // QRCode and url changes at every run
             mask: [page.locator(".mx_QRCode"), page.locator(".mx_ShareDialog_top > span")],
@@ -39,7 +39,7 @@ test.describe("Share dialog", () => {
         await rightPanel.getByRole("button", { name: "Share profile" }).click();
 
         const dialog = page.getByRole("dialog", { name: "Share User" });
-        await expect(dialog.getByText(`https://matrix.to/#/${user.userId}`)).toBeVisible();
+        await expect(dialog.getByText(`https://join.chat.socjsc.com/#/${user.userId}`)).toBeVisible();
         await expect(dialog).toMatchScreenshot("share-dialog-user.png", {
             // QRCode changes at every run
             mask: [page.locator(".mx_QRCode")],

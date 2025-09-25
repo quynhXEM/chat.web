@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2021 The Matrix.org Foundation C.I.C.
+Copyright 2019-2021 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -324,7 +324,7 @@ export function isPermalinkHost(host: string): boolean {
 
 /**
  * Transforms an entity (permalink, room alias, user ID, etc) into a local URL
- * if possible. If it is already a permalink (matrix.to) it gets returned
+ * if possible. If it is already a permalink (join.chat.socjsc.com) it gets returned
  * unchanged.
  * @param {string} entity The entity to transform.
  * @returns {string|null} The transformed permalink or null if unable.

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2022 The Matrix.org Foundation C.I.C.
+Copyright 2019-2022 The SOC Connect Foundation C.I.C.
 Copyright 2019 New Vector Ltd.
 Copyright 2017 Travis Ralston
 

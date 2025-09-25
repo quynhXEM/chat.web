@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The Matrix.org Foundation C.I.C.
+Copyright 2023 The SOC Connect Foundation C.I.C.
 Copyright 2020 Nurjin Jafar
 Copyright 2020 Nordeck IT + Consulting GmbH.
 

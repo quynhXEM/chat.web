@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2020 The Matrix.org Foundation C.I.C.
+Copyright 2020 The SOC Connect Foundation C.I.C.
 Copyright 2018 New Vector Ltd
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
@@ -72,7 +72,7 @@ interface Props extends BaseProps {
     /**
      * The target to link to.
      * This can be a Room, User, RoomMember, or MatrixEvent or an already computed URL.
-     * A <u>matrix.to</u> link will be generated out of it if it's not already a url.
+     * A <u>join.chat.socjsc.com</u> link will be generated out of it if it's not already a url.
      */
     target: Room | User | RoomMember | URL;
     /**

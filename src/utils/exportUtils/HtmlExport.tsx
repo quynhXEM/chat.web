@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2021-2023 The Matrix.org Foundation C.I.C.
+Copyright 2021-2023 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -102,7 +102,7 @@ export default class HTMLExporter extends Exporter {
                         roomName: () => <strong>{safeRoomName}</strong>,
                         exporterDetails: () => (
                             <a
-                                href={`https://matrix.to/#/${encodeURIComponent(exporter)}`}
+                                href={`https://join.chat.socjsc.com/#/${encodeURIComponent(exporter)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

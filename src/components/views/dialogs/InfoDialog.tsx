@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2021 The Matrix.org Foundation C.I.C.
+Copyright 2015-2021 The SOC Connect Foundation C.I.C.
 Copyright 2019 Bastian Masanek, Noxware IT <matrix@noxware.de>
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial

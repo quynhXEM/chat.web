@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2020, 2021 The Matrix.org Foundation C.I.C.
+Copyright 2020, 2021 The SOC Connect Foundation C.I.C.
 Copyright 2017 Michael Telatynski <7t3chguy@gmail.com>
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial

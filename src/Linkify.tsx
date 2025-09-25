@@ -1,6 +1,6 @@
 /*
 Copyright 2024, 2025 New Vector Ltd.
-Copyright 2024 The Matrix.org Foundation C.I.C.
+Copyright 2024 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -28,7 +28,7 @@ export const transformTags: NonNullable<IOptions["transformTags"]> = {
 
             const transformed = tryTransformPermalinkToLocalHref(attribs.href); // only used to check if it is a link that can be handled locally
             if (
-                transformed !== attribs.href || // it could be converted so handle locally symbols e.g. @user:server.tdl, matrix: and matrix.to
+                transformed !== attribs.href || // it could be converted so handle locally symbols e.g. @user:server.tdl, matrix: and join.chat.socjsc.com
                 attribs.href.match(ELEMENT_URL_PATTERN) // for https links to SOC Connect domains
             ) {
                 delete attribs.target;

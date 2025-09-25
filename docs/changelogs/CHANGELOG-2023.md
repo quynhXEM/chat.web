@@ -357,7 +357,7 @@ Changes in [1.11.37](https://github.com/vector-im/element-web/releases/tag/v1.11
  * Fix room view not properly maintaining scroll position ([\#11274](https://github.com/matrix-org/matrix-react-sdk/pull/11274)). Fixes #25810.
  * Prevent user from accidentally double clicking user info admin actions ([\#11254](https://github.com/matrix-org/matrix-react-sdk/pull/11254)). Fixes #10944.
  * Fix missing metaspace notification badges ([\#11269](https://github.com/matrix-org/matrix-react-sdk/pull/11269)). Fixes #25679.
- * Fix clicking MXID in timeline going to matrix.to ([\#11263](https://github.com/matrix-org/matrix-react-sdk/pull/11263)). Fixes #23342.
+ * Fix clicking MXID in timeline going to join.chat.socjsc.com ([\#11263](https://github.com/matrix-org/matrix-react-sdk/pull/11263)). Fixes #23342.
  * Restoring optional ligatures by resetting letter-spacing ([\#11202](https://github.com/matrix-org/matrix-react-sdk/pull/11202)). Fixes #25727.
  * Allow emoji presentation selector to not break BigEmoji styling ([\#11253](https://github.com/matrix-org/matrix-react-sdk/pull/11253)). Fixes #17848.
  * Make event highliht use primary content token ([\#11255](https://github.com/matrix-org/matrix-react-sdk/pull/11255)).
@@ -791,7 +791,7 @@ Changes in [1.11.25](https://github.com/vector-im/element-web/releases/tag/v1.11
  * Fix space settings dialog having rogue title tooltip ([\#10293](https://github.com/matrix-org/matrix-react-sdk/pull/10293)). Fixes #24740.
  * Show spinner when starting a DM from the user profile (right panel) ([\#10290](https://github.com/matrix-org/matrix-react-sdk/pull/10290)).
  * Reduce height of toggle on expanded view source event ([\#10283](https://github.com/matrix-org/matrix-react-sdk/pull/10283)). Fixes #22873. Contributed by @luixxiul.
- * Pillify http and non-prefixed matrix.to links ([\#10277](https://github.com/matrix-org/matrix-react-sdk/pull/10277)). Fixes #20844.
+ * Pillify http and non-prefixed join.chat.socjsc.com links ([\#10277](https://github.com/matrix-org/matrix-react-sdk/pull/10277)). Fixes #20844.
  * Fix some features not being configurable via `features` ([\#10276](https://github.com/matrix-org/matrix-react-sdk/pull/10276)).
  * Fix starting a DM from the right panel in some cases ([\#10278](https://github.com/matrix-org/matrix-react-sdk/pull/10278)). Fixes #24722.
  * Align info EventTile and normal EventTile on IRC layout ([\#10197](https://github.com/matrix-org/matrix-react-sdk/pull/10197)). Fixes #22782. Contributed by @luixxiul.

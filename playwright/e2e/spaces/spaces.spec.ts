@@ -1,6 +1,6 @@
 /*
 Copyright 2024,2025 New Vector Ltd.
-Copyright 2022 The Matrix.org Foundation C.I.C.
+Copyright 2022 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -88,9 +88,9 @@ test.describe("Spaces", () => {
             await page.getByPlaceholder("Support").fill("Jokes");
             await page.getByRole("button", { name: "Continue" }).click();
 
-            // Copy matrix.to link
+            // Copy join.chat.socjsc.com link
             await page.getByRole("button", { name: "Share invite link" }).click();
-            expect(await app.getClipboard()).toEqual(`https://matrix.to/#/#lets-have-a-riot:${user.homeServer}`);
+            expect(await app.getClipboard()).toEqual(`https://join.chat.socjsc.com/#/#lets-have-a-riot:${user.homeServer}`);
 
             // Go to space home
             await page.getByRole("button", { name: "Go to my first room" }).click();
@@ -228,7 +228,7 @@ test.describe("Spaces", () => {
         const shareDialog = page.locator(".mx_SpacePublicShare");
         // Copy link first
         await shareDialog.getByRole("button", { name: "Share invite link" }).click();
-        expect(await app.getClipboard()).toEqual(`https://matrix.to/#/#space:${user.homeServer}`);
+        expect(await app.getClipboard()).toEqual(`https://join.chat.socjsc.com/#/#space:${user.homeServer}`);
         // Start Matrix invite flow
         await shareDialog.getByRole("button", { name: "Invite people" }).click();
 

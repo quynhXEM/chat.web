@@ -1,6 +1,6 @@
 /*
 Copyright 2024, 2025 New Vector Ltd.
-Copyright 2022, 2023 The Matrix.org Foundation C.I.C.
+Copyright 2022, 2023 The SOC Connect Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -1371,7 +1371,7 @@ test.describe("Timeline", () => {
                 msgtype: "m.text",
                 body: user.userId,
                 format: "org.matrix.custom.html",
-                formatted_body: `<span data-mx-spoiler>https://matrix.to/#/${user.userId}</span>`,
+                formatted_body: `<span data-mx-spoiler>https://join.chat.socjsc.com/#/${user.userId}</span>`,
             });
 
             const screenshotOptions = {
