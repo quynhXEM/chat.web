@@ -3,7 +3,7 @@ Copyright 2024 New Vector Ltd.
 Copyright 2020 The Matrix.org Foundation C.I.C.
 Copyright 2015, 2016 OpenMarket Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -414,7 +414,7 @@ export class ModalManager extends TypedEventEmitter<ModalManagerEvent, HandlerMa
 
     private async reRender(): Promise<void> {
         if (this.modals.length === 0 && !this.priorityModal && !this.staticModal) {
-            // If there is no modal to render, make all of Element available
+            // If there is no modal to render, make all of SOC Connect available
             // to screen reader users again
             defaultDispatcher.dispatch({
                 action: "aria_unhide_main_app",

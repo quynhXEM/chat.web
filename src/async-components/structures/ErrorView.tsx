@@ -1,7 +1,7 @@
 /*
 Copyright 2020-2024 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -35,7 +35,7 @@ export const ErrorView: React.FC<IProps> = ({ title, messages, footer, children 
                 className="mx_ErrorView_logo"
                 height="160"
                 src="themes/element/img/logos/element-app-logo.png"
-                alt="Element"
+                alt="SOC Connect"
             />
             <div className="mx_ErrorView_container">
                 <Heading size="md" weight="semibold">
@@ -121,7 +121,7 @@ export const UnsupportedBrowserView: React.FC<{
     onAccept?(): void;
 }> = ({ onAccept }) => {
     const config = SdkConfig.get();
-    const brand = config.brand ?? "Element";
+    const brand = config.brand ?? "SOC Connect";
 
     const hasDesktopBuilds =
         config.desktop_builds?.available &&

@@ -2,7 +2,7 @@
 Copyright 2024, 2025 New Vector Ltd.
 Copyright 2022, 2023 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -748,7 +748,7 @@ test.describe("Timeline", () => {
         test("should render url previews", { tag: "@screenshot" }, async ({ page, app, room, axe, context }) => {
             axe.disableRules("color-contrast");
 
-            // Element Web uses a Service Worker to rewrite unauthenticated media requests to authenticated ones, but
+            // SOC Connect Web uses a Service Worker to rewrite unauthenticated media requests to authenticated ones, but
             // the page can't see this happening. We intercept the route at the BrowserContext to ensure we get it
             // post-worker, but we can't waitForResponse on that, so the page context is still used there. Because
             // the page doesn't see the rewrite, it waits for the unauthenticated route. This is only confusing until
@@ -766,7 +766,7 @@ test.describe("Timeline", () => {
                 async (route) => {
                     await route.fulfill({
                         json: {
-                            "og:title": "Element Call",
+                            "og:title": "SOC Connect Call",
                             "og:description": null,
                             "og:image:width": 48,
                             "og:image:height": 48,
@@ -787,7 +787,7 @@ test.describe("Timeline", () => {
             await app.client.sendMessage(room.roomId, "https://call.element.io/");
             await page.goto(`/#/room/${room.roomId}`);
 
-            await expect(page.locator(".mx_LinkPreviewWidget").getByText("Element Call")).toBeVisible();
+            await expect(page.locator(".mx_LinkPreviewWidget").getByText("SOC Connect Call")).toBeVisible();
             await Promise.all(requestPromises);
 
             await expect(axe).toHaveNoViolations();

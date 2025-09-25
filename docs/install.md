@@ -1,8 +1,8 @@
-# Installing Element Web
+# Installing SOC Connect Web
 
 **Familiarise yourself with the [Important Security Notes](../README.md#important-security-notes) before starting, they apply to all installation methods.**
 
-_Note: that for the security of your chats will need to serve Element over HTTPS.
+_Note: that for the security of your chats will need to serve SOC Connect over HTTPS.
 Major browsers also do not allow you to use VoIP/video chats over HTTP, as WebRTC is only usable over HTTPS.
 There are some exceptions like when using localhost, which is considered a [secure context](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) and thus allowed._
 
@@ -14,14 +14,14 @@ There are some exceptions like when using localhost, which is considered a [secu
 1. Configure the correct caching headers in your webserver (see below)
 1. Configure the app by copying `config.sample.json` to `config.json` and
    modifying it. See the [configuration docs](config.md) for details.
-1. Enter the URL into your browser and log into Element!
+1. Enter the URL into your browser and log into SOC Connect!
 
 Releases are signed using gpg and the OpenPGP standard,
 and can be checked against the public key located at <https://packages.element.io/element-release-key.asc>.
 
 ## Debian package
 
-Element Web is now also available as a Debian package for Debian and Ubuntu based systems.
+SOC Connect Web is now also available as a Debian package for Debian and Ubuntu based systems.
 
 ```shell
 sudo apt install -y wget apt-transport-https
@@ -66,7 +66,7 @@ on other runtimes may require root privileges. To resolve this, either run the
 image as root (`docker run --user 0`) or, better, change the port that nginx
 listens on via the `ELEMENT_WEB_PORT` environment variable.
 
-[Element Web Modules](https://github.com/element-hq/element-modules/tree/main/packages/element-web-module-api) can be dynamically loaded
+[SOC Connect Web Modules](https://github.com/element-hq/element-modules/tree/main/packages/element-web-module-api) can be dynamically loaded
 by being made available (e.g. via bind mount) in a directory within `/modules/`.
 The default entrypoint will be index.js in that directory but can be overridden if a package.json file is found with a `main` directive.
 These modules will be presented in a `/modules` subdirectory within the webroot, and automatically added to the config.json `modules` field.

@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2019-2021 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -368,7 +368,7 @@ export function tryTransformPermalinkToLocalHref(permalink: string): string {
         !permalink.startsWith("http:") &&
         !permalink.startsWith("https:") &&
         !permalink.startsWith("matrix:") &&
-        !permalink.startsWith("vector:") // Element Desktop
+        !permalink.startsWith("vector:") // SOC Connect Desktop
     ) {
         return permalink;
     }
@@ -383,7 +383,7 @@ export function tryTransformPermalinkToLocalHref(permalink: string): string {
         return permalink;
     }
 
-    // A bit of a hack to convert permalinks of unknown origin to Element links
+    // A bit of a hack to convert permalinks of unknown origin to SOC Connect links
     try {
         const permalinkParts = parsePermalink(permalink);
         if (permalinkParts) {

@@ -686,7 +686,7 @@
         "invalid_json_detail": "ההודעה מהמנתח היא: %(message)s",
         "invalid_json_generic": "JSON לא חוקי",
         "mau": "השרת הזה הגיע לקצה מספר המשתמשים הפעילים לחודש.",
-        "misconfigured": "Element אינו מוגדר תקין",
+        "misconfigured": "SOC Connect אינו מוגדר תקין",
         "mixed_content": "לא ניתן להתחבר לשרת ביתי באמצעות HTTP כאשר כתובת HTTPS נמצאת בסרגל הדפדפן שלך. השתמש ב- HTTPS או <a> הפעל סקריפטים לא בטוחים </a>.",
         "non_urgent_echo_failure_toast": "השרת שלכם אינו מגיב לבקשות מסויימות <a>בקשות</a>.",
         "resource_limits": "השרת הזה חרג מאחד ממגבלות המשאבים שלו.",
@@ -2438,7 +2438,7 @@
         "you_are_presenting": "אתה מציג"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s עַל %(osName)s",
-    "welcome_to_element": "ברוכים הבאים ל Element",
+    "welcome_to_element": "ברוכים הבאים ל SOC Connect",
     "widget": {
         "added_by": "ישומון נוסף על ידי",
         "capabilities_dialog": {

@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2022 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -548,7 +548,7 @@ export enum ElementCallIntent {
 }
 
 /**
- * A group call using MSC3401 and Element Call as a backend.
+ * A group call using MSC3401 and SOC Connect Call as a backend.
  * (somewhat cheekily named)
  */
 export class ElementCall extends Call {
@@ -572,7 +572,7 @@ export class ElementCall extends Call {
         const elementCallUrl = SettingsStore.getValue("Developer.elementCallUrl");
         if (elementCallUrl) url = new URL(elementCallUrl);
 
-        // Splice together the Element Call URL for this call
+        // Splice together the SOC Connect Call URL for this call
         const params = new URLSearchParams({
             confineToRoom: "true", // Only show the call interface for the configured room
             // Template variables are used, so that this can be configured using the widget data.
@@ -698,14 +698,14 @@ export class ElementCall extends Call {
             return ecWidget;
         }
 
-        // To use Element Call without touching room state, we create a virtual
+        // To use SOC Connect Call without touching room state, we create a virtual
         // widget (one that doesn't have a corresponding state event)
         const url = ElementCall.generateWidgetUrl(client, roomId);
         return WidgetStore.instance.addVirtualWidget(
             {
                 id: secureRandomString(24), // So that it's globally unique
                 creatorUserId: client.getUserId()!,
-                name: "Element Call",
+                name: "SOC Connect Call",
                 type: WidgetType.CALL.preferred,
                 url: url.toString(),
                 waitForIframeLoad: false,

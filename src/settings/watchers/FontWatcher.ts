@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2020-2023 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -106,7 +106,7 @@ export class FontWatcher implements IWatcher {
         // of 5 pixels for all values stored under `baseFontSize`
         const LEGACY_SIZE_DIFF = 5;
 
-        // Compound uses a base font size of `16px`, whereas the old Element
+        // Compound uses a base font size of `16px`, whereas the old SOC Connect
         // styles based their calculations off a `15px` root font size.
         const ROOT_FONT_SIZE_INCREASE = 1;
 

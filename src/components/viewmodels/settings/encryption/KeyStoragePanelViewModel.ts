@@ -1,7 +1,7 @@
 /*
 Copyright 2025 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -117,7 +117,7 @@ export function useKeyStoragePanelViewModel(): KeyStoragePanelState {
                     await crypto.disableKeyStorage();
 
                     // Set a flag to say that the user doesn't want key backup.
-                    // Element X uses this to determine whether to set up automatically,
+                    // SOC Connect X uses this to determine whether to set up automatically,
                     // so this will stop EX turning it back on spontaneously.
                     await matrixClient.setAccountData(BACKUP_DISABLED_ACCOUNT_DATA_KEY, { disabled: true });
                 }

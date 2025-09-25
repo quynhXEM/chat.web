@@ -990,7 +990,7 @@
         "bridge_state_workspace": "Laborspaco: <networkLink/>",
         "currently_experimental": "Nuntempe eksperimenta.",
         "custom_themes": "Subteni aldonadon de propraj haŭtoj",
-        "element_call_video_rooms": "Element Call videoĉambroj",
+        "element_call_video_rooms": "SOC Connect Call videoĉambroj",
         "group_calls": "La nova grupvoka sperto",
         "group_developer": "Programisto",
         "group_encryption": "Ĉifrado",
@@ -2571,7 +2571,7 @@
         "you_are_presenting": "Vi prezentas"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s sur %(osName)s",
-    "welcome_to_element": "Bonvenon al Element",
+    "welcome_to_element": "Bonvenon al SOC Connect",
     "widget": {
         "added_by": "Fenestraĵon aldonis",
         "capabilities_dialog": {

@@ -3,7 +3,7 @@ Copyright 2024 New Vector Ltd.
 Copyright 2019-2022 The Matrix.org Foundation C.I.C.
 Copyright 2016 OpenMarket Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -17,7 +17,7 @@ import { type DeepReadonly, type Defaultize } from "./@types/common";
 
 // see element-web config.md for docs, or the IConfigOptions interface for dev docs
 export const DEFAULTS: DeepReadonly<IConfigOptions> = {
-    brand: "Element",
+    brand: "SOC Connect",
     help_url: "https://element.io/help",
     help_encryption_url: "https://element.io/help#encryption",
     integrations_ui_url: "https://scalar.vector.im/",
@@ -32,7 +32,7 @@ export const DEFAULTS: DeepReadonly<IConfigOptions> = {
     element_call: {
         use_exclusively: false,
         participant_limit: 8,
-        brand: "Element Call",
+        brand: "SOC Connect Call",
     },
 
     // @ts-ignore - we deliberately use the camelCase version here so we trigger
@@ -56,9 +56,9 @@ export const DEFAULTS: DeepReadonly<IConfigOptions> = {
         available: true,
         logo: "vector-icons/1024.png",
         url: "https://element.io/download",
-        url_macos: "https://packages.element.io/desktop/install/macos/Element.dmg",
-        url_win64: "https://packages.element.io/desktop/install/win32/x64/Element%20Setup.exe",
-        url_win64arm: "https://packages.element.io/desktop/install/win32/arm64/Element%20Setup.exe",
+        url_macos: "https://packages.element.io/desktop/install/macos/SOC Connect.dmg",
+        url_win64: "https://packages.element.io/desktop/install/win32/x64/SOC Connect%20Setup.exe",
+        url_win64arm: "https://packages.element.io/desktop/install/win32/arm64/SOC Connect%20Setup.exe",
         url_linux: "https://element.io/download#linux",
     },
     mobile_builds: {

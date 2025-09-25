@@ -1,7 +1,7 @@
 /*
 Copyright 2025 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -71,7 +71,7 @@ async function sendRTCState(bot: Bot, roomId: string, notification?: "ring" | "n
     });
 }
 
-test.describe("Element Call", () => {
+test.describe("SOC Connect Call", () => {
     test.use({
         config: {
             element_call: {
@@ -89,7 +89,7 @@ test.describe("Element Call", () => {
     });
 
     test.beforeEach(async ({ page, user, app }) => {
-        // Mock a widget page. It doesn't need to actually be Element Call.
+        // Mock a widget page. It doesn't need to actually be SOC Connect Call.
         await page.route("/widget.html", async (route) => {
             await route.fulfill({
                 status: 200,
@@ -116,7 +116,7 @@ test.describe("Element Call", () => {
             await expect(page.getByText("Bob joined the room")).toBeVisible();
 
             await page.getByRole("button", { name: "Video call" }).click();
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "SOC Connect Call" }).click();
 
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
             await expect(frameUrlStr).toBeDefined();
@@ -134,7 +134,7 @@ test.describe("Element Call", () => {
 
             await page.getByRole("button", { name: "Video call" }).click();
             await page.keyboard.down("Shift");
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "SOC Connect Call" }).click();
             await page.keyboard.up("Shift");
 
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
@@ -224,7 +224,7 @@ test.describe("Element Call", () => {
             await expect(page.getByText("Bob joined the room")).toBeVisible();
 
             await page.getByRole("button", { name: "Video call" }).click();
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "SOC Connect Call" }).click();
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
 
             await expect(frameUrlStr).toBeDefined();
@@ -241,7 +241,7 @@ test.describe("Element Call", () => {
 
             await page.getByRole("button", { name: "Video call" }).click();
             await page.keyboard.down("Shift");
-            await page.getByRole("menuitem", { name: "Element Call" }).click();
+            await page.getByRole("menuitem", { name: "SOC Connect Call" }).click();
             await page.keyboard.up("Shift");
             const frameUrlStr = await page.locator("iframe").getAttribute("src");
 

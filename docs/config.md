@@ -9,7 +9,7 @@ This backwards compatibility will be getting removed in a future release so plea
 ---
 
 You can configure the app by copying `config.sample.json` to `config.json` or `config.$domain.json` and customising it.
-Element will attempt to load first `config.$domain.json` and if it fails `config.json`. This mechanism allows different
+SOC Connect will attempt to load first `config.$domain.json` and if it fails `config.json`. This mechanism allows different
 configuration options depending on if you're hitting e.g. `app1.example.com` or `app2.example.com`. Configs are not mixed
 in any way, it either entirely uses the domain config, or entirely uses `config.json`.
 
@@ -25,7 +25,7 @@ for the desktop app the application will need to be exited fully (including via 
 
 ## Homeserver configuration
 
-In order for Element to even start you will need to tell it what homeserver to connect to _by default_. Users will be
+In order for SOC Connect to even start you will need to tell it what homeserver to connect to _by default_. Users will be
 able to use a different homeserver if they like, though this can be disabled with `"disable_custom_urls": true` in your
 config.
 
@@ -53,7 +53,7 @@ One of the following options **must** be supplied:
    information. These are the same values seen as `base_url` in the `default_server_config` example, with `default_is_url`
    being optional.
 
-If both `default_server_config` and `default_server_name` are used, Element will try to look up the connection
+If both `default_server_config` and `default_server_name` are used, SOC Connect will try to look up the connection
 information using `.well-known`, and if that fails, take `default_server_config` as the homeserver connection
 information.
 
@@ -82,7 +82,7 @@ the functionality.
 
 ## Default settings
 
-Some settings additionally support being specified at the config level to affect the user experience of your Element Web
+Some settings additionally support being specified at the config level to affect the user experience of your SOC Connect Web
 instance. As of writing those settings are not fully documented, however a few are:
 
 1. `default_federate`: When `true` (default), rooms will be marked as "federatable" during creation. Typically this setting
@@ -115,26 +115,26 @@ instance. As of writing those settings are not fully documented, however a few a
 
 <!-- Author's note: https://english.stackexchange.com/questions/570116/alternative-ways-of-saying-white-labeled -->
 
-Element supports some customisation of the user experience through various branding and theme options. While it doesn't support
+SOC Connect supports some customisation of the user experience through various branding and theme options. While it doesn't support
 complete re-branding/private labeling, a more personalised experience can be achieved for your users.
 
 1. `default_theme`: Typically either `light` (the default) or `dark`, this is the optional name of the colour theme to use.
    If using custom themes, this can be a theme name from that as well.
 2. `default_device_display_name`: Optional public name for devices created by login and registration, instead of the default
    templated string. Note that this option does not support templating, currently.
-3. `brand`: Optional name for the app. Defaults to `Element`. This is used throughout the application in various strings/locations.
-4. `permalink_prefix`: An optional URL pointing to an Element Web deployment. For example, `https://app.element.io`. This will
-   change all permalinks (via the "Share" menus) to point at the Element Web deployment rather than `matrix.to`.
+3. `brand`: Optional name for the app. Defaults to `SOC Connect`. This is used throughout the application in various strings/locations.
+4. `permalink_prefix`: An optional URL pointing to an SOC Connect Web deployment. For example, `https://app.element.io`. This will
+   change all permalinks (via the "Share" menus) to point at the SOC Connect Web deployment rather than `matrix.to`.
 5. `desktop_builds`: Optional. Where the desktop builds for the application are, if available. This is explained in more detail
    down below.
 6. `mobile_builds`: Optional. Like `desktop_builds`, except for the mobile apps. Also described in more detail down below.
-7. `mobile_guide_toast`: When `true` (default), users accessing the Element Web instance from a mobile device will be prompted to
+7. `mobile_guide_toast`: When `true` (default), users accessing the SOC Connect Web instance from a mobile device will be prompted to
    download the app instead.
 8. `mobile_guide_app_variant`: Optional. The mobile app that the user is prompted to download from the `/mobile_guide` page. When omitted
-   the mobile guide will be configured for the new Element X apps. Allowed values are as follows:
-    1. `element`: Element X Android/iOS.
-    2. `element-classic`: Element Classic Android/iOS.
-    3. `element-pro`: Element Pro Android/iOS.
+   the mobile guide will be configured for the new SOC Connect X apps. Allowed values are as follows:
+    1. `element`: SOC Connect X Android/iOS.
+    2. `element-classic`: SOC Connect Classic Android/iOS.
+    3. `element-pro`: SOC Connect Pro Android/iOS.
 9. `update_base_url`: For the desktop app only, the URL where to acquire update packages. If specified, must be a path to a directory
    containing `macos` and `win32` directories, with the update packages within. Defaults to `https://packages.element.io/desktop/update/`
    in production.
@@ -183,7 +183,7 @@ When `desktop_builds` is not specified at all, the app will assume desktop downl
 For `mobile_builds`, the following subproperties are available:
 
 1. `ios`: The URL for where to download the iOS app, such as an App Store link. When explicitly `null`, the app will assume the
-   iOS app cannot be downloaded. When not provided, the default Element app will be assumed available.
+   iOS app cannot be downloaded. When not provided, the default SOC Connect app will be assumed available.
 2. `android`: The same as `ios`, except for Android instead.
 3. `fdroid`: The same as `android`, except for FDroid instead.
 
@@ -220,7 +220,7 @@ Starting with `branding`, the following subproperties are available:
 `embedded_pages` can be configured as such:
 
 1. `welcome_url`: A URL to an HTML page to show as a welcome page (landing on `#/welcome`). When not specified, the default
-   `welcome.html` that ships with Element will be used instead.
+   `welcome.html` that ships with SOC Connect will be used instead.
 2. `home_url`: A URL to an HTML page to show within the app as the "home" page. When the app doesn't have a room/screen to
    show the user, it will use the home page instead. The home page is additionally accessible from the user menu. By default,
    no home page is set and therefore a hardcoded landing screen is used. More documentation and examples are [here](./custom-home.md).
@@ -247,17 +247,17 @@ Together, the options might look like this in your config:
 ```
 
 Note that `index.html` also has an og:image meta tag that is set to an image hosted on element.io. This is the image used if
-links to your copy of Element appear in some websites like Facebook, and indeed Element itself. This has to be static in the HTML
+links to your copy of SOC Connect appear in some websites like Facebook, and indeed SOC Connect itself. This has to be static in the HTML
 and an absolute URL (and HTTP rather than HTTPS), so it's not possible for this to be an option in config.json. If you'd like to
-change it, you can build Element, but run `RIOT_OG_IMAGE_URL="http://example.com/logo.png" yarn build`. Alternatively, you can edit
-the `og:image` meta tag in `index.html` directly each time you download a new version of Element.
+change it, you can build SOC Connect, but run `RIOT_OG_IMAGE_URL="http://example.com/logo.png" yarn build`. Alternatively, you can edit
+the `og:image` meta tag in `index.html` directly each time you download a new version of SOC Connect.
 
 ## SSO setup
 
-When Element is deployed alongside a homeserver with SSO-only login, some options to ease the user experience might want to be set:
+When SOC Connect is deployed alongside a homeserver with SSO-only login, some options to ease the user experience might want to be set:
 
 1. `logout_redirect_url`: Optional URL to redirect the user to after they have logged out. Some SSO systems support a page that the
-   user can be sent to in order to log them out of that system too, making logout symmetric between Element and the SSO system.
+   user can be sent to in order to log them out of that system too, making logout symmetric between SOC Connect and the SSO system.
 2. `sso_redirect_options`: Options to define how to handle unauthenticated users. If the object contains `"immediate": true`, then
    all unauthenticated users will be automatically redirected to the SSO system to start their login. If instead you'd only like to
    have users which land on the welcome page to be redirected, use `"on_welcome_page": true`. Additionally, there is an option to
@@ -316,9 +316,9 @@ As an example:
 
 ## VoIP / Jitsi calls
 
-Currently, Element uses Jitsi to offer conference calls in rooms, with an experimental Element Call implementation in the works.
-A set of defaults are applied, pointing at our Jitsi and Element Call instances, to ensure conference calling works, however you
-can point Element at your own if you prefer.
+Currently, SOC Connect uses Jitsi to offer conference calls in rooms, with an experimental SOC Connect Call implementation in the works.
+A set of defaults are applied, pointing at our Jitsi and SOC Connect Call instances, to ensure conference calling works, however you
+can point SOC Connect at your own if you prefer.
 
 More information about the Jitsi setup can be found [here](./jitsi.md).
 
@@ -357,7 +357,7 @@ The VoIP and Jitsi options are:
         }
     }
     ```
-4. `widget_build_url`: Optional URL to have Element make a request to when a user presses the voice/video call buttons in the app,
+4. `widget_build_url`: Optional URL to have SOC Connect make a request to when a user presses the voice/video call buttons in the app,
    if a call would normally be started by the action. The URL will be called with a `roomId` query parameter to identify the room
    being called in. The URL must respond with a JSON object similar to the following:
     ```json
@@ -385,20 +385,20 @@ The VoIP and Jitsi options are:
     ```
     The `widget` is the `content` of a normal widget state event. The `layout` is the layout specifier for the widget being created,
     as defined by the `io.element.widgets.layout` state event. By default this applies to all rooms, but the behaviour can be skipped for
-    2-person rooms, causing Element to fall back to 1:1 VoIP, by setting the option `widget_build_url_ignore_dm` to `true`.
+    2-person rooms, causing SOC Connect to fall back to 1:1 VoIP, by setting the option `widget_build_url_ignore_dm` to `true`.
 5. `audio_stream_url`: Optional URL to pass to Jitsi to enable live streaming. This option is considered experimental and may be removed
    at any time without notice.
-6. `element_call`: Optional configuration for native group calls using Element Call, with the following subkeys:
-    - `use_exclusively`: A boolean specifying whether Element Call should be used exclusively as the only VoIP stack in
+6. `element_call`: Optional configuration for native group calls using SOC Connect Call, with the following subkeys:
+    - `use_exclusively`: A boolean specifying whether SOC Connect Call should be used exclusively as the only VoIP stack in
       the app, removing the ability to start legacy 1:1 calls or Jitsi calls. Defaults to `false`.
     - `participant_limit`: The maximum number of users who can join a call; if
       this number is exceeded, the user will not be able to join a given call.
-    - `brand`: Optional name for the app. Defaults to `Element Call`. This is
+    - `brand`: Optional name for the app. Defaults to `SOC Connect Call`. This is
       used throughout the application in various strings/locations.
-    - `guest_spa_url`: Optional URL for an Element Call single-page app (SPA),
-      for guest links. If this is set, Element Web will expose a "join" link
+    - `guest_spa_url`: Optional URL for an SOC Connect Call single-page app (SPA),
+      for guest links. If this is set, SOC Connect Web will expose a "join" link
       for public video rooms, which can then be shared to non-matrix users.
-      The target Element Call SPA is typically set up to use a homeserver that
+      The target SOC Connect Call SPA is typically set up to use a homeserver that
       allows users to register without email ("passwordless guest users") and to
       federate.
 
@@ -433,14 +433,14 @@ For example:
 
 ## Integration managers
 
-Integration managers are embedded applications within Element to help the user configure bots, bridges, and widgets. An integration manager
+Integration managers are embedded applications within SOC Connect to help the user configure bots, bridges, and widgets. An integration manager
 is a separate piece of software not typically available with your homeserver. To disable integrations, set the options defined here to `null`.
 
 1. `integrations_ui_url`: The UI URL for the integration manager.
 2. `integrations_rest_url`: The REST interface URL for the integration manager.
 3. `integrations_widgets_urls`: A list of URLs the integration manager uses to host widgets.
 
-If you would like to use Scalar, the integration manager maintained by Element, the following options would apply:
+If you would like to use Scalar, the integration manager maintained by SOC Connect, the following options would apply:
 
 ```json
 {
@@ -494,12 +494,12 @@ analytics are deemed impossible and the user won't be asked to opt in to the sys
 There are additional root-level options which can be specified:
 
 1. `analytics_owner`: the company name used in dialogs talking about analytics - this defaults to `brand`,
-   and is useful when the provider of analytics is different from the provider of the Element instance.
+   and is useful when the provider of analytics is different from the provider of the SOC Connect instance.
 2. `privacy_policy_url`: URL to the privacy policy including the analytics collection policy.
 
 ## Miscellaneous
 
-Element supports other options which don't quite fit into other sections of this document.
+SOC Connect supports other options which don't quite fit into other sections of this document.
 
 To configure whether presence UI is shown for a given homeserver, set `enable_presence_by_hs_url`. It is recommended to
 set this value to the following at a minimum:
@@ -519,10 +519,10 @@ The identity server is used for inviting other users to a room via third party
 identifiers like emails and phone numbers. It is not used to store your password
 or account information.
 
-As of Element 1.4.0, all identity server functions are optional and you are
+As of SOC Connect 1.4.0, all identity server functions are optional and you are
 prompted to agree to terms before data is sent to the identity server.
 
-Element will check multiple sources when looking for an identity server to use in
+SOC Connect will check multiple sources when looking for an identity server to use in
 the following order of preference:
 
 1. The identity server set in the user's account data
@@ -532,7 +532,7 @@ the following order of preference:
    login
 3. The identity server provided by the Riot config file
 
-If none of these sources have an identity server set, then Element will prompt the
+If none of these sources have an identity server set, then SOC Connect will prompt the
 user to set an identity server first when attempting to use features that
 require one.
 

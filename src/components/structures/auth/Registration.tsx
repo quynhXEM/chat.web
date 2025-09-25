@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2015-2021 The connect.socjsc.com Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -151,7 +151,7 @@ export default class Registration extends React.Component<IProps, IState> {
 
         const { hsUrl, isUrl, delegatedAuthentication } = this.props.serverConfig;
         this.loginLogic = new Login(hsUrl, isUrl, null, {
-            defaultDeviceDisplayName: "Element login check", // We shouldn't ever be used
+            defaultDeviceDisplayName: "SOC Connect login check", // We shouldn't ever be used
             delegatedAuthentication,
         });
     }

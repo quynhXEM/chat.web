@@ -668,7 +668,7 @@
         "stop_voice_message": "Stopio recordio",
         "voice_message_button": "Neges Llais"
     },
-    "console_dev_note": "Os ydych chi'n gwybod beth rydych chi'n ei wneud, mae Element yn raglen cod agored, gwnewch yn siŵr eich bod chi'n edrych ar ein GitHub ( https://github.com/vector-im/element-web/ ) a chyfrannu!",
+    "console_dev_note": "Os ydych chi'n gwybod beth rydych chi'n ei wneud, mae SOC Connect yn raglen cod agored, gwnewch yn siŵr eich bod chi'n edrych ar ein GitHub ( https://github.com/vector-im/element-web/ ) a chyfrannu!",
     "console_scam_warning": "Os dywedodd rhywun wrthych am gopïo/gludo rhywbeth yma, mae'n debygol iawn eich bod yn cael eich twyllo!",
     "console_wait": "Arhoswch!",
     "create_room": {
@@ -866,7 +866,7 @@
         "setting_definition": "Gosod  diffiniad:",
         "setting_id": "Gosod  ID",
         "settings": {
-            "elementCallUrl": "URL Galwad Element"
+            "elementCallUrl": "URL Galwad SOC Connect"
         },
         "settings_explorer": "Archwiliwr gosodiadau",
         "show_empty_content_events": "Dangos digwyddiadau gyda chynnwys gwag",
@@ -1507,13 +1507,13 @@
         "custom_themes": "Cefnogi ychwanegu themâu personol",
         "dynamic_room_predecessors": "Rhagflaenwyr ystafell deimaterig",
         "dynamic_room_predecessors_description": "Galluogi MSC3946 (i gefnogi archifau ystafelloedd sy'n cyrraedd yn hwyr)",
-        "element_call_video_rooms": "Ystafelloedd fideo Element Call",
+        "element_call_video_rooms": "Ystafelloedd fideo SOC Connect Call",
         "exclude_insecure_devices": "Gwahardd dyfeisiau anniogel wrth anfon/derbyn negeseuon",
         "exclude_insecure_devices_description": "Pan fydd y modd hwn wedi'i alluogi, ni fydd negeseuon wedi'u hamgryptio yn cael eu rhannu â dyfeisiau heb eu gwirio, a bydd negeseuon o ddyfeisiau heb eu gwirio yn cael eu dangos fel gwall. Sylwch, os ydych chi'n galluogi'r modd hwn, efallai na fyddwch chi'n gallu cyfathrebu â defnyddwyr nad ydyn nhw wedi gwirio eu dyfeisiau.",
         "experimental_description": "Teimlo'n arbrofol? Rhowch gynnig ar ein syniadau diweddaraf sy'n cael eu datblygu. Nid yw'r nodweddion hyn yn derfynol; gallant fod yn ansefydlog, gallant newid, neu gallant gael eu gollwng yn gyfan gwbl. <a>Dysgu rhagor</a>.",
         "experimental_section": "Rhagolygon cynnar",
         "extended_profiles_msc_support": "Mae angen i'ch gweinydd gefnogi MSC4133",
-        "feature_disable_call_per_sender_encryption": "Analluogi amgryptio fesul anfonwr ar gyfer Element Call",
+        "feature_disable_call_per_sender_encryption": "Analluogi amgryptio fesul anfonwr ar gyfer SOC Connect Call",
         "feature_wysiwyg_composer_description": "Defnyddiwch destun cyfoethog yn lle Markdown yng nghyfansoddwr y neges.",
         "group_calls": "Profiad galwad grŵp newydd",
         "group_developer": "Datblygwr",
@@ -4224,7 +4224,7 @@
         "disabled_no_perms_start_video_call": "Nid oes gennych ganiatâd i ddechrau galwadau fideo",
         "disabled_no_perms_start_voice_call": "Nid oes gennych ganiatâd i ddechrau galwadau llais",
         "disabled_ongoing_call": "Galwad cyfredol",
-        "element_call": "Galwad Element",
+        "element_call": "Galwad SOC Connect",
         "enable_camera": "Trowch y camera ymlaen",
         "enable_microphone": "Dad-dewi meicroffon",
         "expand": "Dychwelyd i'r alwad",
@@ -4298,7 +4298,7 @@
         "you_are_presenting": "Rydych chi'n cyflwyno"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s ar %(osName)s",
-    "welcome_to_element": "Croeso i Element",
+    "welcome_to_element": "Croeso i SOC Connect",
     "widget": {
         "added_by": "Ychwanegwyd teclyn gan",
         "capabilities_dialog": {

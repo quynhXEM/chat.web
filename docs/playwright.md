@@ -1,4 +1,4 @@
-# Playwright in Element Web
+# Playwright in SOC Connect Web
 
 ## Contents
 
@@ -63,7 +63,7 @@ Everything Playwright-related lives in the `playwright/` subdirectory
 as is typical for Playwright tests. Likewise, tests live in `playwright/e2e`.
 
 `playwright/testcontainers` contains the testcontainers which start instances
-of Synapse/Dendrite. These servers are what Element-web runs against in the tests.
+of Synapse/Dendrite. These servers are what SOC Connect-web runs against in the tests.
 
 Synapse can be launched with different configurations in order to test element
 in different configurations. You can specify `synapseConfig` as such:

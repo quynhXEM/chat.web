@@ -4,7 +4,7 @@ Copyright 2022 The Matrix.org Foundation C.I.C.
 Copyright 2021, 2022 Šimon Brandner <simon.bra.ag@gmail.com>
 Copyright 2020 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -103,7 +103,7 @@ export enum KeyBindingAction {
     ToggleUserMenu = "KeyBinding.toggleTopLeftMenu",
     /** Toggle the short cut help dialog */
     ShowKeyboardSettings = "KeyBinding.showKeyBindingsSettings",
-    /** Got to the Element home screen */
+    /** Got to the SOC Connect home screen */
     GoToHome = "KeyBinding.goToHomeView",
     /** Select prev room */
     SelectPrevRoom = "KeyBinding.previousRoom",

@@ -670,7 +670,7 @@
         "stop_voice_message": "Zastaviť nahrávanie",
         "voice_message_button": "Hlasová správa"
     },
-    "console_dev_note": "Ak viete, čo robíte, Element je open-source, určite si pozrite náš GitHub (https://github.com/vector-im/element-web/) a zapojte sa!",
+    "console_dev_note": "Ak viete, čo robíte, SOC Connect je open-source, určite si pozrite náš GitHub (https://github.com/vector-im/element-web/) a zapojte sa!",
     "console_scam_warning": "Ak vám niekto povedal, aby ste sem niečo skopírovali/vložili, je veľká pravdepodobnosť, že vás niekto snaží podviesť!",
     "console_wait": "Počkajte!",
     "create_room": {
@@ -868,7 +868,7 @@
         "setting_definition": "Definícia nastavenia:",
         "setting_id": "ID nastavenia",
         "settings": {
-            "elementCallUrl": "URL adresa Element Call"
+            "elementCallUrl": "URL adresa SOC Connect Call"
         },
         "settings_explorer": "Prieskumník nastavení",
         "show_empty_content_events": "Zobraziť udalosti s prázdnym obsahom",
@@ -1108,7 +1108,7 @@
         "invalid_json_detail": "Správa z parsera je: %(message)s",
         "invalid_json_generic": "Neplatný JSON",
         "mau": "Bol dosiahnutý mesačný limit počtu aktívnych používateľov tohoto domovského servera.",
-        "misconfigured": "Váš Element je nesprávne nastavený",
+        "misconfigured": "Váš SOC Connect je nesprávne nastavený",
         "mixed_content": "K domovskému serveru nie je možné pripojiť sa použitím protokolu HTTP keďže v adresnom riadku prehliadača máte HTTPS adresu. Použite protokol HTTPS alebo <a>povolte nezabezpečené skripty</a>.",
         "non_urgent_echo_failure_toast": "Váš server neodpovedá na niektoré <a>požiadavky</a>.",
         "resource_limits": "Bol prekročený limit využitia prostriedkov pre tento domovský server.",
@@ -1502,13 +1502,13 @@
         "custom_themes": "Umožniť pridávať vlastný vzhľad",
         "dynamic_room_predecessors": "Predchodcovia dynamickej miestnosti",
         "dynamic_room_predecessors_description": "Zapnúť MSC3946 (na podporu neskorých archívov miestností)",
-        "element_call_video_rooms": "Element Call video miestnosti",
+        "element_call_video_rooms": "SOC Connect Call video miestnosti",
         "exclude_insecure_devices": "Vylúčiť nezabezpečené zariadenia pri odosielaní/prijímaní správ",
         "exclude_insecure_devices_description": "Ak je tento režim povolený, šifrované správy nebudú zdieľané s neoverenými zariadeniami a správy z neoverených zariadení sa zobrazia ako chyba. Upozorňujeme, že ak povolíte tento režim, možno nebudete môcť komunikovať s používateľmi, ktorí svoje zariadenia neoverili.",
         "experimental_description": "Chcete experimentovať? Vyskúšajte naše najnovšie nápady vo vývojovom štádiu. Tieto funkcie nie sú dokončené; môžu byť nestabilné, môžu sa zmeniť alebo môžu byť úplne zrušené. <a>Zistiť viac</a>.",
         "experimental_section": "Predbežné ukážky",
         "extended_profiles_msc_support": "Vyžaduje, aby váš server podporoval MSC4133",
-        "feature_disable_call_per_sender_encryption": "Zakázať šifrovanie pre jednotlivých odosielateľov pre Element Call",
+        "feature_disable_call_per_sender_encryption": "Zakázať šifrovanie pre jednotlivých odosielateľov pre SOC Connect Call",
         "feature_wysiwyg_composer_description": "Použiť rozšírený text namiesto Markdown v správach.",
         "group_calls": "Nový zážitok zo skupinových hovorov",
         "group_developer": "Vývojárske",
@@ -4036,7 +4036,7 @@
         "disabled_no_perms_start_video_call": "Nemáte povolenie na spustenie videohovorov",
         "disabled_no_perms_start_voice_call": "Nemáte povolenie na spustenie hlasových hovorov",
         "disabled_ongoing_call": "Prebiehajúci hovor",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Zapnúť kameru",
         "enable_microphone": "Zrušiť stlmenie mikrofónu",
         "expand": "Návrat k hovoru",
@@ -4106,7 +4106,7 @@
         "you_are_presenting": "Prezentujete"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s na %(osName)s",
-    "welcome_to_element": "Víta vás Element",
+    "welcome_to_element": "Víta vás SOC Connect",
     "widget": {
         "added_by": "Widget pridaný používateľom",
         "capabilities_dialog": {

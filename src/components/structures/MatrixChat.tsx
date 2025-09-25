@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2015-2024 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -311,8 +311,8 @@ export default class MatrixChat extends React.PureComponent<IProps, IState> {
      *  * If all else fails, present a login screen.
      */
     private async initSession(): Promise<void> {
-        // The Rust Crypto SDK will break if two Element instances try to use the same datastore at once, so
-        // make sure we are the only Element instance in town (on this browser/domain).
+        // The Rust Crypto SDK will break if two SOC Connect instances try to use the same datastore at once, so
+        // make sure we are the only SOC Connect instance in town (on this browser/domain).
         const platform = PlatformPeg.get();
         if (platform && !(await platform.getSessionLock(() => this.onSessionLockStolen()))) {
             // we failed to get the lock. onSessionLockStolen should already have been called, so nothing left to do.
@@ -528,13 +528,13 @@ export default class MatrixChat extends React.PureComponent<IProps, IState> {
         const scamText = _t("console_scam_warning");
         const devText = _t("console_dev_note");
 
-        global.mx_rage_logger.bypassRageshake(
-            "log",
-            `%c${waitText}\n%c${scamText}\n%c${devText}`,
-            `font-size:${largeFontSize}; color:blue;`,
-            `font-size:${normalFontSize}; color:red;`,
-            `font-size:${normalFontSize};`,
-        );
+        // global.mx_rage_logger.bypassRageshake(
+        //     "log",
+        //     `%c${waitText}\n%c${scamText}\n%c${devText}`,
+        //     `font-size:${largeFontSize}; color:blue;`,
+        //     `font-size:${normalFontSize}; color:red;`,
+        //     `font-size:${normalFontSize};`,
+        // );
     }, 1000);
 
     private getFallbackHsUrl(): string | undefined {

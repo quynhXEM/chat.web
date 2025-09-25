@@ -3,7 +3,7 @@ Copyright 2024 New Vector Ltd.
 Copyright 2019, 2020 The Matrix.org Foundation C.I.C.
 Copyright 2019 New Vector Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -122,7 +122,7 @@ function parseHeader(n: Node, pc: PartCreator, opts: IParseOptions): Part[] {
 
 function checkIgnored(n: Node): boolean {
     if (n.nodeType === Node.TEXT_NODE) {
-        // Element adds \n text nodes in a lot of places,
+        // SOC Connect adds \n text nodes in a lot of places,
         // which should be ignored
         return n.nodeValue === "\n";
     } else if (n.nodeType === Node.ELEMENT_NODE) {

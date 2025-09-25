@@ -5,12 +5,12 @@ Copyright 2018 New Vector Ltd
 Copyright 2016 Aviral Dasgupta
 Copyright 2016 OpenMarket Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
 // Note: we don't import the base64 utils from `matrix-js-sdk/src/matrix` because this file
-// is used by Element Web's service worker, and importing `matrix` brings in ~1mb of stuff
+// is used by SOC Connect Web's service worker, and importing `matrix` brings in ~1mb of stuff
 // we don't need. Instead, we ignore the import restriction and only bring in what we actually
 // need.
 // Note: `base64` is not public in the js-sdk, so if it changes/breaks, that's on us. We should

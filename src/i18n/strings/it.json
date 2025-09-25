@@ -595,7 +595,7 @@
         "stop_voice_message": "Ferma la registrazione",
         "voice_message_button": "Messaggio vocale"
     },
-    "console_dev_note": "Se sai quello che stai facendo, Element è open source, assicurati di controllare il nostro GitHub (https://github.com/vector-im/element-web/) e contribuisci!",
+    "console_dev_note": "Se sai quello che stai facendo, SOC Connect è open source, assicurati di controllare il nostro GitHub (https://github.com/vector-im/element-web/) e contribuisci!",
     "console_scam_warning": "Se qualcuno ti ha detto di copiare/incollare qualcosa qui, è molto probabile che ti stia truffando!",
     "console_wait": "Aspetta!",
     "create_room": {
@@ -1301,10 +1301,10 @@
         "custom_themes": "Supporta l'aggiunta di temi personalizzati",
         "dynamic_room_predecessors": "Predecessori della stanza dinamici",
         "dynamic_room_predecessors_description": "Attiva MSC3946 (per supportare archivi della stanza arrivati in ritardo)",
-        "element_call_video_rooms": "Stanze video di Element Call",
+        "element_call_video_rooms": "Stanze video di SOC Connect Call",
         "experimental_description": "Ti senti di sperimentare? Prova le nostre ultime idee in sviluppo. Queste funzioni non sono complete; potrebbero essere instabili, cambiare o essere scartate. <a>Maggiori informazioni</a>.",
         "experimental_section": "Anteprime",
-        "feature_disable_call_per_sender_encryption": "Disattiva la crittografia per mittente in Element Call",
+        "feature_disable_call_per_sender_encryption": "Disattiva la crittografia per mittente in SOC Connect Call",
         "feature_wysiwyg_composer_description": "Usa il rich text invece del Markdown nel compositore di messaggi.",
         "group_calls": "Nuova esperienza per chiamate di gruppo",
         "group_developer": "Sviluppatore",
@@ -3461,7 +3461,7 @@
         "disabled_no_perms_start_video_call": "Non hai il permesso di avviare videochiamate",
         "disabled_no_perms_start_voice_call": "Non hai il permesso di avviare chiamate",
         "disabled_ongoing_call": "Chiamata in corso",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Accendi la fotocamera",
         "enable_microphone": "Riaccendi il microfono",
         "expand": "Torna alla chiamata",
@@ -3526,7 +3526,7 @@
         "you_are_presenting": "Stai presentando"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s su %(osName)s",
-    "welcome_to_element": "Benvenuti su Element",
+    "welcome_to_element": "Benvenuti su SOC Connect",
     "widget": {
         "added_by": "Widget aggiunto da",
         "capabilities_dialog": {

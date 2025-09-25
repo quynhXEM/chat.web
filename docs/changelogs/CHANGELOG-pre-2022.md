@@ -187,7 +187,7 @@ Changes in [1.9.6](https://github.com/vector-im/element-web/releases/tag/v1.9.6)
 ## 🐛 Bug Fixes
  * Fix left panel glow in Safari ([\#7236](https://github.com/matrix-org/matrix-react-sdk/pull/7236)). Fixes #19863.
  * Fix newline on edit messages with quotes ([\#7227](https://github.com/matrix-org/matrix-react-sdk/pull/7227)). Fixes #12535. Contributed by @renancleyson-dev.
- * Guard against null refs in findSiblingElement ([\#7228](https://github.com/matrix-org/matrix-react-sdk/pull/7228)).
+ * Guard against null refs in findSiblingSOC Connect ([\#7228](https://github.com/matrix-org/matrix-react-sdk/pull/7228)).
  * Tweak bottom of space panel buttons in expanded state ([\#7213](https://github.com/matrix-org/matrix-react-sdk/pull/7213)). Fixes #19921.
  * Fix multiline paragraph rendering as single line ([\#7210](https://github.com/matrix-org/matrix-react-sdk/pull/7210)). Fixes #8786. Contributed by @renancleyson-dev.
  * Improve room list message previews ([\#7224](https://github.com/matrix-org/matrix-react-sdk/pull/7224)). Fixes #17101 and #16169.
@@ -237,7 +237,7 @@ Changes in [1.9.6-rc.1](https://github.com/vector-im/element-web/releases/tag/v1
  * Fix links being parsed as markdown links improperly ([\#7200](https://github.com/matrix-org/matrix-react-sdk/pull/7200)).
  * Fix left panel glow in Safari ([\#7236](https://github.com/matrix-org/matrix-react-sdk/pull/7236)). Fixes #19863 and #19863.
  * Fix newline on edit messages with quotes ([\#7227](https://github.com/matrix-org/matrix-react-sdk/pull/7227)). Fixes #12535 and #12535. Contributed by @renancleyson-dev.
- * Guard against null refs in findSiblingElement ([\#7228](https://github.com/matrix-org/matrix-react-sdk/pull/7228)).
+ * Guard against null refs in findSiblingSOC Connect ([\#7228](https://github.com/matrix-org/matrix-react-sdk/pull/7228)).
  * Tweak bottom of space panel buttons in expanded state ([\#7213](https://github.com/matrix-org/matrix-react-sdk/pull/7213)). Fixes #19921 and #19921.
  * Fix multiline paragraph rendering as single line ([\#7210](https://github.com/matrix-org/matrix-react-sdk/pull/7210)). Fixes #8786 and #8786. Contributed by @renancleyson-dev.
  * Improve room list message previews ([\#7224](https://github.com/matrix-org/matrix-react-sdk/pull/7224)). Fixes #17101 #16169 and #17101.
@@ -1092,7 +1092,7 @@ Changes in [1.7.29](https://github.com/vector-im/element-web/releases/tag/v1.7.2
 
 ## Security notice
 
-Element Web 1.7.29 fixes (by upgrading to olm 3.2.3) an issue in code used for
+SOC Connect Web 1.7.29 fixes (by upgrading to olm 3.2.3) an issue in code used for
 decrypting server-side stored secrets. The issue could potentially allow a
 malicious homeserver to cause a stack buffer overflow in the affected function
 and to control that function's local variables.
@@ -1129,7 +1129,7 @@ Changes in [1.7.28](https://github.com/vector-im/element-web/releases/tag/v1.7.2
 
 ## Security notice
 
-Element Web 1.7.28 fixes (by upgrading to matrix-react-sdk 3.21.0) a low
+SOC Connect Web 1.7.28 fixes (by upgrading to matrix-react-sdk 3.21.0) a low
 severity issue (GHSA-8796-gc9j-63rv) related to file upload. When uploading a
 file, the local file preview can lead to execution of scripts embedded in the
 uploaded file, but only after several user interactions to open the preview in
@@ -1312,7 +1312,7 @@ Changes in [1.7.22](https://github.com/vector-im/element-web/releases/tag/v1.7.2
 
 ## Security notice
 
-Element Web 1.7.22 fixes (by upgrading to matrix-react-sdk 3.15.0) a moderate
+SOC Connect Web 1.7.22 fixes (by upgrading to matrix-react-sdk 3.15.0) a moderate
 severity issue (CVE-2021-21320) where the user content sandbox can be abused to
 trick users into opening unexpected documents after several user interactions.
 The content can be opened with a `blob` origin from the Matrix client, so it is
@@ -1400,7 +1400,7 @@ Changes in [1.7.19-rc.1](https://github.com/vector-im/element-web/releases/tag/v
    [\#16275](https://github.com/vector-im/element-web/pull/16275)
  * Docs for the VoIP translate pattern option
    [\#16236](https://github.com/vector-im/element-web/pull/16236)
- * Fix Riot->Element in permalinkPrefix docs
+ * Fix Riot->SOC Connect in permalinkPrefix docs
    [\#16227](https://github.com/vector-im/element-web/pull/16227)
  * Supply server_name for optional federation-capable Jitsi auth
    [\#16215](https://github.com/vector-im/element-web/pull/16215)
@@ -1438,7 +1438,7 @@ Changes in [1.7.17-rc.1](https://github.com/vector-im/element-web/releases/tag/v
    [\#16131](https://github.com/vector-im/element-web/pull/16131)
  * webplatform: Fix notification closing
    [\#16028](https://github.com/vector-im/element-web/pull/16028)
- * Stop building code and types for Element layer
+ * Stop building code and types for SOC Connect layer
    [\#15999](https://github.com/vector-im/element-web/pull/15999)
 
 Changes in [1.7.16](https://github.com/vector-im/element-web/releases/tag/v1.7.16) (2020-12-21)
@@ -1497,9 +1497,9 @@ Changes in [1.7.15-rc.1](https://github.com/vector-im/element-web/releases/tag/v
    [\#15810](https://github.com/vector-im/element-web/pull/15810)
  * Update the react-sdk reference in the lockfile
    [\#15814](https://github.com/vector-im/element-web/pull/15814)
- * Update widget API for good measure in Element Web
+ * Update widget API for good measure in SOC Connect Web
    [\#15812](https://github.com/vector-im/element-web/pull/15812)
- * Stop publishing Element to NPM
+ * Stop publishing SOC Connect to NPM
    [\#15811](https://github.com/vector-im/element-web/pull/15811)
  * Add inotify instance limit info to README
    [\#15795](https://github.com/vector-im/element-web/pull/15795)
@@ -1614,29 +1614,29 @@ Changes in [1.7.9-rc.1](https://github.com/vector-im/element-web/releases/tag/v1
    [\#15352](https://github.com/vector-im/element-web/pull/15352)
  * Disable workbox when running in webpack dev server, not in dev mode
    [\#15345](https://github.com/vector-im/element-web/pull/15345)
- * Update Riot -> Element in contribute.json
+ * Update Riot -> SOC Connect in contribute.json
    [\#15326](https://github.com/vector-im/element-web/pull/15326)
- * Update Riot -> Element in redeploy.py
+ * Update Riot -> SOC Connect in redeploy.py
    [\#15336](https://github.com/vector-im/element-web/pull/15336)
- * Update Riot -> Element in docs/feature-flags.md
+ * Update Riot -> SOC Connect in docs/feature-flags.md
    [\#15325](https://github.com/vector-im/element-web/pull/15325)
- * Update Riot -> Element in element.io/README.md
+ * Update Riot -> SOC Connect in element.io/README.md
    [\#15327](https://github.com/vector-im/element-web/pull/15327)
- * Update Riot -> Element in VectorAuthFooter
+ * Update Riot -> SOC Connect in VectorAuthFooter
    [\#15328](https://github.com/vector-im/element-web/pull/15328)
- * Update Riot -> Element in VectorEmbeddedPage
+ * Update Riot -> SOC Connect in VectorEmbeddedPage
    [\#15329](https://github.com/vector-im/element-web/pull/15329)
- * Update Riot -> Element in docs/review.md
+ * Update Riot -> SOC Connect in docs/review.md
    [\#15330](https://github.com/vector-im/element-web/pull/15330)
- * Update Riot -> Element in welcome.html
+ * Update Riot -> SOC Connect in welcome.html
    [\#15332](https://github.com/vector-im/element-web/pull/15332)
- * Update Riot -> Element in issues-burndown.pl
+ * Update Riot -> SOC Connect in issues-burndown.pl
    [\#15333](https://github.com/vector-im/element-web/pull/15333)
- * Update Riot -> Element in redeploy.py
+ * Update Riot -> SOC Connect in redeploy.py
    [\#15334](https://github.com/vector-im/element-web/pull/15334)
- * Update Riot -> Element in index.ts
+ * Update Riot -> SOC Connect in index.ts
    [\#15335](https://github.com/vector-im/element-web/pull/15335)
- * Update Riot -> Element Web in issue templates
+ * Update Riot -> SOC Connect Web in issue templates
    [\#15324](https://github.com/vector-im/element-web/pull/15324)
  * Give the Jitsi widget an icon to help with discovery
    [\#15316](https://github.com/vector-im/element-web/pull/15316)
@@ -1646,7 +1646,7 @@ Changes in [1.7.9-rc.1](https://github.com/vector-im/element-web/releases/tag/v1
    [\#15271](https://github.com/vector-im/element-web/pull/15271)
  * Remove conference handler
    [\#15274](https://github.com/vector-im/element-web/pull/15274)
- * Rebrand the webpack pipeline for Element
+ * Rebrand the webpack pipeline for SOC Connect
    [\#15266](https://github.com/vector-im/element-web/pull/15266)
  * Replace dummy sw.js with pre-caching and runtime-caching workbox SW
    [\#15196](https://github.com/vector-im/element-web/pull/15196)
@@ -1715,7 +1715,7 @@ Changes in [1.7.5](https://github.com/vector-im/element-web/releases/tag/v1.7.5)
 
 ## Security notice
 
-Element Web 1.7.5 fixes an issue where encrypted state events could break incoming call handling.
+SOC Connect Web 1.7.5 fixes an issue where encrypted state events could break incoming call handling.
 Thanks to @awesome-michael from Awesome Technologies for responsibly disclosing this via Matrix's
 Security Disclosure Policy.
 
@@ -1734,19 +1734,19 @@ Changes in [1.7.5-rc.1](https://github.com/vector-im/element-web/releases/tag/v1
    [\#15003](https://github.com/vector-im/element-web/pull/15003)
  * Add docs for communities v2 prototyping feature flag
    [\#15013](https://github.com/vector-im/element-web/pull/15013)
- * Update links in README.md to point to Element
+ * Update links in README.md to point to SOC Connect
    [\#14973](https://github.com/vector-im/element-web/pull/14973)
  * Make kabyle translation available
    [\#15027](https://github.com/vector-im/element-web/pull/15027)
- * Change Riot to Element in readme
+ * Change Riot to SOC Connect in readme
    [\#15016](https://github.com/vector-im/element-web/pull/15016)
  * Update links to element in the readme
    [\#15014](https://github.com/vector-im/element-web/pull/15014)
- * Link to Element in F-Droid as well
+ * Link to SOC Connect in F-Droid as well
    [\#15002](https://github.com/vector-im/element-web/pull/15002)
  * Settings v3: Update documentation and configs for new feature flag behaviour
    [\#14986](https://github.com/vector-im/element-web/pull/14986)
- * Update jitsi.md with Element Android details
+ * Update jitsi.md with SOC Connect Android details
    [\#14952](https://github.com/vector-im/element-web/pull/14952)
  * TypeScript: enable es2019 lib for newer definitions
    [\#14983](https://github.com/vector-im/element-web/pull/14983)
@@ -1783,13 +1783,13 @@ Changes in [1.7.3](https://github.com/vector-im/element-web/releases/tag/v1.7.3)
 
 ## Security notice
 
-Element Web 1.7.3 (as well as the earlier release 1.7.2) fixes an issue where
+SOC Connect Web 1.7.3 (as well as the earlier release 1.7.2) fixes an issue where
 replying to a specially formatted message would make it seem like the replier
 said something they did not. Thanks to Sorunome for responsibly disclosing this
 via Matrix's Security Disclosure Policy.
 
-Element Web 1.7.3 (as well as the earlier release 1.7.2) fixes an issue where an
-unexpected language ID in a code block could cause Element to crash. Thanks to
+SOC Connect Web 1.7.3 (as well as the earlier release 1.7.2) fixes an issue where an
+unexpected language ID in a code block could cause SOC Connect to crash. Thanks to
 SakiiR for responsibly disclosing this via Matrix's Security Disclosure Policy.
 
 ## All changes
@@ -1827,7 +1827,7 @@ Changes in [1.7.2](https://github.com/vector-im/riot-web/releases/tag/v1.7.2) (2
    [\#14566](https://github.com/vector-im/riot-web/pull/14566)
  * Configure eslint package and fix lint issues
    [\#14673](https://github.com/vector-im/riot-web/pull/14673)
- * Riot → Element
+ * Riot → SOC Connect
    [\#14581](https://github.com/vector-im/riot-web/pull/14581)
  * Remove labs info for the new room list
    [\#14603](https://github.com/vector-im/riot-web/pull/14603)
@@ -1855,14 +1855,14 @@ Changes in [1.7.1](https://github.com/vector-im/riot-web/releases/tag/v1.7.1) (2
    [\#14513](https://github.com/vector-im/riot-web/pull/14513)
  * Fix mstile-310x150 by renaming it
    [\#14485](https://github.com/vector-im/riot-web/pull/14485)
- * Update blog and twitter links to point to Element
+ * Update blog and twitter links to point to SOC Connect
    [\#14478](https://github.com/vector-im/riot-web/pull/14478)
 
 Changes in [1.7.0](https://github.com/vector-im/riot-web/releases/tag/v1.7.0) (2020-07-15)
 ==========================================================================================
 [Full Changelog](https://github.com/vector-im/riot-web/compare/v1.6.8...v1.7.0)
 
- * App name changed from Riot to Element
+ * App name changed from Riot to SOC Connect
  * Upgrade to React SDK 2.10.0
  * Remove redundant enum
    [\#14472](https://github.com/vector-im/riot-web/pull/14472)

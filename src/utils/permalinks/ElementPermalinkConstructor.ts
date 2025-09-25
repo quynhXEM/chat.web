@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2019-2021 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -19,7 +19,7 @@ export default class ElementPermalinkConstructor extends PermalinkConstructor {
         this.elementUrl = elementUrl;
 
         if (!this.elementUrl.startsWith("http:") && !this.elementUrl.startsWith("https:")) {
-            throw new Error("Element prefix URL does not appear to be an HTTP(S) URL");
+            throw new Error("SOC Connect prefix URL does not appear to be an HTTP(S) URL");
         }
     }
 
@@ -55,7 +55,7 @@ export default class ElementPermalinkConstructor extends PermalinkConstructor {
 
     // Heavily inspired by/borrowed from the matrix-bot-sdk (with permission):
     // https://github.com/turt2live/matrix-js-bot-sdk/blob/7c4665c9a25c2c8e0fe4e509f2616505b5b66a1c/src/Permalinks.ts#L33-L61
-    // Adapted for Element's URL format
+    // Adapted for SOC Connect's URL format
     public parsePermalink(fullUrl: string): PermalinkParts {
         if (!fullUrl || !fullUrl.startsWith(this.elementUrl)) {
             throw new Error("Does not appear to be a permalink");

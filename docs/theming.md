@@ -1,9 +1,9 @@
-# Theming Element
+# Theming SOC Connect
 
 Themes are a very basic way of providing simple alternative look & feels to the
-Element app via CSS & custom imagery.
+SOC Connect app via CSS & custom imagery.
 
-To define a theme for Element:
+To define a theme for SOC Connect:
 
 1.  Pick a name, e.g. `teal`. at time of writing we have `light` and `dark`.
 2.  Fork `res/themes/dark/css/dark.pcss` to be `teal.pcss`

@@ -2,7 +2,7 @@
 Copyright 2024, 2025 New Vector Ltd.
 Copyright 2024 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -41,7 +41,7 @@ declare module "matrix-js-sdk/src/types" {
         "im.vector.modular.widgets": IWidget | EmptyObject;
         [WIDGET_LAYOUT_EVENT_TYPE]: ILayoutStateEvent;
 
-        // Element custom state events
+        // SOC Connect custom state events
         "im.vector.web.settings": Record<string, any>;
         "org.matrix.room.preview_urls": { disable: boolean };
 
@@ -69,7 +69,7 @@ declare module "matrix-js-sdk/src/types" {
         };
         // Device client information account data event
         [key: `io.element.matrix_client_information.${string}`]: DeviceClientInformation;
-        // Element settings account data events
+        // SOC Connect settings account data events
         "im.vector.setting.breadcrumbs": { recent_rooms: string[] };
         "io.element.recent_emoji": { recent_emoji: string[] };
         "im.vector.setting.integration_provisioning": { enabled: boolean };

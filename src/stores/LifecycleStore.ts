@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2017-2021 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -95,7 +95,7 @@ async function checkServerVersions(): Promise<void> {
 
         // This is retrospective doc having debated about the exactly what this toast is for, but
         // our guess is that it's a nudge to update, or ask your HS admin to update your Homeserver
-        // after a new version of Element has come out, in a way that doesn't lock you out of all
+        // after a new version of SOC Connect has come out, in a way that doesn't lock you out of all
         // your messages.
         const toastKey = "LEGACY_SERVER";
         ToastStore.sharedInstance().addOrReplaceToast({

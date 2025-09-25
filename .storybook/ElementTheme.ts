@@ -1,7 +1,7 @@
 /*
 Copyright 2025 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -21,8 +21,8 @@ export default create({
     // Toolbar
     barBg: "#ffffff",
 
-    brandTitle: "Element Web",
-    brandUrl: "https://github.com/element-hq/element-web",
-    brandImage: "https://element.io/images/logo-ele-secondary.svg",
+    brandTitle: "SOC Connect Web",
+    brandUrl: "https://www.nobody.network/",
+    brandImage: "https://www.nobody.network/default/theme/assets-custom/img/nobody-icon-darkmode.png?height=44",
     brandTarget: "_self",
 });

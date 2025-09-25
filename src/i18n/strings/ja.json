@@ -1214,7 +1214,7 @@
         "currently_experimental": "現在実験中。",
         "custom_themes": "ユーザー定義のテーマの追加をサポート",
         "dynamic_room_predecessors_description": "MSC3946を有効にする（遅延ルームアーカイブのサポート）",
-        "element_call_video_rooms": "Element Callのビデオ通話ルーム",
+        "element_call_video_rooms": "SOC Connect Callのビデオ通話ルーム",
         "experimental_description": "実験に参加したいですか？開発中のアイディアを試してください。これらの機能は完成していません。不安定な可能性や変更される可能性、また、開発が中止される可能性もあります。<a>詳細を確認</a>。",
         "experimental_section": "早期プレビュー",
         "feature_wysiwyg_composer_description": "メッセージ入力欄でマークダウンの代わりにリッチテキストを使用。",

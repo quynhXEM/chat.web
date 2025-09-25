@@ -665,7 +665,7 @@
         "stop_voice_message": "Остановить запись",
         "voice_message_button": "Голосовое сообщение"
     },
-    "console_dev_note": "Если вы знаете, что делаете, Element с открытым исходным кодом, обязательно зайдите на наш GitHub (https://github.com/vector-im/element-web/) и внесите свой вклад!",
+    "console_dev_note": "Если вы знаете, что делаете, SOC Connect с открытым исходным кодом, обязательно зайдите на наш GitHub (https://github.com/vector-im/element-web/) и внесите свой вклад!",
     "console_scam_warning": "Если кто-то сказал вам скопировать/вставить что-то здесь, велика вероятность, что вас пытаются обмануть!",
     "console_wait": "Подождите!",
     "create_room": {
@@ -863,7 +863,7 @@
         "setting_definition": "Установка определения:",
         "setting_id": "ID настроек",
         "settings": {
-            "elementCallUrl": "URL-адрес Element Call"
+            "elementCallUrl": "URL-адрес SOC Connect Call"
         },
         "settings_explorer": "Посмотреть настройки",
         "show_hidden_events": "Показывать скрытые события в ленте сообщений",
@@ -1094,11 +1094,11 @@
         "hs_blocked": "Доступ к этому домашнему серверу заблокирован вашим администратором.",
         "invalid_configuration_mixed_server": "Неверная конфигурация: нельзя указать default_hs_url вместе с default_server_name или default_server_config",
         "invalid_configuration_no_server": "Неверная конфигурация: сервер по умолчанию не указан.",
-        "invalid_json": "Конфигурация Element содержит неверный JSON. Исправьте проблему и обновите страницу.",
+        "invalid_json": "Конфигурация SOC Connect содержит неверный JSON. Исправьте проблему и обновите страницу.",
         "invalid_json_detail": "Сообщение из парсера: %(message)s",
         "invalid_json_generic": "Неверный JSON",
         "mau": "Сервер достиг ежемесячного ограничения активных пользователей.",
-        "misconfigured": "Ваш Element неверно настроен",
+        "misconfigured": "Ваш SOC Connect неверно настроен",
         "mixed_content": "Не удается подключиться к домашнему серверу через HTTP, так как в адресной строке браузера указан адрес HTTPS. Используйте HTTPS или <a>включите небезопасные скрипты</a>.",
         "non_urgent_echo_failure_toast": "Ваш сервер не отвечает на некоторые <a>запросы</a>.",
         "resource_limits": "Превышен один из лимитов на ресурсы сервера.",
@@ -1481,13 +1481,13 @@
         "custom_themes": "Поддержка сторонних тем",
         "dynamic_room_predecessors": "Родитель динамической комнаты",
         "dynamic_room_predecessors_description": "Включите MSC3946 (для поддержки архивных комнат)",
-        "element_call_video_rooms": "Видеокомнаты Element Call",
+        "element_call_video_rooms": "Видеокомнаты SOC Connect Call",
         "exclude_insecure_devices": "Исключить небезопасные устройства при отправке/получении сообщений",
         "exclude_insecure_devices_description": "Когда этот режим включен, зашифрованные сообщения не будут передаваться непроверенным устройствам, а сообщения с непроверенных устройств будут отображаться как ошибка. Обратите внимание, что если вы включите этот режим, возможно, вы не сможете общаться с пользователями, которые не подтвердили свои устройства.",
         "experimental_description": "Время экспериментов? Попробуйте наши последние наработки. Эти функции не заверешены; они могут быть нестабильными, постоянно меняющимися, или вовсе отброшенными. <a>Узнайте больше</a>.",
         "experimental_section": "Предпросмотр",
         "extended_profiles_msc_support": "Требуется, чтобы ваш сервер поддерживал MSC4133",
-        "feature_disable_call_per_sender_encryption": "Отключить шифрование для каждого отправителя Element Call",
+        "feature_disable_call_per_sender_encryption": "Отключить шифрование для каждого отправителя SOC Connect Call",
         "feature_wysiwyg_composer_description": "Используйте форматированный текст вместо Markdown в редакторе сообщений.",
         "group_calls": "Новый опыт группового вызова",
         "group_developer": "Разработка",
@@ -3940,7 +3940,7 @@
         "disabled_no_perms_start_video_call": "У вас нет разрешения для запуска видеозвонка",
         "disabled_no_perms_start_voice_call": "У вас нет разрешения для запуска звонка",
         "disabled_ongoing_call": "Текущий звонок",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Включить камеру",
         "enable_microphone": "Включить микрофон",
         "expand": "Вернуться к звонку",
@@ -4009,7 +4009,7 @@
         "you_are_presenting": "Вы представляете"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s на %(osName)s",
-    "welcome_to_element": "Добро пожаловать в Element",
+    "welcome_to_element": "Добро пожаловать в SOC Connect",
     "widget": {
         "added_by": "Виджет добавлен",
         "capabilities_dialog": {

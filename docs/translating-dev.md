@@ -1,4 +1,4 @@
-# How to translate Element (Dev Guide)
+# How to translate SOC Connect (Dev Guide)
 
 ## Requirements
 

@@ -1,7 +1,7 @@
 /*
  * Copyright 2025 New Vector Ltd.
  *
- * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+ * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
  * Please see LICENSE files in the repository root for full details.
  */
 
@@ -28,11 +28,11 @@ test.describe("Voice & Video room settings tab", () => {
     });
 
     test(
-        "should be able to toggle on Element Call in the room",
+        "should be able to toggle on SOC Connect Call in the room",
         { tag: "@screenshot" },
         async ({ page, app, user, axe }) => {
             await page.setViewportSize({ width: 1024, height: 1400 });
-            const callToggle = settings.getByLabel("Enable Element Call as an additional calling option in this room");
+            const callToggle = settings.getByLabel("Enable SOC Connect Call as an additional calling option in this room");
             await callToggle.check();
             axe.disableRules("color-contrast"); // XXX: Inheriting colour contrast issues from room view.
             await expect(axe).toHaveNoViolations();

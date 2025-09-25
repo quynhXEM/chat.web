@@ -3,7 +3,7 @@ Copyright 2024 New Vector Ltd.
 Copyright 2019, 2020 The Matrix.org Foundation C.I.C.
 Copyright 2015, 2016 OpenMarket Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -338,7 +338,7 @@ export default async function createRoom(client: MatrixClient, opts: IOpts): Pro
                 // Reset our power level back to admin so that the widget becomes immutable
                 await client.setPowerLevel(roomId, client.getUserId()!, 100);
             } else if (opts.roomType === RoomType.UnstableCall) {
-                // Set up this video room with an Element call
+                // Set up this video room with an SOC Connect call
                 ElementCall.create(await room);
 
                 // Reset our power level back to admin so that the call becomes immutable

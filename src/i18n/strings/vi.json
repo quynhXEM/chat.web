@@ -870,7 +870,7 @@
 },
 "see_history": "Xem lịch sử",
 "settings": {
-    "elementCallUrl": "URL Element Call"
+    "elementCallUrl": "URL SOC Connect Call"
 },
 "spaces": {
     "one": "<không gian>",
@@ -1457,7 +1457,7 @@
         "currently_experimental": "Hiện đang thử nghiệm.",
         "custom_themes": "Hỗ trợ thêm các chủ đề tùy chỉnh",
         "dynamic_room_predecessors": "Tiền nhiệm động cho phòng",
-        "element_call_video_rooms": "Phòng truyền hình Element Call",
+        "element_call_video_rooms": "Phòng truyền hình SOC Connect Call",
         "experimental_description": "Muốn trải nghiệm? Thử các ý tưởng mới nhất còn đang được phát triển của chúng tôi. Các tính năng này chưa được hoàn thiện, chúng có thể không ổn định, có thể thay đổi, hay bị loại bỏ hoàn toàn. <a>Tìm hiểu thêm</a>.",
         "experimental_section": "Thử trước tính năng mới",
         "feature_wysiwyg_composer_description": "Dùng văn bản giàu tính chất thay cho định dạng Markdown ở thanh soạn tin nhắn.",
@@ -1510,7 +1510,7 @@
         "exclude_insecure_devices": "Loại trừ thiết bị không an toàn khi gửi/nhận tin nhắn",
         "exclude_insecure_devices_description": "Khi chế độ này được bật, tin nhắn mã hóa sẽ không được chia sẻ với thiết bị chưa xác minh, và tin nhắn từ thiết bị chưa xác minh sẽ hiển thị dưới dạng lỗi. Lưu ý rằng nếu bạn bật chế độ này, bạn có thể không liên lạc được với người dùng chưa xác minh thiết bị của họ.",
         "extended_profiles_msc_support": "Yêu cầu máy chủ của bạn hỗ trợ MSC4133",
-        "feature_disable_call_per_sender_encryption": "Tắt mã hóa theo từng người gửi cho Element Call",
+        "feature_disable_call_per_sender_encryption": "Tắt mã hóa theo từng người gửi cho SOC Connect Call",
         "group_ui": "Giao diện người dùng",
         "new_room_list": "Bật danh sách phòng mới",
         "notification_settings_beta_caption": "Giới thiệu cách đơn giản hơn để thay đổi cài đặt thông báo. Tùy chỉnh %(brand)s theo ý bạn.",
@@ -3955,7 +3955,7 @@
         "voice_call": "Gọi thoại",
         "you_are_presenting": "Bạn đang trình bày",
         "close_lobby": "Đóng sảnh chờ",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "get_call_link": "Chia sẻ liên kết cuộc gọi",
         "jitsi_call": "Jitsi Conference",
         "legacy_call": "Cuộc gọi cũ",
@@ -4123,7 +4123,7 @@
             "userInputs": "There should not be any personal or page related data."
         }
     },
-    "console_dev_note": "Nếu bạn biết mình đang làm gì, Element là mã nguồn mở — hãy ghé GitHub của chúng tôi (https://github.com/vector-im/element-web/) và đóng góp!",
+    "console_dev_note": "Nếu bạn biết mình đang làm gì, SOC Connect là mã nguồn mở — hãy ghé GitHub của chúng tôi (https://github.com/vector-im/element-web/) và đóng góp!",
     "console_scam_warning": "Nếu ai đó bảo bạn copy/paste gì đó vào đây, rất có thể bạn đang bị lừa đảo!",
     "console_wait": "Khoan đã!",
     "decline_invitation_dialog": {

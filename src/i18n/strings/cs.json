@@ -665,7 +665,7 @@
         "stop_voice_message": "Zastavit nahrávání",
         "voice_message_button": "Hlasová zpráva"
     },
-    "console_dev_note": "Pokud víte, co děláte, Element je open-source, určitě se podívejte na náš GitHub (https://github.com/vector-im/element-web/) a zapojte se!",
+    "console_dev_note": "Pokud víte, co děláte, SOC Connect je open-source, určitě se podívejte na náš GitHub (https://github.com/vector-im/element-web/) a zapojte se!",
     "console_scam_warning": "Pokud vám někdo řekl, abyste sem něco zkopírovali/vložili, je vysoká pravděpodobnost, že vás někdo oklamal!",
     "console_wait": "Pozor!",
     "create_room": {
@@ -863,7 +863,7 @@
         "setting_definition": "Definice nastavení:",
         "setting_id": "ID nastavení",
         "settings": {
-            "elementCallUrl": "Element Call URL"
+            "elementCallUrl": "SOC Connect Call URL"
         },
         "settings_explorer": "Průzkumník nastavení",
         "show_empty_content_events": "Zobrazit události s prázdným obsahem",
@@ -1107,7 +1107,7 @@
         "invalid_json_detail": "Zpráva z parseru je: %(message)s",
         "invalid_json_generic": "Neplatný JSON",
         "mau": "Tento domovský server dosáhl svého měsíčního limitu pro aktivní uživatele.",
-        "misconfigured": "Váš Element je nesprávně nastaven",
+        "misconfigured": "Váš SOC Connect je nesprávně nastaven",
         "mixed_content": "Nelze se připojit k domovskému serveru přes HTTP, pokud je v adresním řádku HTTPS. Buď použijte HTTPS, nebo <a>povolte nezabezpečené skripty</a>.",
         "non_urgent_echo_failure_toast": "Váš server neodpovídá na některé <a>požadavky</a>.",
         "resource_limits": "Tento domovský server překročil některý z limitů.",
@@ -1495,13 +1495,13 @@
         "custom_themes": "Umožnit přidání vlastního vzhledu",
         "dynamic_room_predecessors": "Předchůdci dynamické místnosti",
         "dynamic_room_predecessors_description": "Povolit MSC3946 (podpora pozdních archivů místností)",
-        "element_call_video_rooms": "Element Call video místnosti",
+        "element_call_video_rooms": "SOC Connect Call video místnosti",
         "exclude_insecure_devices": "Vyloučit nezabezpečená zařízení při odesílání/přijímání zpráv",
         "exclude_insecure_devices_description": "Pokud je tento režim povolen, šifrované zprávy nebudou sdíleny s neověřenými zařízeními a zprávy z neověřených zařízení se zobrazí jako chyba. Upozorňujeme, že pokud tento režim povolíte, může se stát, že nebudete moci komunikovat s uživateli, kteří svá zařízení neověřili.",
         "experimental_description": "Rádi experimentujete? Vyzkoušejte naše nejnovější nápady ve vývoji. Tyto funkce nejsou dokončeny; mohou být nestabilní, mohou se změnit nebo mohou být zcela vypuštěny. <a>Zjistěte více</a>.",
         "experimental_section": "Předběžné ukázky",
         "extended_profiles_msc_support": "Vyžaduje, aby váš server podporoval MSC4133",
-        "feature_disable_call_per_sender_encryption": "Zakázat šifrování podle odesílatele pro Element Call",
+        "feature_disable_call_per_sender_encryption": "Zakázat šifrování podle odesílatele pro SOC Connect Call",
         "feature_wysiwyg_composer_description": "V editoru zpráv použít formátovaný text namísto Markdown.",
         "group_calls": "Nový zážitek ze skupinových hovorů",
         "group_developer": "Pro vývojáře",
@@ -4003,7 +4003,7 @@
         "disabled_no_perms_start_video_call": "Nemáte oprávnění ke spuštění videohovorů",
         "disabled_no_perms_start_voice_call": "Nemáte oprávnění k zahájení hlasových hovorů",
         "disabled_ongoing_call": "Průběžný hovor",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Zapnout kameru",
         "enable_microphone": "Zrušit ztlumení mikrofonu",
         "expand": "Návrat do hovoru",
@@ -4073,7 +4073,7 @@
         "you_are_presenting": "Prezentujete"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s na %(osName)s",
-    "welcome_to_element": "Vítá vás Element",
+    "welcome_to_element": "Vítá vás SOC Connect",
     "widget": {
         "added_by": "Widget přidal",
         "capabilities_dialog": {

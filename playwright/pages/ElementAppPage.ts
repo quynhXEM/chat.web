@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2023 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -14,7 +14,7 @@ import { Timeline } from "./timeline";
 import { Spotlight } from "./Spotlight";
 
 /**
- * A set of utility methods for interacting with the Element-Web UI.
+ * A set of utility methods for interacting with the SOC Connect-Web UI.
  */
 export class ElementAppPage {
     public constructor(public readonly page: Page) {}
@@ -209,7 +209,7 @@ export class ElementAppPage {
         ]);
         if (!labelledById && !describedById) {
             throw new Error(
-                "Element has no aria-labelledby or aria-describedy attributes! The tooltip should have added either one of these.",
+                "SOC Connect has no aria-labelledby or aria-describedy attributes! The tooltip should have added either one of these.",
             );
         }
         return this.page.locator(`id=${labelledById ?? describedById}`);
@@ -235,7 +235,7 @@ export class ElementAppPage {
         await list.hover();
 
         const needsScroll = async () => {
-            // From https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#determine_if_an_element_has_been_totally_scrolled
+            // From https://developer.mozilla.org/en-US/docs/Web/API/SOC Connect/scrollHeight#determine_if_an_element_has_been_totally_scrolled
             const fullyScrolled = await list.evaluate(
                 (e) => Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) <= 1,
             );

@@ -1,7 +1,7 @@
 /*
 Copyright 2024 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -24,7 +24,7 @@ function onBackToElementClick(): void {
 function renderConfigError(message: string): void {
     const contactMsg =
         "If this is unexpected, please contact your system administrator " + "or technical support representative.";
-    message = `<h2>Error loading Element</h2><p>${message}</p><p>${contactMsg}</p>`;
+    message = `<h2>Error loading SOC Connect</h2><p>${message}</p><p>${contactMsg}</p>`;
 
     const toHide = document.getElementsByClassName("mx_HomePage_container");
     const errorContainers = document.getElementsByClassName(

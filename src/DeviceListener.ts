@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2020 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -50,10 +50,10 @@ import { asyncSomeParallel } from "./utils/arrays.ts";
 const KEY_BACKUP_POLL_INTERVAL = 5 * 60 * 1000;
 
 /**
- * Unfortunately-named account data key used by Element X to indicate that the user
+ * Unfortunately-named account data key used by SOC Connect X to indicate that the user
  * has chosen to disable server side key backups.
  *
- * We need to set and honour this to prevent Element X from automatically turning key backup back on.
+ * We need to set and honour this to prevent SOC Connect X from automatically turning key backup back on.
  */
 export const BACKUP_DISABLED_ACCOUNT_DATA_KEY = "m.org.matrix.custom.backup_disabled";
 

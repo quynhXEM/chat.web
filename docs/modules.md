@@ -1,6 +1,6 @@
 # Module system
 
-The module system in Element Web is a way to add or modify functionality of Element Web itself, bundled at compile time
+The module system in SOC Connect Web is a way to add or modify functionality of SOC Connect Web itself, bundled at compile time
 for the app. This means that modules are loaded as part of the `yarn build` process but have an effect on user experience
 at runtime.
 

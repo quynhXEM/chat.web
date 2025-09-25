@@ -663,7 +663,7 @@
         "stop_voice_message": "Lõpeta salvestamine",
         "voice_message_button": "Häälsõnum"
     },
-    "console_dev_note": "Kui sa tead, mida ja kuidas teed, siis osale meie arenduses - Element on avatud lähtekoodiga tarkvara, mille leiad GitHub'ist (https://github.com/vector-im/element-web/)!",
+    "console_dev_note": "Kui sa tead, mida ja kuidas teed, siis osale meie arenduses - SOC Connect on avatud lähtekoodiga tarkvara, mille leiad GitHub'ist (https://github.com/vector-im/element-web/)!",
     "console_scam_warning": "Kui keegi palus sul siia midagi kopeerida või asetada, siis suure tõenäosusega on tegemist pettusekatsega!",
     "console_wait": "Palun oota!",
     "create_room": {
@@ -861,7 +861,7 @@
         "setting_definition": "Seadistuse määratlus:",
         "setting_id": "Seadistuse tunnus",
         "settings": {
-            "elementCallUrl": "Element Calli võrguaadress"
+            "elementCallUrl": "SOC Connect Calli võrguaadress"
         },
         "settings_explorer": "Seadistuste haldur",
         "show_empty_content_events": "Näita tühja sisuga sündmusi",
@@ -1096,11 +1096,11 @@
         "hs_blocked": "Ligipääs sellele koduserverile on sinu serveri haldaja poolt blokeeritud.",
         "invalid_configuration_mixed_server": "Vigane seadistus: default_hs_url ei saa olla määratud koos default_server_name või default_server_config tunnustega",
         "invalid_configuration_no_server": "Vigane seadistus: vaikimisi server on määramata.",
-        "invalid_json": "Sinu Element'i seadistustes on vigased JSON-vormingus andmed. Palun paranda see viga ja laadi leht uuesti.",
+        "invalid_json": "Sinu SOC Connect'i seadistustes on vigased JSON-vormingus andmed. Palun paranda see viga ja laadi leht uuesti.",
         "invalid_json_detail": "Sõnum parserist on: %(message)s",
         "invalid_json_generic": "Vigane JSON",
         "mau": "See koduserver on saavutanud igakuise aktiivsete kasutajate piiri.",
-        "misconfigured": "Sinu Element on valesti seadistatud",
+        "misconfigured": "Sinu SOC Connect on valesti seadistatud",
         "mixed_content": "Kui aadressiribal on HTTPS-aadress, siis HTTP-protokolli kasutades ei saa ühendust koduserveriga. Palun pruugi HTTPS-protokolli või <a>luba brauseris ebaturvaliste skriptide kasutamine</a>.",
         "non_urgent_echo_failure_toast": "Sinu koduserver ei vasta mõnedele <a>päringutele</a>.",
         "resource_limits": "See koduserver ületanud ühe oma ressursipiirangutest.",
@@ -1488,13 +1488,13 @@
         "custom_themes": "Kohandatud kujunduste lisamise võimalus",
         "dynamic_room_predecessors": "Jututoa dünaamilised eellased",
         "dynamic_room_predecessors_description": "Võta kasutusele MSC3946 (jututoa ajaloo aeglane laadimine)",
-        "element_call_video_rooms": "Element Call videotoad",
+        "element_call_video_rooms": "SOC Connect Call videotoad",
         "exclude_insecure_devices": "Sõnumite saatmisel ja vastuvõtmisel välista ebaturvalised seadmed",
         "exclude_insecure_devices_description": "Kui see režiim on kasutusel, siis krüptitud sõnumeid ei jagata verifitseerimata seadmetega ja verifitseerimata seadmetest saabunud sõnumite puhul näidatakse vaid veateadet. Palun arvesta, et selle töörežiimi puhul sa ilmselt ei saa suhelda kasutajatega, kes pole kõiki oma seadmeid korrektselt verifitseerinud.",
         "experimental_description": "Soovid katsetada? Proovi meie uusimaid arendusmõtteid. Need funktsionaalsused pole üldsegi veel valmis, nad võivad toimida puudulikult, võivad muutuda või sootuks lõpetamata jääda. <a>Lisateavet leiad siit</a>.",
         "experimental_section": "Varased arendusjärgud",
         "extended_profiles_msc_support": "See eeldab, et koduserver toetab MSC4133 spetsifikatsiooni",
-        "feature_disable_call_per_sender_encryption": "Lülita Element Call'i kasutamisel krüptimine kasutajakohaselt välja",
+        "feature_disable_call_per_sender_encryption": "Lülita SOC Connect Call'i kasutamisel krüptimine kasutajakohaselt välja",
         "feature_wysiwyg_composer_description": "Sõnumite kirjutamisel kasuta Markdown'i asemel täisfunktsionaalset küljendust.",
         "group_calls": "Uus rühmakõnede lahendus",
         "group_developer": "Arendajad",
@@ -2511,9 +2511,9 @@
         "reset_explainer": "Kui sa siiski soovid seda teha, siis sinu sõnumeid me ei kustuta, aga seniks kuni sõnumite indeks taustal uuesti luuakse, toimib otsing aeglaselt ja ebatõhusalt",
         "reset_title": "Kas lähtestame sündmuste andmekogu?",
         "warning_kind_files": "See %(brand)s versioon ei toeta mõnede krüptitud failide vaatatamist",
-        "warning_kind_files_app": "Kõikide krüptitud failide vaatamiseks kasuta <a>Element Desktop</a> rakendust",
+        "warning_kind_files_app": "Kõikide krüptitud failide vaatamiseks kasuta <a>SOC Connect Desktop</a> rakendust",
         "warning_kind_search": "See %(brand)s versioon ei toeta otsingut krüptitud sõnumite seast",
-        "warning_kind_search_app": "Otsinguks krüptitud sõnumite hulgast kasuta <a>Element Desktop</a> rakendust"
+        "warning_kind_search_app": "Otsinguks krüptitud sõnumite hulgast kasuta <a>SOC Connect Desktop</a> rakendust"
     },
     "setting": {
         "help_about": {
@@ -2867,14 +2867,14 @@
             "dialog_title": "<strong>Seadistused:</strong> Eelistused",
             "enable_content_protection": "Kasuta sisu kaitset",
             "enable_hardware_acceleration": "Kasuta riistvaralist kiirendust",
-            "enable_tray_icon": "Näita süsteemisalve ikooni ja Element'i akna sulgemisel minimeeri ta salve",
+            "enable_tray_icon": "Näita süsteemisalve ikooni ja SOC Connect'i akna sulgemisel minimeeri ta salve",
             "keyboard_heading": "Kiirklahvid",
             "keyboard_view_shortcuts_button": "<a>Vaata siit</a> kõiki kiirklahve.",
             "media_heading": "Pildid, gif'id ja videod",
             "presence_description": "Jaga teistega oma olekut ja tegevusi.",
             "publish_timezone": "Avalda oma ajavööd oma avalikus profiilis",
             "rm_lifetime": "Lugemise markeri iga (ms)",
-            "rm_lifetime_offscreen": "Lugemise markeri iga, kui Element pole fookuses (ms)",
+            "rm_lifetime_offscreen": "Lugemise markeri iga, kui SOC Connect pole fookuses (ms)",
             "room_directory_heading": "Jututubade loend",
             "room_list_heading": "Jututubade loend",
             "show_avatars_pills": "Näita tunnuspilte kasutajate, jututubade ja sündmuste mainimistes",
@@ -3018,7 +3018,7 @@
             "url": "URL",
             "verified_session": "Verifitseeritud sessioon",
             "verified_sessions": "Verifitseeritud sessioonid",
-            "verified_sessions_explainer_1": "Verifitseeritud sessioonideks loetakse Element'is või mõnes muus Matrix'i rakenduses selliseid sessioone, kus sa kas oled sisestanud oma salafraasi või tuvastanud end mõne teise oma verifitseeritud sessiooni abil.",
+            "verified_sessions_explainer_1": "Verifitseeritud sessioonideks loetakse SOC Connect'is või mõnes muus Matrix'i rakenduses selliseid sessioone, kus sa kas oled sisestanud oma salafraasi või tuvastanud end mõne teise oma verifitseeritud sessiooni abil.",
             "verified_sessions_explainer_2": "See tähendab, et selles sessioonis on ka kõik vajalikud võtmed krüptitud sõnumite lugemiseks ja teistele kasutajatele kinnitamiseks, et sa usaldad seda sessiooni.",
             "verified_sessions_list_description": "Parima turvalisuse nimel logi välja neist sessioonidest, mida sa enam ei kasuta või ei tunne ära.",
             "verify_session": "Verifitseeri sessioon",
@@ -3052,7 +3052,7 @@
             "spaces_explainer": "Kogukonnad on võimalus jututubade ja inimeste ühendamiseks. Lisaks nendele, mille liige sa juba olev, võid kasutada süsteemi poolt loodud kogukondi.",
             "title": "Külgpaan"
         },
-        "start_automatically": "Käivita Element automaatselt peale arvutisse sisselogimist",
+        "start_automatically": "Käivita SOC Connect automaatselt peale arvutisse sisselogimist",
         "tac_only_notifications": "Näita teavitusi vaid jutulõngade ülevaates",
         "use_12_hour_format": "Näita ajatempleid 12-tunnises vormingus (näiteks 2:30pl)",
         "use_command_enter_send_message": "Sõnumi saatmiseks vajuta Command + Enter klahve",
@@ -3989,7 +3989,7 @@
         "disabled_no_perms_start_video_call": "Sul ei ole piisavalt õigusi videokõne alustamiseks",
         "disabled_no_perms_start_voice_call": "Sul ei ole piisavalt õigusi häälkõne alustamiseks",
         "disabled_ongoing_call": "Kõne on pooleli",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Lülita kaamera sisse",
         "enable_microphone": "Eemalda mikrofoni summutamine",
         "expand": "Pöördu tagasi kõne juurde",
@@ -4058,7 +4058,7 @@
         "you_are_presenting": "Sina esitad"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s operatsioonisüsteemis %(osName)s",
-    "welcome_to_element": "Tere tulemast kasutama suhtlusrakendust Element",
+    "welcome_to_element": "Tere tulemast kasutama suhtlusrakendust SOC Connect",
     "widget": {
         "added_by": "Vidina lisaja",
         "capabilities_dialog": {

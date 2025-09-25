@@ -5,7 +5,7 @@ Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 Copyright 2018 New Vector Ltd
 Copyright 2015, 2016 OpenMarket Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -34,7 +34,7 @@ function openRoom(cli: MatrixClient, args: string | undefined, autoJoin: boolean
         const parsedUrl = new URL(params[0]);
         const hostname = parsedUrl.host || parsedUrl.hostname; // takes first non-falsey value
 
-        // if we're using a Element permalink handler, this will catch it before we get much further.
+        // if we're using a SOC Connect permalink handler, this will catch it before we get much further.
         // see below where we make assumptions about parsing the URL.
         if (isPermalinkHost(hostname)) {
             isPermalink = true;

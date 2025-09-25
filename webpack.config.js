@@ -2,6 +2,7 @@
 /* eslint-disable quote-props */
 
 const dotenv = require("dotenv");
+const Dotenv = require('dotenv-webpack');
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -20,7 +21,7 @@ const { RetryChunkLoadPlugin } = require("webpack-retry-chunk-load-plugin");
 
 dotenv.config();
 let ogImageUrl = process.env.RIOT_OG_IMAGE_URL;
-if (!ogImageUrl) ogImageUrl = "https://app.element.io/themes/element/img/logos/opengraph.png";
+if (!ogImageUrl) ogImageUrl = "https://cdn-img.upanhlaylink.com/view/image_20250610fa2001f7c440bd6818477bbe010642a6.jpg";
 
 const cssThemes = {
     // CSS themes
@@ -579,6 +580,7 @@ module.exports = (env, argv) => {
 
         plugins: [
             ...moduleReplacementPlugins,
+            new Dotenv(),
 
             // This exports our CSS using the splitChunks and loaders above.
             new MiniCssExtractPlugin({
@@ -674,7 +676,7 @@ module.exports = (env, argv) => {
                     { from: "decoder-ring/**", context: path.resolve(__dirname, "res") },
                     { from: "media/**", context: path.resolve(__dirname, "res/") },
                     { from: "config.json", noErrorOnMissing: true },
-                    // Element Call embedded widget
+                    // SOC Connect Call embedded widget
                     {
                         from: "**",
                         context: path.resolve(__dirname, "node_modules/@element-hq/element-call-embedded/dist"),

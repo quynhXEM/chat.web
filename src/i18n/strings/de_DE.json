@@ -663,7 +663,7 @@
         "stop_voice_message": "Aufnahme beenden",
         "voice_message_button": "Sprachnachricht"
     },
-    "console_dev_note": "Falls du weißt, was du machst: Element ist Open Source! Checke unser GitHub aus (https://github.com/vector-im/element-web/) und hilf mit!",
+    "console_dev_note": "Falls du weißt, was du machst: SOC Connect ist Open Source! Checke unser GitHub aus (https://github.com/vector-im/element-web/) und hilf mit!",
     "console_scam_warning": "Wenn dir jemand gesagt hat, dass du hier etwas einfügen sollst, ist die Wahrscheinlichkeit sehr groß, dass du von der Person betrogen wirst!",
     "console_wait": "Warte!",
     "create_room": {
@@ -861,7 +861,7 @@
         "setting_definition": "Definition der Einstellung:",
         "setting_id": "Einstellungs-ID",
         "settings": {
-            "elementCallUrl": "Element Call URL"
+            "elementCallUrl": "SOC Connect Call URL"
         },
         "settings_explorer": "Einstellungsübersicht",
         "show_empty_content_events": "Events mit leerem Inhalt anzeigen",
@@ -1096,11 +1096,11 @@
         "hs_blocked": "Dieser Heim-Server wurde von seiner Administration geblockt.",
         "invalid_configuration_mixed_server": "Ungültige Konfiguration: default_hs_url kann nicht zeitgleich mit default_server_name oder default_server_config festgelegt werden",
         "invalid_configuration_no_server": "Ungültige Konfiguration: Es wurde kein Standardserver angegeben.",
-        "invalid_json": "Deine Element-Konfiguration enthält ungültiges JSON. Bitte korrigiere das Problem und lade die Seite neu.",
+        "invalid_json": "Deine SOC Connect-Konfiguration enthält ungültiges JSON. Bitte korrigiere das Problem und lade die Seite neu.",
         "invalid_json_detail": "Die Nachricht des Parsers ist: %(message)s",
         "invalid_json_generic": "Ungültiges JSON",
         "mau": "Dieser Heim-Server hat seinen Grenzwert an monatlich aktiven Nutzern erreicht.",
-        "misconfigured": "Dein Element ist falsch konfiguriert",
+        "misconfigured": "Dein SOC Connect ist falsch konfiguriert",
         "mixed_content": "Es kann keine Verbindung zum Heim-Server via HTTP aufgebaut werden, wenn die Adresszeile des Browsers eine HTTPS-URL enthält. Entweder HTTPS verwenden oder alternativ <a>unsichere Skripte erlauben</a>.",
         "non_urgent_echo_failure_toast": "Dein Server antwortet auf einige <a>Anfragen</a> nicht.",
         "resource_limits": "Dieser Heim-Server hat einen seiner Ressourcengrenzwerte überschritten.",
@@ -1488,13 +1488,13 @@
         "custom_themes": "Selbstdefinierte Designs",
         "dynamic_room_predecessors": "Veränderbare Chat Vorgänger",
         "dynamic_room_predecessors_description": "MSC3946 aktivieren (zur Verknüpfung von Chat Archiven nach der Chat Erstellung)",
-        "element_call_video_rooms": "Element Call-Videochats",
+        "element_call_video_rooms": "SOC Connect Call-Videochats",
         "exclude_insecure_devices": "Unsichere Geräte ausschließen beim senden/empfangen von Nachrichten",
         "exclude_insecure_devices_description": "Bei Aktivierung dieser Einstellung werden verschlüsselte Nachrichten nicht mehr mit unverifizierten Geräten geteilt und Nachrichten von unverifizierten Geräten werden als Fehler angezeigt. Beachte, dass es bei Aktivierung dieser Einstellung nicht mehr möglich ist, mit Nutzern zu kommunizieren, die keine verifizierten Geräte haben.",
         "experimental_description": "Experimentierfreudig? Probiere unsere neuesten, sich in Entwicklung befindlichen Ideen aus. Diese Funktionen sind nicht final; Sie könnten instabil sein, sich verändern oder sogar ganz entfernt werden. <a>Erfahre mehr</a>.",
         "experimental_section": "Frühe Vorschauen",
         "extended_profiles_msc_support": "Erfordert die Unterstützung von MSC4133 durch den Server",
-        "feature_disable_call_per_sender_encryption": "Verschlüsselung per-sender für Element Anruf abschalten",
+        "feature_disable_call_per_sender_encryption": "Verschlüsselung per-sender für SOC Connect Anruf abschalten",
         "feature_wysiwyg_composer_description": "Verwende Textverarbeitung (Rich-Text) statt Markdown im Eingabefeld.",
         "group_calls": "Neue Gruppenanruf-Erfahrung",
         "group_developer": "Entwickler",
@@ -1537,7 +1537,7 @@
         "share_history_on_invite_description": "Wenn du einen Nutzer in einen Chat einlädst, bei dem die die Sichtbarkeit der Historie auf \"geteilt\" eingestellt ist, wird der verschlüsselte Nachrichtenverlauf mit diesem Nutzer geteilt. Du akzeptierst damit auch, einen solchen verschlüsselten Nachrichtenverlauf zu empfangen, wenn du selbst in einen solchen Chat eingeladen wirst.",
         "share_history_on_invite_warning": "Diese Funktion ist EXPERIMENTELL und nicht alle Sicherheitsmaßnahmen sind aktiviert. Bitte nicht auf Konten verwenden, die für den Produktions-Betrieb gedacht sind.",
         "sliding_sync": "Sliding-Sync-Modus",
-        "sliding_sync_description": "In aktiver Entwicklung, kann nicht deaktiviert werden. Derzeit nicht mit Element Call kompatibel.",
+        "sliding_sync_description": "In aktiver Entwicklung, kann nicht deaktiviert werden. Derzeit nicht mit SOC Connect Call kompatibel.",
         "sliding_sync_disabled_notice": "Zum Deaktivieren, melde dich ab und erneut an",
         "sliding_sync_server_no_support": "Dein Server wird hier nicht unterstützt.",
         "under_active_development": "In aktiver Entwicklung.",
@@ -3988,7 +3988,7 @@
         "disabled_no_perms_start_video_call": "Dir fehlt die Berechtigung, um Videoanrufe zu beginnen",
         "disabled_no_perms_start_voice_call": "Dir fehlt die Berechtigung, um Audioanrufe zu beginnen",
         "disabled_ongoing_call": "laufender Anruf",
-        "element_call": "Element Anruf",
+        "element_call": "SOC Connect Anruf",
         "enable_camera": "Kamera aktivieren",
         "enable_microphone": "Mikrofon aktivieren",
         "expand": "Zurück zum Anruf",
@@ -4057,7 +4057,7 @@
         "you_are_presenting": "Du präsentierst"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s auf %(osName)s",
-    "welcome_to_element": "Willkommen bei Element",
+    "welcome_to_element": "Willkommen bei SOC Connect",
     "widget": {
         "added_by": "Widget hinzugefügt von",
         "capabilities_dialog": {

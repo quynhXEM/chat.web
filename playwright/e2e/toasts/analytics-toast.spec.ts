@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2022 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -33,12 +33,12 @@ test.describe("Analytics Toast", () => {
         });
 
         test("should show an analytics toast which can be accepted", async ({ user, toasts }) => {
-            await toasts.acceptToast("Help improve Element");
+            await toasts.acceptToast("Help improve SOC Connect");
             await toasts.assertNoToasts();
         });
 
         test("should show an analytics toast which can be rejected", async ({ user, toasts }) => {
-            await toasts.rejectToast("Help improve Element");
+            await toasts.rejectToast("Help improve SOC Connect");
             await toasts.assertNoToasts();
         });
     });

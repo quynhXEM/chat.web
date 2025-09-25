@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2022 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -24,7 +24,7 @@ export type ExtendedDeviceInformation = {
     client?: string;
 };
 
-// Element/1.8.21 (iPhone XS Max; iOS 15.2; Scale/3.00)
+// SOC Connect/1.8.21 (iPhone XS Max; iOS 15.2; Scale/3.00)
 const IOS_KEYWORD = "; iOS ";
 const BROWSER_KEYWORD = "Mozilla/";
 

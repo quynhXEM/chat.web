@@ -578,7 +578,7 @@
         "stop_voice_message": "Διακοπή εγγραφής",
         "voice_message_button": "Φωνητικό μήνυμα"
     },
-    "console_dev_note": "Εάν ξέρετε τι κάνετε, το Element είναι ανοιχτού κώδικα, ανατρέξετε στο GitHub (https://github.com/vector-im/element-web/) και συνεισφέρετε!",
+    "console_dev_note": "Εάν ξέρετε τι κάνετε, το SOC Connect είναι ανοιχτού κώδικα, ανατρέξετε στο GitHub (https://github.com/vector-im/element-web/) και συνεισφέρετε!",
     "console_scam_warning": "Εάν κάποιος σας είπε να κάνετε αντιγραφή και επικόλληση κάτι εδώ, υπάρχει μεγάλη πιθανότητα να σας έχουν εξαπατήσει!",
     "console_wait": "Μια στιγμή!",
     "create_room": {
@@ -913,11 +913,11 @@
         "failed_copy": "Αποτυχία αντιγραφής",
         "hs_blocked": "Αυτός ο κεντρικός διακομιστής έχει αποκλειστεί από τον διαχειριστή του.",
         "invalid_configuration_no_server": "Μη έγκυρη ρύθμιση παραμέτρων: δεν έχει οριστεί προκαθορισμένος διακομιστής.",
-        "invalid_json": "Η ρύθμιση του Element περιέχει μη έγκυρο JSON. Διορθώστε το πρόβλημα και φορτώστε ξανά τη σελίδα.",
+        "invalid_json": "Η ρύθμιση του SOC Connect περιέχει μη έγκυρο JSON. Διορθώστε το πρόβλημα και φορτώστε ξανά τη σελίδα.",
         "invalid_json_detail": "Το μήνυμα από τον αναλυτή είναι: %(message)s",
         "invalid_json_generic": "Μη έγκυρο JSON",
         "mau": "Αυτός ο κεντρικός διακομιστής έχει φτάσει το μηνιαίο όριο ενεργού χρήστη.",
-        "misconfigured": "Το Element σας δεν εχει ρυθμιστεί σωστά",
+        "misconfigured": "Το SOC Connect σας δεν εχει ρυθμιστεί σωστά",
         "mixed_content": "Δεν είναι δυνατή η σύνδεση στον κεντρικό διακομιστή μέσω HTTP όταν μια διεύθυνση HTTPS βρίσκεται στην μπάρα του περιηγητή. Είτε χρησιμοποιήστε HTTPS ή <a>ενεργοποιήστε τα μη ασφαλή σενάρια εντολών</a>.",
         "non_urgent_echo_failure_toast": "Ο διακομιστής σας δεν ανταποκρίνεται σε ορισμένα <a>αιτήματα</a>.",
         "resource_limits": "Αυτός ο κεντρικός διακομιστής έχει υπερβεί ένα από τα όρια πόρων του.",
@@ -1249,7 +1249,7 @@
         "currently_experimental": "Προς το παρόν πειραματικό.",
         "custom_themes": "Υποστήριξη προσθήκης προσαρμοσμένων θεμάτων",
         "dynamic_room_predecessors": "Δυναμικοί προκάτοχοι δωματίων",
-        "element_call_video_rooms": "Δωμάτια βίντεο κλήσεων Element",
+        "element_call_video_rooms": "Δωμάτια βίντεο κλήσεων SOC Connect",
         "feature_wysiwyg_composer_description": "Χρήση εμπλουτισμένου κειμένου αντί για Markdown στον συντάκτη μηνυμάτων.",
         "group_calls": "Νέα εμπειρία ομαδικής κλήσης",
         "group_developer": "Προγραμματιστής",
@@ -3268,7 +3268,7 @@
         "voice_call": "Φωνητική κλήση",
         "you_are_presenting": "Παρουσιάζετε"
     },
-    "welcome_to_element": "Καλώς ήλθατε στο Element",
+    "welcome_to_element": "Καλώς ήλθατε στο SOC Connect",
     "widget": {
         "added_by": "Μικροεοεφαρμογή προστέθηκε από",
         "capabilities_dialog": {

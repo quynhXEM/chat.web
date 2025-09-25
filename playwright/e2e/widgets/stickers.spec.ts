@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2022, 2023 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -138,7 +138,7 @@ test.describe("Stickers", { tag: ["@no-firefox", "@no-webkit"] }, () => {
     });
 
     // We spin up a web server for the sticker picker so that we're not testing to see if
-    // sysadmins can deploy sticker pickers on the same Element domain - we actually want
+    // sysadmins can deploy sticker pickers on the same SOC Connect domain - we actually want
     // to make sure that cross-origin postMessage works properly. This makes it difficult
     // to write the test though, as we have to juggle iframe logistics.
     //

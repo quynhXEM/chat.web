@@ -660,7 +660,7 @@
         "stop_voice_message": "Hentikan merekam",
         "voice_message_button": "Pesan Suara"
     },
-    "console_dev_note": "Jika Anda tahu apa yang Anda lakukan, Element itu sumber-terbuka, pastikan untuk mengunjungi GitHub kami (https://github.com/vector-im/element-web/) dan berkontribusi!",
+    "console_dev_note": "Jika Anda tahu apa yang Anda lakukan, SOC Connect itu sumber-terbuka, pastikan untuk mengunjungi GitHub kami (https://github.com/vector-im/element-web/) dan berkontribusi!",
     "console_scam_warning": "Jika seseorang membilangi Anda untuk salin/tempel sesuatu di sini, mungkin saja Anda sedang ditipu!",
     "console_wait": "Tunggu!",
     "create_room": {
@@ -856,7 +856,7 @@
         "setting_definition": "Definisi pengaturan:",
         "setting_id": "ID Pengaturan",
         "settings": {
-            "elementCallUrl": "URL Element Call"
+            "elementCallUrl": "URL SOC Connect Call"
         },
         "settings_explorer": "Penelusur pengaturan",
         "show_empty_content_events": "Tampilkan peristiwa dengan isi kosong",
@@ -1091,11 +1091,11 @@
         "hs_blocked": "Homeserver ini telah diblokir oleh administratornya.",
         "invalid_configuration_mixed_server": "Konfigurasi tidak valid: default_hs_url tidak dapat ditentukan bersama dengan default_server_name atau default_server_config",
         "invalid_configuration_no_server": "Konfigurasi tidak absah: server bawaan belum ditentukan.",
-        "invalid_json": "Konfigurasi Element Anda berisi JSON yang tidak absah. Mohon perbaiki masalahnya dan muat ulang laman ini.",
+        "invalid_json": "Konfigurasi SOC Connect Anda berisi JSON yang tidak absah. Mohon perbaiki masalahnya dan muat ulang laman ini.",
         "invalid_json_detail": "Pesan dari pengurai adalah: %(message)s",
         "invalid_json_generic": "JSON tidak absah",
         "mau": "Homeserver ini telah mencapai batasnya Pengguna Aktif Bulanan.",
-        "misconfigured": "Anda salah mengatur Element",
+        "misconfigured": "Anda salah mengatur SOC Connect",
         "mixed_content": "Tidak dapat terhubung ke homeserver melalui HTTP ketika URL di browser berupa HTTPS. Gunakan HTTPS atau <a>aktifkan skrip yang tidak aman</a>.",
         "non_urgent_echo_failure_toast": "Server Anda tidak menanggapi beberapa <a>permintaan</a>.",
         "resource_limits": "Homeserver ini telah melebihi batas sumber dayanya.",
@@ -1482,13 +1482,13 @@
         "custom_themes": "Dukungan penambahan tema kustom",
         "dynamic_room_predecessors": "Pendahulu ruang dinamis",
         "dynamic_room_predecessors_description": "Aktifkan MSC3946 (untuk mendukung arsip ruangan yang datang terlambat)",
-        "element_call_video_rooms": "Ruangan video Element Call",
+        "element_call_video_rooms": "Ruangan video SOC Connect Call",
         "exclude_insecure_devices": "Kecualikan perangkat tidak aman ketika mengirim/menerima pesan",
         "exclude_insecure_devices_description": "Jika mode ini diaktifkan, pesan terenkripsi tidak akan dibagikan dengan perangkat yang tidak terverifikasi, dan pesan dari perangkat yang tidak terverifikasi akan ditampilkan sebagai kesalahan. Perlu diperhatikan bahwa jika Anda mengaktifkan mode ini, Anda mungkin tidak dapat berkomunikasi dengan pengguna yang belum memverifikasi perangkat mereka.",
         "experimental_description": "Merasa eksperimental? Coba ide terkini kami dalam pengembangan. Fitur ini belum selesai; mereka mungkin tidak stabil, mungkin berubah, atau dihapus sama sekali. <a>Pelajari lebih lanjut</a>.",
         "experimental_section": "Pratinjau awal",
         "extended_profiles_msc_support": "Memerlukan server Anda untuk mendukung MSC4133",
-        "feature_disable_call_per_sender_encryption": "Nonaktifkan enkripsi per pengirim untuk Element Call",
+        "feature_disable_call_per_sender_encryption": "Nonaktifkan enkripsi per pengirim untuk SOC Connect Call",
         "feature_wysiwyg_composer_description": "Menggunakan teks kaya daripada Markdown dalam komposer pesan.",
         "group_calls": "Pengalaman panggilan grup baru",
         "group_developer": "Pengembang",
@@ -1655,7 +1655,7 @@
     },
     "member_list_back_action_label": "Anggota ruangan",
     "message_edit_dialog_title": "Editan pesan",
-    "migrating_crypto": "Bersabarlah. Kami sedang memperbarui Element untuk membuat enkripsi lebih cepat dan andal.",
+    "migrating_crypto": "Bersabarlah. Kami sedang memperbarui SOC Connect untuk membuat enkripsi lebih cepat dan andal.",
     "mobile_guide": {
         "toast_accept": "Gunakan aplikasi",
         "toast_description": "%(brand)s bersifat eksperimental pada peramban web ponsel. Untuk pengalaman yang lebih baik dan fitur-fitur terkini, gunakan aplikasi natif gratis kami.",
@@ -3949,7 +3949,7 @@
         "disabled_no_perms_start_video_call": "Anda tidak memiliki izin untuk memulai panggilan video",
         "disabled_no_perms_start_voice_call": "Anda tidak memiliki izin untuk memulai panggilan suara",
         "disabled_ongoing_call": "Panggilan sedang berlangsung",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Nyalakan kamera",
         "enable_microphone": "Suarakan mikrofon",
         "expand": "Kembali ke panggilan",
@@ -4018,7 +4018,7 @@
         "you_are_presenting": "Anda sedang mempresentasi"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s di %(osName)s",
-    "welcome_to_element": "Selamat datang di Element",
+    "welcome_to_element": "Selamat datang di SOC Connect",
     "widget": {
         "added_by": "Widget ditambahkan oleh",
         "capabilities_dialog": {

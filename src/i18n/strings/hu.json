@@ -661,7 +661,7 @@
         "stop_voice_message": "Felvétel leállítása",
         "voice_message_button": "Hangüzenet"
     },
-    "console_dev_note": "Ha tudja mit csinál, az Element nyílt forráskódú szoftver, nézze meg a GitHubon (https://github.com/vector-im/element-web/) és működjön közre!",
+    "console_dev_note": "Ha tudja mit csinál, az SOC Connect nyílt forráskódú szoftver, nézze meg a GitHubon (https://github.com/vector-im/element-web/) és működjön közre!",
     "console_scam_warning": "Ha valaki azt kéri hogy másoljon/illesszen be itt valamit, nagy esély van rá hogy valaki becsapja!",
     "console_wait": "Várjon!",
     "create_room": {
@@ -857,7 +857,7 @@
         "setting_definition": "Beállítás leírása:",
         "setting_id": "Beállításazonosító",
         "settings": {
-            "elementCallUrl": "Element Call webcím"
+            "elementCallUrl": "SOC Connect Call webcím"
         },
         "settings_explorer": "Beállításböngésző",
         "show_empty_content_events": "Üres tartalmú események megjelenítése",
@@ -1092,11 +1092,11 @@
         "hs_blocked": "A Matrix-kiszolgálót az adminisztrátor zárolta.",
         "invalid_configuration_mixed_server": "Érvénytelen konfiguráció: a default_hs_url nem adható meg a default_server_name vagy a default_server_config kulcsokkal együtt",
         "invalid_configuration_no_server": "Érvénytelen konfiguráció: nincs megadva alapértelmezett kiszolgáló.",
-        "invalid_json": "Az Element érvénytelen JSON-t tartalmazó konfigurációval rendelkezik. Javítsa és töltse újra az oldalt.",
+        "invalid_json": "Az SOC Connect érvénytelen JSON-t tartalmazó konfigurációval rendelkezik. Javítsa és töltse újra az oldalt.",
         "invalid_json_detail": "A feldolgozó algoritmus üzenete: %(message)s",
         "invalid_json_generic": "Érvénytelen JSON",
         "mau": "A Matrix-kiszolgáló elérte a havi aktív felhasználói korlátot.",
-        "misconfigured": "Az Element hibásan van beállítva",
+        "misconfigured": "Az SOC Connect hibásan van beállítva",
         "mixed_content": "Nem lehet HTTP-vel csatlakozni a Matrix-kiszolgálóhoz, ha HTTPS van a böngésző címsorában. Vagy használjon HTTPS-t vagy <a>engedélyezze a nem biztonságos parancsfájlokat</a>.",
         "non_urgent_echo_failure_toast": "A kiszolgálója nem válaszol néhány <a>kérésre</a>.",
         "resource_limits": "A Matrix-kiszolgáló túllépte valamelyik erőforráskorlátját.",
@@ -1478,13 +1478,13 @@
         "custom_themes": "Egyéni témák támogatásának hozzáadása",
         "dynamic_room_predecessors": "A dinamikus szoba előfutárai",
         "dynamic_room_predecessors_description": "MSC3946 engedélyezése (a későn érkező szobaarchívumok támogatáshoz)",
-        "element_call_video_rooms": "Element Call videószobák",
+        "element_call_video_rooms": "SOC Connect Call videószobák",
         "exclude_insecure_devices": "A nem biztonságos eszközök kizárása üzenetek küldésekor vagy fogadásakor",
         "exclude_insecure_devices_description": "Ha ez a mód engedélyezve van, a titkosított üzenetek nem kerülnek megosztásra a nem ellenőrzött eszközökkel, és a nem ellenőrzött eszközökről érkező üzenetek hibaként jelennek meg. Ne feledje, hogy ha engedélyezi ezt a módot, előfordulhat, hogy nem tud kommunikálni azokkal a felhasználókkal, akik nem ellenőrizték eszközüket.",
         "experimental_description": "Kísérletező kedvében van? Próbálja ki a legújabb fejlesztési ötleteinket. Ezek nincsenek befejezve; lehet, hogy instabilak, megváltozhatnak vagy el is tűnhetnek. <a>Tudjon meg többet</a>.",
         "experimental_section": "Korai előzetesek",
         "extended_profiles_msc_support": "A kiszolgálónak támogatnia kell az MSC4133-at",
-        "feature_disable_call_per_sender_encryption": "Küldőnkénti titkosítás letiltása Element Callhoz",
+        "feature_disable_call_per_sender_encryption": "Küldőnkénti titkosítás letiltása SOC Connect Callhoz",
         "feature_wysiwyg_composer_description": "Szövegszerkesztő használata a Markdown formázás helyett az üzenet írásakor.",
         "group_calls": "Új konferenciahívási élmény",
         "group_developer": "Fejlesztői",
@@ -3928,7 +3928,7 @@
         "disabled_no_perms_start_video_call": "Nincs jogosultsága videóhívást indítani",
         "disabled_no_perms_start_voice_call": "Nincs jogosultsága hanghívást indítani",
         "disabled_ongoing_call": "Hívás folyamatban",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Kamera bekapcsolása",
         "enable_microphone": "Mikrofon némításának feloldása",
         "expand": "Visszatérés a híváshoz",
@@ -3996,7 +3996,7 @@
         "you_are_presenting": "Ön tartja a bemutatót"
     },
     "web_default_device_name": "%(appName)s: (%(browserName)s itt: %(osName)s)",
-    "welcome_to_element": "Üdvözli az Element",
+    "welcome_to_element": "Üdvözli az SOC Connect",
     "widget": {
         "added_by": "A kisalkalmazást hozzáadta",
         "capabilities_dialog": {

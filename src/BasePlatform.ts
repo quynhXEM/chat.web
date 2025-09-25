@@ -5,7 +5,7 @@ Copyright 2018 New Vector Ltd
 Copyright 2016 Aviral Dasgupta
 Copyright 2016 OpenMarket Ltd
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -81,7 +81,7 @@ export default abstract class BasePlatform {
     }
 
     /**
-     * Get a sensible default display name for the device Element is running on
+     * Get a sensible default display name for the device SOC Connect is running on
      */
     public abstract getDefaultDeviceDisplayName(): string;
 
@@ -477,7 +477,7 @@ export default abstract class BasePlatform {
         // The redirect URL has to exactly match that registered at the OIDC server, so
         // ensure that the fragment part of the URL is empty.
         url.hash = "";
-        // Set no_universal_links=true to prevent the callback being handled by Element X installed on macOS Apple Silicon
+        // Set no_universal_links=true to prevent the callback being handled by SOC Connect X installed on macOS Apple Silicon
         url.searchParams.set("no_universal_links", "true");
         return url;
     }

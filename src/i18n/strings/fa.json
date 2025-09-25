@@ -670,7 +670,7 @@
         "invalid_json_detail": "پیام از طرف تجزیه کننده: %(message)s",
         "invalid_json_generic": "JSON اشتباه",
         "mau": "این سرور به محدودیت بیشینه‌ی تعداد کاربران فعال ماهانه رسیده‌است.",
-        "misconfigured": "Element شما پیکربندی نشده است",
+        "misconfigured": "SOC Connect شما پیکربندی نشده است",
         "mixed_content": "امکان اتصال به سرور از طریق پروتکل‌های HTTP و HTTPS در مروگر شما میسر نیست. یا از HTTPS استفاده کرده و یا <a>حالت اجرای غیرامن اسکریپت‌ها</a> را فعال کنید.",
         "non_urgent_echo_failure_toast": "سرور شما به بعضی <a>درخواست‌ها</a> پاسخ نمی‌دهد.",
         "resource_limits": "این سرور از یکی از محدودیت های منابع خود فراتر رفته است.",
@@ -2256,7 +2256,7 @@
         "voice_call": "تماس صوتی"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s: روی %(osName)s",
-    "welcome_to_element": "به Element خوش‌آمدید",
+    "welcome_to_element": "به SOC Connect خوش‌آمدید",
     "widget": {
         "added_by": "ابزارک اضافه شده توسط",
         "capabilities_dialog": {

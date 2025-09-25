@@ -663,7 +663,7 @@
         "stop_voice_message": "Arrêter l’enregistrement",
         "voice_message_button": "Message vocal"
     },
-    "console_dev_note": "Si vous savez ce que vous faites, Element est un logiciel libre, n'hésitez pas à consulter notre GitHub (https://github.com/vector-im/element-web/) et à contribuer !",
+    "console_dev_note": "Si vous savez ce que vous faites, SOC Connect est un logiciel libre, n'hésitez pas à consulter notre GitHub (https://github.com/vector-im/element-web/) et à contribuer !",
     "console_scam_warning": "Si quelqu'un vous a dit de copier/coller quelque chose ici, il y a de fortes chances que vous soyez victime d'une escroquerie !",
     "console_wait": "Attendez !",
     "create_room": {
@@ -861,7 +861,7 @@
         "setting_definition": "Définition du paramètre :",
         "setting_id": "Identifiant de paramètre",
         "settings": {
-            "elementCallUrl": "Lien d'Element Call"
+            "elementCallUrl": "Lien d'SOC Connect Call"
         },
         "settings_explorer": "Explorateur de paramètres",
         "show_empty_content_events": "Afficher les événements sans contenu",
@@ -1101,11 +1101,11 @@
         "hs_blocked": "Ce serveur d’accueil a été bloqué par son administrateur.",
         "invalid_configuration_mixed_server": "Configuration invalide : default_hs_url ne peut pas être défini en même temps que default_server_name ou default_server_config",
         "invalid_configuration_no_server": "Configuration invalide : aucun serveur par défaut indiqué.",
-        "invalid_json": "La configuration de votre Element contient du JSON invalide. Veuillez corriger le problème et recharger la page.",
+        "invalid_json": "La configuration de votre SOC Connect contient du JSON invalide. Veuillez corriger le problème et recharger la page.",
         "invalid_json_detail": "Le message de l’analyseur est : %(message)s",
         "invalid_json_generic": "JSON non valide",
         "mau": "Ce serveur d’accueil a atteint sa limite mensuelle d'utilisateurs actifs.",
-        "misconfigured": "Votre Element est mal configuré",
+        "misconfigured": "Votre SOC Connect est mal configuré",
         "mixed_content": "Impossible de se connecter au serveur d'accueil en HTTP si l’URL dans la barre de votre explorateur est en HTTPS. Utilisez HTTPS ou <a>activez la prise en charge des scripts non-vérifiés</a>.",
         "non_urgent_echo_failure_toast": "Votre serveur ne répond pas à certaines <a>requêtes</a>.",
         "resource_limits": "Ce serveur d’accueil a dépassé une de ses limites de ressources.",
@@ -1493,13 +1493,13 @@
         "custom_themes": "Autoriser l’ajout de thèmes personnalisés",
         "dynamic_room_predecessors": "Prédécesseurs de salon dynamique",
         "dynamic_room_predecessors_description": "Active MSC3946 (pour prendre en charge les archives de salon après création)",
-        "element_call_video_rooms": "Salons vidéo Element Call",
+        "element_call_video_rooms": "Salons vidéo SOC Connect Call",
         "exclude_insecure_devices": "Exclure les appareils non sécurisés lors de l'envoi/de la réception de messages",
         "exclude_insecure_devices_description": "Lorsque ce mode est activé, les messages chiffrés ne seront pas partagés avec des appareils non vérifiés et les messages provenant d'appareils non vérifiés seront affichés comme une erreur. Notez que si vous activez ce mode, il se peut que vous ne puissiez pas communiquer avec les utilisateurs qui n'ont pas vérifié leurs appareils.",
         "experimental_description": "Envie d’expériences ? Essayez nos dernières idées en développement. Ces fonctionnalités ne sont pas terminées ; elles peuvent changer, être instables, ou être complètement abandonnées. <a>En savoir plus</a>.",
         "experimental_section": "Avant-premières",
         "extended_profiles_msc_support": "Nécessite que votre serveur prenne en charge MSC4133",
-        "feature_disable_call_per_sender_encryption": "Désactiver le chiffrement de chaque expéditeur pour Element Call",
+        "feature_disable_call_per_sender_encryption": "Désactiver le chiffrement de chaque expéditeur pour SOC Connect Call",
         "feature_wysiwyg_composer_description": "Utilise le texte formaté au lieu de Markdown dans le compositeur de message.",
         "group_calls": "Nouvelle expérience d’appel de groupe",
         "group_developer": "Développeur",
@@ -3995,7 +3995,7 @@
         "disabled_no_perms_start_video_call": "Vous n’avez pas la permission de démarrer un appel vidéo",
         "disabled_no_perms_start_voice_call": "Vous n’avez pas la permission de démarrer un appel audio",
         "disabled_ongoing_call": "Appel en cours",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Activer la caméra",
         "enable_microphone": "Activer le microphone",
         "expand": "Revenir à l’appel",
@@ -4065,7 +4065,7 @@
         "you_are_presenting": "Vous êtes à l’écran"
     },
     "web_default_device_name": "%(appName)s : %(browserName)s pour %(osName)s",
-    "welcome_to_element": "Bienvenue sur Element",
+    "welcome_to_element": "Bienvenue sur SOC Connect",
     "widget": {
         "added_by": "Widget ajouté par",
         "capabilities_dialog": {

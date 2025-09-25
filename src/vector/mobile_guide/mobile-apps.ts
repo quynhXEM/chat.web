@@ -1,7 +1,7 @@
 /*
 Copyright 2025 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -28,7 +28,7 @@ export interface MobileAppMetadata {
 
 export const mobileApps: Record<MobileAppVariant, MobileAppMetadata> = {
     [MobileAppVariant.Classic]: {
-        name: "Element",
+        name: "SOC Connect",
         appleAppId: "id1083446067",
         appStoreUrl: "https://apps.apple.com/app/element-messenger/id1083446067",
         playStoreUrl: "https://play.google.com/store/apps/details?id=im.vector.app",
@@ -38,7 +38,7 @@ export const mobileApps: Record<MobileAppVariant, MobileAppMetadata> = {
         isProApp: false,
     },
     [MobileAppVariant.X]: {
-        name: "Element X",
+        name: "SOC Connect X",
         appleAppId: "id1631335820",
         appStoreUrl: "https://apps.apple.com/app/element-x-secure-chat-call/id1631335820",
         playStoreUrl: "https://play.google.com/store/apps/details?id=io.element.android.x",
@@ -48,7 +48,7 @@ export const mobileApps: Record<MobileAppVariant, MobileAppMetadata> = {
         isProApp: false,
     },
     [MobileAppVariant.Pro]: {
-        name: "Element Pro",
+        name: "SOC Connect Pro",
         appleAppId: "id6502951615",
         appStoreUrl: "https://apps.apple.com/app/element-pro-for-work/id6502951615",
         playStoreUrl: "https://play.google.com/store/apps/details?id=io.element.enterprise",
@@ -63,7 +63,7 @@ export function updateMobilePage(metadata: MobileAppMetadata, deepLinkUrl: strin
     appleMeta.setAttribute("content", `app-id=${metadata.appleAppId}`);
 
     if (server) {
-        (document.getElementById("header_title") as HTMLHeadingElement).innerText = `Join ${server} on Element`;
+        (document.getElementById("header_title") as HTMLHeadingElement).innerText = `Join ${server} on SOC Connect`;
     }
     (document.getElementById("app_store_link") as HTMLAnchorElement).href = metadata.appStoreUrl;
     (document.getElementById("play_store_link") as HTMLAnchorElement).href = metadata.playStoreUrl;
@@ -75,7 +75,7 @@ export function updateMobilePage(metadata: MobileAppMetadata, deepLinkUrl: strin
     }
 
     const step1Heading = document.getElementById("step1_heading")!;
-    step1Heading.innerHTML = step1Heading!.innerHTML.replace("Element", metadata.name);
+    step1Heading.innerHTML = step1Heading!.innerHTML.replace("SOC Connect", metadata.name);
 
     // Step 2 is only shown on the mobile guide, not on mobile.element.io
     if (document.getElementById("step2_container")) {

@@ -1,6 +1,6 @@
 # Labs features
 
-If Labs is enabled in the [Element config](config.md), you can enable some of these features by going
+If Labs is enabled in the [SOC Connect config](config.md), you can enable some of these features by going
 to `Settings->Labs`. This list is non-exhaustive and subject to change, chat in
 [#element-web:matrix.org](https://matrix.to/#/#element-web:matrix.org) for more information.
 
@@ -65,8 +65,8 @@ tab as the single source of truth just yet.
 
 ## Custom themes (`feature_custom_themes`)
 
-Custom themes are possible through Element's [theme support](./theming.md), though
-normally these themes need to be defined in the config for Element. This labs flag
+Custom themes are possible through SOC Connect's [theme support](./theming.md), though
+normally these themes need to be defined in the config for SOC Connect. This labs flag
 adds an ability for end users to add themes themselves by using a URL to the JSON
 theme definition.
 
@@ -80,24 +80,24 @@ Enables sharing your current location to the timeline, with live updates.
 
 Enables support for creating video rooms, which are persistent video chats that users can jump in and out of.
 
-## Element Call video rooms (`feature_element_call_video_rooms`) [In Development]
+## SOC Connect Call video rooms (`feature_element_call_video_rooms`) [In Development]
 
-Enables support for video rooms that use Element Call rather than Jitsi, and causes the 'New video room' option to create Element Call video rooms rather than Jitsi ones.
+Enables support for video rooms that use SOC Connect Call rather than Jitsi, and causes the 'New video room' option to create SOC Connect Call video rooms rather than Jitsi ones.
 
 This flag will not have any effect unless `feature_video_rooms` is also enabled.
 
 ## New group call experience (`feature_group_calls`) [In Development]
 
-This feature allows users to place native [MSC3401](https://github.com/matrix-org/matrix-spec-proposals/pull/3401) group calls in compatible rooms, using Element Call.
+This feature allows users to place native [MSC3401](https://github.com/matrix-org/matrix-spec-proposals/pull/3401) group calls in compatible rooms, using SOC Connect Call.
 
 If you're enabling this at the deployment level, you may also want to reference the docs for the `element_call` config section.
 
-## Disable per-sender encryption for Element Call (`feature_disable_call_per_sender_encryption`)
+## Disable per-sender encryption for SOC Connect Call (`feature_disable_call_per_sender_encryption`)
 
-The default for embedded Element Call in Element Web is per-participant encryption.
-This labs flag disables encryption for embedded Element Call in encrypted rooms.
+The default for embedded SOC Connect Call in SOC Connect Web is per-participant encryption.
+This labs flag disables encryption for embedded SOC Connect Call in encrypted rooms.
 
-Under the hood this stops Element Web from adding the `perParticipantE2EE` flag for the Element Call widget url.
+Under the hood this stops SOC Connect Web from adding the `perParticipantE2EE` flag for the SOC Connect Call widget url.
 
 This is useful while we experiment with encryption and to make calling compatible with platforms that don't use encryption yet.
 

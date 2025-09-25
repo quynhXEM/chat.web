@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2019, 2020 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -230,7 +230,7 @@ export default class VerificationPanel extends React.PureComponent<IProps, IStat
               });
         let body: JSX.Element;
         if (this.state.reciprocateQREvent) {
-            // Element Web doesn't support scanning yet, so assume here we're the client being scanned.
+            // SOC Connect Web doesn't support scanning yet, so assume here we're the client being scanned.
             body = (
                 <React.Fragment>
                     <p>{description}</p>

@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["X4NN7P3QPD.com.socconnect.socjsc"],
+                "components": [
+                    {
+                        "#": "/*",
+                        "comment": "Only open urls with a fragment, so you can still create links"
+                    }
+                ]
+            }
+        ]
+    }
+}

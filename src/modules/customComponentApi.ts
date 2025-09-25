@@ -1,7 +1,7 @@
 /*
 Copyright 2025 New Vector Ltd.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -32,7 +32,7 @@ interface CustomMessageComponentProps extends Omit<ModuleCustomMessageComponentP
 }
 
 interface CustomMessageRenderHints extends Omit<ModuleCustomCustomMessageRenderHints, "allowDownloadingMedia"> {
-    // Note. This just makes it easier to use this API on Element Web as we already have the moduleized event stored.
+    // Note. This just makes it easier to use this API on SOC Connect Web as we already have the moduleized event stored.
     allowDownloadingMedia?: () => Promise<boolean>;
 }
 

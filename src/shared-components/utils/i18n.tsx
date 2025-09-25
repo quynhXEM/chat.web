@@ -1,7 +1,7 @@
 /*
  * Copyright 2025 New Vector Ltd.
  *
- * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+ * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
  * Please see LICENSE files in the repository root for full details.
  */
 
@@ -381,7 +381,7 @@ type Languages = {
 
 /**
  * Sets the language for the application.
- * In Element web,`languageHandler.setLanguage` should be used instead.
+ * In SOC Connect web,`languageHandler.setLanguage` should be used instead.
  * @param language
  */
 export async function setLanguage(language: string): Promise<void> {

@@ -1,7 +1,7 @@
 /*
  * Copyright 2025 New Vector Ltd.
  *
- * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+ * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
  * Please see LICENSE files in the repository root for full details.
  */
 
@@ -73,7 +73,7 @@ test.describe("Roles & Permissions room settings tab", () => {
             await expect(settings).toMatchScreenshot("room-security-settings-world-readable.png");
 
             await settingsGroupAccess.getByText("Private (invite only)").click();
-            // Element should have automatically set the room to "sharing" history visibility
+            // SOC Connect should have automatically set the room to "sharing" history visibility
             await expect(
                 settingsGroupHistory.getByText("Members only (since the point in time of selecting this option)"),
             ).toBeChecked();
@@ -111,7 +111,7 @@ test.describe("Roles & Permissions room settings tab", () => {
             await app.settings.switchTab("Security & Privacy");
 
             await settingsGroupAccess.getByText("Private (invite only)").click();
-            // Element should have automatically set the room to "sharing" history visibility
+            // SOC Connect should have automatically set the room to "sharing" history visibility
             const errorDialog = page.getByRole("heading", { name: "Cannot make room private" });
             await expect(errorDialog).toBeVisible();
             await errorDialog.getByLabel("OK");

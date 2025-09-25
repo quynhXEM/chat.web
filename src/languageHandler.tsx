@@ -1,7 +1,7 @@
 /*
  * Copyright 2025 New Vector Ltd.
  *
- * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+ * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
  * Please see LICENSE files in the repository root for full details.
  */
 
@@ -57,7 +57,7 @@ export interface ErrorOptions {
  * `translatedMessage` property in the UI and inspect the underlying error with the
  * `cause` property.
  *
- * The error message will display as English in the console and logs so Element
+ * The error message will display as English in the console and logs so SOC Connect
  * developers can easily understand the error and find the source in the code. It also
  * helps tools like Sentry deduplicate the error, or just generally searching in
  * rageshakes to find all instances regardless of the users locale.

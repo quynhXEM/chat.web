@@ -862,11 +862,11 @@
         "hs_blocked": "此 homeserver 已被其管理员屏蔽。",
         "invalid_configuration_mixed_server": "配置无效：无法与 default_server_name 或 default_server_config 一起指定 default_hs_url",
         "invalid_configuration_no_server": "配置无效：没有指定默认服务器。",
-        "invalid_json": "Element 配置文件中包含无效的 JSON。请改正错误并重新加载页面。",
+        "invalid_json": "SOC Connect 配置文件中包含无效的 JSON。请改正错误并重新加载页面。",
         "invalid_json_detail": "来自解析器的消息：%(message)s",
         "invalid_json_generic": "无效的 JSON",
         "mau": "此家服务器已达到其每月活跃用户限制。",
-        "misconfigured": "Element 配置错误",
+        "misconfigured": "SOC Connect 配置错误",
         "mixed_content": "当浏览器地址栏里有 HTTPS 的 URL 时，不能使用 HTTP 连接家服务器。请使用 HTTPS 或者<a>允许不安全的脚本</a>。",
         "non_urgent_echo_failure_toast": "你的服务器没有响应一些<a>请求</a>。",
         "resource_limits": "本服务器已达到其使用量限制之一。",
@@ -3162,7 +3162,7 @@
         "you_are_presenting": "你正在展示"
     },
     "web_default_device_name": "%(appName)s：%(browserName)s在%(osName)s",
-    "welcome_to_element": "欢迎来到 Element",
+    "welcome_to_element": "欢迎来到 SOC Connect",
     "widget": {
         "added_by": "挂件添加者",
         "capabilities_dialog": {

@@ -666,7 +666,7 @@
         "stop_voice_message": "Skończ nagrywanie",
         "voice_message_button": "Wiadomość głosowa"
     },
-    "console_dev_note": "Jeśli wiesz, co robisz, pamiętaj, że Element jest open-source. Dlatego odwiedź nas na platformie GitHub (https://github.com/vector-im/element-web/) i dodaj swoją kontrybucję!",
+    "console_dev_note": "Jeśli wiesz, co robisz, pamiętaj, że SOC Connect jest open-source. Dlatego odwiedź nas na platformie GitHub (https://github.com/vector-im/element-web/) i dodaj swoją kontrybucję!",
     "console_scam_warning": "Jeśli ktoś Ci powiedział, żeby coś stąd skopiować/wkleić, istnieje wysokie prawdopodobieństwo, że jesteś oszukiwany!",
     "console_wait": "Czekaj!",
     "create_room": {
@@ -864,7 +864,7 @@
         "setting_definition": "Definicja ustawienia:",
         "setting_id": "ID ustawienia",
         "settings": {
-            "elementCallUrl": "Adres URL Element Call"
+            "elementCallUrl": "Adres URL SOC Connect Call"
         },
         "settings_explorer": "Eksplorator ustawień",
         "show_empty_content_events": "Pokaż wydarzenia z pustą zawartością",
@@ -1099,11 +1099,11 @@
         "hs_blocked": "Ten serwer domowy został zablokowany przez jego administratora.",
         "invalid_configuration_mixed_server": "Nieprawidłowa konfiguracja: nie można określić default_hs_url wraz z default_server_name lub default_server_config",
         "invalid_configuration_no_server": "Błędna konfiguracja: nie wybrano domyślnego serwera.",
-        "invalid_json": "Twoja konfiguracja Element zawiera nieprawidłowy JSON. Rozwiąż problem i odśwież stronę.",
+        "invalid_json": "Twoja konfiguracja SOC Connect zawiera nieprawidłowy JSON. Rozwiąż problem i odśwież stronę.",
         "invalid_json_detail": "Wiadomość od parsera to: %(message)s",
         "invalid_json_generic": "Błędny JSON",
         "mau": "Ten serwer osiągnął miesięczny limit aktywnego użytkownika.",
-        "misconfigured": "Twój Element jest nieprawidłowo skonfigurowany",
+        "misconfigured": "Twój SOC Connect jest nieprawidłowo skonfigurowany",
         "mixed_content": "Nie można nawiązać połączenia z serwerem przy użyciu HTTP podczas korzystania z HTTPS dla bieżącej strony. Użyj HTTPS lub <a>włącz niebezpieczne skrypty</a>.",
         "non_urgent_echo_failure_toast": "Twój serwer nie odpowiada na niektóre <a>zapytania</a>.",
         "resource_limits": "Ten serwer przekroczył jeden z limitów.",
@@ -1493,13 +1493,13 @@
         "custom_themes": "Obsługa dodawania niestandardowych motywów",
         "dynamic_room_predecessors": "Dynamiczne poprzedniki pokoju",
         "dynamic_room_predecessors_description": "Włącz MSC3946 (dla opóźnionych archiwów pokoju)",
-        "element_call_video_rooms": "Pokoje rozmów wideo Element Call",
+        "element_call_video_rooms": "Pokoje rozmów wideo SOC Connect Call",
         "exclude_insecure_devices": "Wyklucz niezabezpieczone urządzenia wysyłając/odbierając wiadomości",
         "exclude_insecure_devices_description": "Gdy ten tryb jest włączony, wiadomości szyfrowane nie zostaną udostępnione niezweryfikowanym urządzeniom, a wiadomości odbierane od tych urządzeń wyświetlą błąd. Należy pamiętać, że jeśli włączysz ten tryb, możesz nie być w stanie komunikować się z użytkownikami, którzy nie zweryfikowali swoich urządzeń.",
         "experimental_description": "Chcesz poeksperymentować? Wypróbuj nasze najnowsze pomysły w trakcie rozwoju. Przedstawione funkcje nie zostały w pełni ukończone; mogą być niestabilne; mogą się zmienić lub zostać kompletnie porzucone. <a>Dowiedz się więcej</a>.",
         "experimental_section": "Wczesny podgląd",
         "extended_profiles_msc_support": "Serwer musi wspierać MSC4133",
-        "feature_disable_call_per_sender_encryption": "Wyłącz szyfrowanie nadawcy dla Element Call",
+        "feature_disable_call_per_sender_encryption": "Wyłącz szyfrowanie nadawcy dla SOC Connect Call",
         "feature_wysiwyg_composer_description": "Użyj bogatego edytora tekstu zamiast edytora Markdown podczas tworzenia wiadomości.",
         "group_calls": "Nowe wrażenia rozmów grupowych",
         "group_developer": "Deweloper",
@@ -3969,7 +3969,7 @@
         "disabled_no_perms_start_video_call": "Nie masz uprawnień do rozpoczęcia rozmowy wideo",
         "disabled_no_perms_start_voice_call": "Nie masz uprawnień do rozpoczęcia rozmowy głosowej",
         "disabled_ongoing_call": "Rozmowa w toku",
-        "element_call": "Element Call",
+        "element_call": "SOC Connect Call",
         "enable_camera": "Włącz kamerę",
         "enable_microphone": "Wyłącz wyciszenie mikrofonu",
         "expand": "Wróć do połączenia",
@@ -4039,7 +4039,7 @@
         "you_are_presenting": "Prezentujesz"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s na %(osName)s",
-    "welcome_to_element": "Witamy w Element",
+    "welcome_to_element": "Witamy w SOC Connect",
     "widget": {
         "added_by": "Widżet dodany przez",
         "capabilities_dialog": {

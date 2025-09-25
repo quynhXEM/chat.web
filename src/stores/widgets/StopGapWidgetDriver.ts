@@ -2,7 +2,7 @@
  * Copyright 2024 New Vector Ltd.
  * Copyright 2020-2023 The Matrix.org Foundation C.I.C.
  *
- * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+ * SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
  * Please see LICENSE files in the repository root for full details.
  */
 
@@ -116,7 +116,7 @@ export class StopGapWidgetDriver extends WidgetDriver {
             // Widgets don't technically need to request this capability, but Scalar still does.
             this.allowedCapabilities.add("visibility");
         } else if (virtual && WidgetType.CALL.matches(this.forWidget.type) && forWidgetKind === WidgetKind.Room) {
-            // This is a trusted Element Call widget that we control
+            // This is a trusted SOC Connect Call widget that we control
             this.allowedCapabilities.add(MatrixCapabilities.AlwaysOnScreen);
             this.allowedCapabilities.add(MatrixCapabilities.MSC3846TurnServers);
             this.allowedCapabilities.add(`org.matrix.msc2762.timeline:${inRoomId}`);

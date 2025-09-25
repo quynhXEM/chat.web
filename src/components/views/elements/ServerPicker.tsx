@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2020, 2021 The connect.socjsc.com Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -60,7 +60,7 @@ const ServerPicker: React.FC<IProps> = ({ title, dialogTitle, serverConfig, onSe
         onLoading?.(true);
         const onGetServers = async (): Promise<void> => {
             try {
-                const res = await fetch(`/api/servers?limit=100&fields=domain,is_default&meta=filter_count`, {
+                const res = await fetch(`${process.env.DEV_API_URL || ""}/api/servers?limit=100&fields=domain,is_default&meta=filter_count`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",

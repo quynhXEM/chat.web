@@ -2,7 +2,7 @@
 Copyright 2024 New Vector Ltd.
 Copyright 2021 The Matrix.org Foundation C.I.C.
 
-SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC Connect-Commercial
 Please see LICENSE files in the repository root for full details.
 */
 
@@ -14,7 +14,7 @@ Please see LICENSE files in the repository root for full details.
 // called createObjectURL(), and so if the content contains any scripting then it
 // will pose a XSS vulnerability when the browser renders it.  This is particularly
 // bad if the user right-clicks the URI and pastes it into a new window or tab,
-// as the blob will then execute with access to Element's full JS environment(!)
+// as the blob will then execute with access to SOC Connect's full JS environment(!)
 //
 // See https://github.com/matrix-org/matrix-react-sdk/pull/1820#issuecomment-385210647
 // for details.
