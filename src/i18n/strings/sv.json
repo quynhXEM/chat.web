@@ -180,9 +180,9 @@
         "autodiscovery_generic_failure": "Misslyckades att få konfiguration för autoupptäckt från servern",
         "autodiscovery_hs_incompatible": "Din hemserver är för gammal och stöder inte minimum-API:t som krävs. Vänligen kontakta din serverägare, eller uppgradera din server.",
         "autodiscovery_invalid": "Ogiltigt hemserverupptäcktssvar",
-        "autodiscovery_invalid_hs": "Hemserver-URL:en verkar inte vara en giltig Matrix-hemserver",
+        "autodiscovery_invalid_hs": "Hemserver-URL:en verkar inte vara en giltig SOC Connect-hemserver",
         "autodiscovery_invalid_hs_base_url": "Ogiltig base_url för m.homeserver",
-        "autodiscovery_invalid_is": "Identitetsserver-URL:en verkar inte vara en giltig Matrix-identitetsserver",
+        "autodiscovery_invalid_is": "Identitetsserver-URL:en verkar inte vara en giltig SOC Connect-identitetsserver",
         "autodiscovery_invalid_is_base_url": "Ogiltig base_url för m.identity_server",
         "autodiscovery_invalid_is_response": "Ogiltigt identitetsserverupptäcktssvar",
         "autodiscovery_invalid_json": "Ogiltig JSON",
@@ -326,11 +326,11 @@
         "reset_password_button": "Glömt lösenordet?",
         "reset_password_email_field_description": "Använd en a-postadress för att återställa ditt konto",
         "reset_password_email_field_required_invalid": "Skriv in e-postadress (krävs på den här hemservern)",
-        "reset_password_email_not_associated": "Din e-postadress verkar inte vara associerad med ett Matrix-ID på den här hemservern.",
+        "reset_password_email_not_associated": "Din e-postadress verkar inte vara associerad med ett SOC Connect-ID på den här hemservern.",
         "reset_password_email_not_found_title": "Den här e-postadressen finns inte",
         "reset_password_title": "Återställ ditt lösenord",
         "server_picker_custom": "Annan hemserver",
-        "server_picker_description": "Du kan använda egna serverinställningar för att logga in på andra Matrix-servrar genom att ange en URL för en annan hemserver. Då kan du använda %(brand)s med ett existerande Matrix-konto på en annan hemserver.",
+        "server_picker_description": "Du kan använda egna serverinställningar för att logga in på andra SOC Connect-servrar genom att ange en URL för en annan hemserver. Då kan du använda %(brand)s med ett existerande SOC Connect-konto på en annan hemserver.",
         "server_picker_description_connect.socjsc.com": "Gå med miljontals användare gratis på den största publika servern",
         "server_picker_dialog_title": "Bestäm var ditt konto finns",
         "server_picker_explainer": "Använd din föredragna hemserver om du har en, eller driv din egen.",
@@ -433,7 +433,7 @@
         "introduction": "Om du har rapporterat en bugg via GitHub så kan felsökningsloggar hjälpa oss att hitta problemet. ",
         "log_request": "För att hjälpa oss att förhindra detta i framtiden, vänligen <a>skicka oss loggar</a>.",
         "logs_sent": "Loggar skickade",
-        "matrix_security_issue": "För att rapportera ett Matrix-relaterat säkerhetsproblem, vänligen läs Connect.socjsc.coms <a>riktlinjer för säkerhetspublicering</a>.",
+        "matrix_security_issue": "För att rapportera ett SOC Connect-relaterat säkerhetsproblem, vänligen läs Connect.socjsc.coms <a>riktlinjer för säkerhetspublicering</a>.",
         "preparing_download": "Förbereder nedladdning av loggar",
         "preparing_logs": "Förbereder sändning av loggar",
         "send_logs": "Skicka loggar",
@@ -519,7 +519,7 @@
         "loading": "Laddar …",
         "location": "Plats",
         "low_priority": "Låg prioritet",
-        "matrix": "Matrix",
+        "matrix": "SOC Connect",
         "message": "Meddelande",
         "message_layout": "Meddelandearrangemang",
         "message_timestamp_invalid": "Ogiltig tidsstämpel",
@@ -1324,7 +1324,7 @@
         "impossible_dialog_title": "Integrationer är inte tillåtna"
     },
     "invite": {
-        "ask_anyway_description": "Kunde inte hitta profiler för Matrix-ID:n nedan — skulle du vilja starta ett DM ändå?",
+        "ask_anyway_description": "Kunde inte hitta profiler för SOC Connect-ID:n nedan — skulle du vilja starta ett DM ändå?",
         "ask_anyway_label": "Starta DM ändå",
         "ask_anyway_never_warn_label": "Starta DM ändå och varna mig aldrig igen",
         "email_caption": "Bjud in via e-post",
@@ -1376,7 +1376,7 @@
         "to_space": "Bjud in till %(spaceName)s",
         "transfer_dial_pad_tab": "Knappsats",
         "transfer_user_directory_tab": "Användarkatalog",
-        "unable_find_profiles_description_default": "Kunde inte hitta profiler för de Matrix-ID:n som listas nedan - vill du bjuda in dem ändå?",
+        "unable_find_profiles_description_default": "Kunde inte hitta profiler för de SOC Connect-ID:n som listas nedan - vill du bjuda in dem ändå?",
         "unable_find_profiles_invite_label_default": "Bjud in ändå",
         "unable_find_profiles_invite_never_warn_label_default": "Bjud in ändå och varna mig aldrig igen",
         "unable_find_profiles_title": "Följande användare kanske inte existerar",
@@ -1767,7 +1767,7 @@
         "moderator": "Moderator",
         "restricted": "Begränsad"
     },
-    "powered_by_matrix": "Drivs av Matrix",
+    "powered_by_matrix": "Drivs av SOC Connect",
     "powered_by_matrix_with_logo": "Decentraliserad krypterad chatt &amp; samarbete som drivs av $matrixLogo",
     "presence": {
         "away": "Borta",
@@ -2207,7 +2207,7 @@
             "room_version_section": "Rumsversion",
             "space_predecessor": "Visa tidigare version av %(spaceName)s.",
             "space_upgrade_button": "Uppgradera det här utrymmet till den rekommenderade rumsversionen",
-            "unfederated": "Detta rum är inte tillgängligt för externa Matrix-servrar",
+            "unfederated": "Detta rum är inte tillgängligt för externa SOC Connect-servrar",
             "upgrade_button": "Uppgradera detta rum till version %(version)s",
             "upgrade_dialog_description": "Att uppgradera det här rummet kräver att den nuvarande instansen a rummet stängs och ett nytt rum skapas i dess plats. För att ge rumsmedlemmar den bästa möjliga upplevelsen kommer vi:",
             "upgrade_dialog_description_1": "Skapa ett nytt rum med samma namn, beskrivning och avatar",
@@ -2468,7 +2468,7 @@
         "title": "Servern svarar inte"
     },
     "service_worker_error": {
-        "description": "%(brand)s kräver en service worker för att läsa in autentiserade media från Matrix-innehållsförråd. Detta stöds inte av din webbläsare, så du kan uppleva att media misslyckas att laddas.",
+        "description": "%(brand)s kräver en service worker för att läsa in autentiserade media från SOC Connect-innehållsförråd. Detta stöds inte av din webbläsare, så du kan uppleva att media misslyckas att laddas.",
         "title": "Misslyckades att ladda service worker"
     },
     "seshat": {
@@ -2736,11 +2736,11 @@
         "key_export_import": {
             "confirm_passphrase": "Bekräfta lösenfrasen",
             "enter_passphrase": "Ange lösenfras",
-            "export_description_1": "Denna process låter dig exportera nycklarna för meddelanden som du har fått i krypterade rum till en lokal fil. Du kommer sedan att kunna importera filen i en annan Matrix-klient i framtiden, så att den klienten också kan avkryptera meddelandena.",
+            "export_description_1": "Denna process låter dig exportera nycklarna för meddelanden som du har fått i krypterade rum till en lokal fil. Du kommer sedan att kunna importera filen i en annan SOC Connect-klient i framtiden, så att den klienten också kan avkryptera meddelandena.",
             "export_description_2": "Den exporterade filen låter alla som kan läsa den avkryptera alla krypterade meddelanden som du kan se, så du bör vara noga med att hålla den säker. För att hjälpa till med detta bör du ange en unik lösenfras nedan, som endast kommer att användas för att kryptera exporterade data. Det kommer bara att vara möjligt att importera datan med samma lösenfras.",
             "export_title": "Exportera rumsnycklar",
             "file_to_import": "Fil att importera",
-            "import_description_1": "Denna process möjliggör import av krypteringsnycklar som tidigare exporterats från en annan Matrix-klient. Du kommer då kunna avkryptera alla meddelanden som den andra klienten kunde avkryptera.",
+            "import_description_1": "Denna process möjliggör import av krypteringsnycklar som tidigare exporterats från en annan SOC Connect-klient. Du kommer då kunna avkryptera alla meddelanden som den andra klienten kunde avkryptera.",
             "import_description_2": "Den exporterade filen kommer vara skyddad med en lösenfras. Du måste ange lösenfrasen här, för att avkryptera filen.",
             "import_title": "Importera rumsnycklar",
             "phrase_cannot_be_empty": "Lösenfrasen får inte vara tom",
@@ -2850,7 +2850,7 @@
             "time_heading": "Tidvisning",
             "user_timezone": "Ange tidszon"
         },
-        "prompt_invite": "Fråga innan inbjudningar skickas till potentiellt ogiltiga Matrix-ID:n",
+        "prompt_invite": "Fråga innan inbjudningar skickas till potentiellt ogiltiga SOC Connect-ID:n",
         "replace_plain_emoji": "Ersätt automatiskt textemotikoner med emojier",
         "security": {
             "analytics_description": "Dela anonyma data för att hjälpa oss att identifiera problem. Inget personligt. Inga tredje parter.",
@@ -3015,7 +3015,7 @@
             "metaspaces_subsection": "Utrymmen att visa",
             "metaspaces_video_rooms": "Videorum och konferenser",
             "metaspaces_video_rooms_description": "Gruppera alla privata videorum och konferenser.",
-            "metaspaces_video_rooms_description_invite_extension": "I konferenser kan du bjuda in personer utanför Matrix.",
+            "metaspaces_video_rooms_description_invite_extension": "I konferenser kan du bjuda in personer utanför SOC Connect.",
             "spaces_explainer": "Utrymmen är sätt att gruppera rum och personer. Vid sidan av de utrymmen du befinner dig i kan du också använda några förbyggda.",
             "title": "Sidofält"
         },
@@ -3116,7 +3116,7 @@
         "part_unknown_alias": "Okänd rumsadress: %(roomAlias)s",
         "plain": "Skickar ett meddelande som vanlig text, utan att tolka det som Markdown",
         "query": "Öppnar en chatt med den valda användaren",
-        "query_not_found_phone_number": "Kunde inte hitta Matrix-ID för telefonnumret",
+        "query_not_found_phone_number": "Kunde inte hitta SOC Connect-ID för telefonnumret",
         "rageshake": "Skicka en buggrapport med loggar",
         "rainbow": "Skickar angivet meddelande i regnbågsfärg",
         "rainbowme": "Skickar angiven emoji i regnbågsfärg",
@@ -3806,7 +3806,7 @@
         "description": "Om du fortsätter kan vissa funktioner sluta fungera och det finns en risk att du kan förlora data i framtiden. Uppdatera din webbläsare för att fortsätta använda%(brand)s.",
         "title": "%(brand)sstöder inte den här webbläsaren"
     },
-    "unsupported_server_description": "Servern använder en äldre version av Matrix. Uppgradera till Matrix %(version)s för att använda %(brand)s utan fel.",
+    "unsupported_server_description": "Servern använder en äldre version av SOC Connect. Uppgradera till SOC Connect %(version)s för att använda %(brand)s utan fel.",
     "unsupported_server_title": "Din server stöds inte",
     "update": {
         "changelog": "Ändringslogg",

@@ -315,12 +315,12 @@ export default class Registration extends React.Component<IProps, IState> {
         sendAttempt: number,
         sessionId: string,
     ): Promise<IRequestTokenResponse> => {
-        if (!this.state.matrixClient) throw new Error("Matrix client has not yet been loaded");
+        if (!this.state.matrixClient) throw new Error("SOC Connect client has not yet been loaded");
         return this.state.matrixClient.requestRegisterEmailToken(emailAddress, clientSecret, sendAttempt);
     };
 
     private onUIAuthFinished: InteractiveAuthCallback<RegisterResponse> = async (success, response): Promise<void> => {
-        if (!this.state.matrixClient) throw new Error("Matrix client has not yet been loaded");
+        if (!this.state.matrixClient) throw new Error("SOC Connect client has not yet been loaded");
 
         debuglog("Registration: ui authentication finished: ", { success, response });
         if (!success) {
@@ -484,7 +484,7 @@ export default class Registration extends React.Component<IProps, IState> {
     };
 
     private makeRegisterRequest = (auth: AuthDict | null): Promise<RegisterResponse> => {
-        if (!this.state.matrixClient) throw new Error("Matrix client has not yet been loaded");
+        if (!this.state.matrixClient) throw new Error("SOC Connect client has not yet been loaded");
 
         const registerParams: IRegisterRequestParams = {
             username: this.state.formVals.username,

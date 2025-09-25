@@ -178,7 +178,7 @@
         "autodiscovery_generic_failure": "Gagal untuk mendapatkan konfigurasi penemuan otomatis dari server",
         "autodiscovery_hs_incompatible": "Homeserver Anda terlalu lawas dan tidak mendukung versi API minimum yang diperlukan. Silakan menghubungi pemilik server Anda, atau tingkatkan server Anda.",
         "autodiscovery_invalid": "Respons penemuan homeserver tidak absah",
-        "autodiscovery_invalid_hs": "URL homeserver sepertinya bukan sebagai homeserver Matrix yang absah",
+        "autodiscovery_invalid_hs": "URL homeserver sepertinya bukan sebagai homeserver SOC Connect yang absah",
         "autodiscovery_invalid_hs_base_url": "base_url tidak absah untuk m.homeserver",
         "autodiscovery_invalid_is": "URL server identitas terlihat bukan sebagai server identitas yang absah",
         "autodiscovery_invalid_is_base_url": "base_url tidak absah untuk m.identity_server",
@@ -324,14 +324,14 @@
         "reset_password_button": "Lupa kata sandi?",
         "reset_password_email_field_description": "Gunakan sebuah alamat email untuk memulihkan akun Anda",
         "reset_password_email_field_required_invalid": "Masukkan alamat email (diperlukan di homeserver ini)",
-        "reset_password_email_not_associated": "Alamat email Anda terlihat tidak diasosiasikan dengan sebuah ID Matrix di homeserver ini.",
+        "reset_password_email_not_associated": "Alamat email Anda terlihat tidak diasosiasikan dengan sebuah ID SOC Connect di homeserver ini.",
         "reset_password_email_not_found_title": "Alamat email ini tidak ditemukan",
         "reset_password_title": "Atur ulang kata sandi Anda",
         "server_picker_custom": "Homeserver lainnya",
-        "server_picker_description": "Anda dapat menggunakan opsi server khusus untuk masuk ke server Matrix lain dengan menentukan URL homeserver yang berbeda. Ini memungkinkan Anda untuk menggunakan %(brand)s dengan akun Matrix yang ada di homeserver yang berbeda.",
+        "server_picker_description": "Anda dapat menggunakan opsi server khusus untuk masuk ke server SOC Connect lain dengan menentukan URL homeserver yang berbeda. Ini memungkinkan Anda untuk menggunakan %(brand)s dengan akun SOC Connect yang ada di homeserver yang berbeda.",
         "server_picker_description_connect.socjsc.com": "Bergabung dengan jutaan orang lainnya secara gratis di server publik terbesar",
         "server_picker_dialog_title": "Putuskan di mana untuk menghost akun Anda",
-        "server_picker_explainer": "Gunakan homeserver Matrix yang Anda inginkan jika Anda punya satu, atau host sendiri.",
+        "server_picker_explainer": "Gunakan homeserver SOC Connect yang Anda inginkan jika Anda punya satu, atau host sendiri.",
         "server_picker_failed_validate_homeserver": "Tidak dapat memvalidasi homeserver",
         "server_picker_intro": "Kami memanggil tempat-tempat yang Anda dapat menghost akun Anda sebagai 'homeserver'.",
         "server_picker_invalid_url": "URL tidak absah",
@@ -431,7 +431,7 @@
         "introduction": "Jika Anda mengirim sebuah kutu via GitHub, catatan pengawakutu dapat membantu kami melacak masalahnya. ",
         "log_request": "Untuk membantu kami mencegahnya di masa mendatang, silakan <a>kirimkan kami catatan</a>.",
         "logs_sent": "Catatan terkirim",
-        "matrix_security_issue": "Untuk melaporkan masalah keamanan yang berkaitan dengan Matrix, mohon baca <a>Kebijakan Penyingkapan Keamanan</a> Connect.socjsc.com.",
+        "matrix_security_issue": "Untuk melaporkan masalah keamanan yang berkaitan dengan SOC Connect, mohon baca <a>Kebijakan Penyingkapan Keamanan</a> Connect.socjsc.com.",
         "preparing_download": "Mempersiapkan untuk mengunduh catatan",
         "preparing_logs": "Mempersiapkan untuk mengirimkan catatan",
         "send_logs": "Kirim catatan",
@@ -517,7 +517,7 @@
         "loading": "Memuat…",
         "location": "Lokasi",
         "low_priority": "Prioritas rendah",
-        "matrix": "Matrix",
+        "matrix": "SOC Connect",
         "message": "Pesan",
         "message_layout": "Tata letak pesan",
         "message_timestamp_invalid": "Stempel waktu tidak valid",
@@ -1321,7 +1321,7 @@
         "impossible_dialog_title": "Integrasi tidak diperbolehkan"
     },
     "invite": {
-        "ask_anyway_description": "Tidak dapat menemukan profil untuk ID Matrix yang disertakan di bawah — apakah Anda ingin memulai percakapan langsung saja?",
+        "ask_anyway_description": "Tidak dapat menemukan profil untuk ID SOC Connect yang disertakan di bawah — apakah Anda ingin memulai percakapan langsung saja?",
         "ask_anyway_label": "Mulai percakapan langsung saja",
         "ask_anyway_never_warn_label": "Mulai percakapan langsung saja dan jangan peringatkan saya lagi",
         "email_caption": "Undang melalui email",
@@ -1373,7 +1373,7 @@
         "to_space": "Undang ke %(spaceName)s",
         "transfer_dial_pad_tab": "Tombol penyetel",
         "transfer_user_directory_tab": "Direktori Pengguna",
-        "unable_find_profiles_description_default": "Tidak dapat menemukan profil untuk ID Matrix yang dicantumkan di bawah — apakah Anda ingin mengundang mereka saja?",
+        "unable_find_profiles_description_default": "Tidak dapat menemukan profil untuk ID SOC Connect yang dicantumkan di bawah — apakah Anda ingin mengundang mereka saja?",
         "unable_find_profiles_invite_label_default": "Undang saja",
         "unable_find_profiles_invite_never_warn_label_default": "Undang saja dan jangan peringatkan saya lagi",
         "unable_find_profiles_title": "Pengguna berikut ini mungkin tidak ada",
@@ -1763,7 +1763,7 @@
         "moderator": "Moderator",
         "restricted": "Dibatasi"
     },
-    "powered_by_matrix": "Diberdayakan oleh Matrix",
+    "powered_by_matrix": "Diberdayakan oleh SOC Connect",
     "powered_by_matrix_with_logo": "Obrolan &amp; kolaborasi terdesentralisasi dan terenkripsi diberdayakan oleh $matrixLogo",
     "presence": {
         "away": "Idle",
@@ -2200,7 +2200,7 @@
             "room_version_section": "Versi ruangan",
             "space_predecessor": "Lihat versi %(spaceName)s yang lama.",
             "space_upgrade_button": "Tingkatkan space ini ke versi ruangan yang disarankan",
-            "unfederated": "Ruangan ini tidak dapat diakses oleh pengguna Matrix jarak jauh",
+            "unfederated": "Ruangan ini tidak dapat diakses oleh pengguna SOC Connect jarak jauh",
             "upgrade_button": "Tingkatkan ruangan ini ke versi %(version)s",
             "upgrade_dialog_description": "Meningkatkan ruangan ini membutuhkan penutupan instansi ruangan saat ini dan membuat ruangan yang baru di tempatnya. Untuk memberikan anggota ruangan pengalaman yang baik, kami akan:",
             "upgrade_dialog_description_1": "Membuat ruangan baru dengan nama, deskripsi, dan avatar yang sama",
@@ -2461,7 +2461,7 @@
         "title": "Server tidak merespon"
     },
     "service_worker_error": {
-        "description": "%(brand)s memerlukan pekerja layanan untuk memuat media yang diautentikasi dari repositori konten Matrix. Ini tidak didukung oleh peramban Anda sehingga Anda mungkin mengalami kegagalan pemuatan media.",
+        "description": "%(brand)s memerlukan pekerja layanan untuk memuat media yang diautentikasi dari repositori konten SOC Connect. Ini tidak didukung oleh peramban Anda sehingga Anda mungkin mengalami kegagalan pemuatan media.",
         "title": "Gagal memuat pekerja layanan"
     },
     "seshat": {
@@ -2729,11 +2729,11 @@
         "key_export_import": {
             "confirm_passphrase": "Konfirmasi frasa sandi",
             "enter_passphrase": "Masukkan frasa sandi",
-            "export_description_1": "Proses ini memungkinkan Anda untuk mengekspor kunci untuk pesan yang Anda terima di ruangan terenkripsi ke file lokal. Anda kemudian dapat mengimpor file ke klien Matrix lain di masa mendatang, sehingga klien juga dapat mendekripsi pesan ini.",
+            "export_description_1": "Proses ini memungkinkan Anda untuk mengekspor kunci untuk pesan yang Anda terima di ruangan terenkripsi ke file lokal. Anda kemudian dapat mengimpor file ke klien SOC Connect lain di masa mendatang, sehingga klien juga dapat mendekripsi pesan ini.",
             "export_description_2": "Berkas yang diekspor akan memungkinkan siapa saja yang dapat membacanya untuk mendekripsi semua pesan terenkripsi yang dapat Anda lihat, jadi Anda harus berhati-hati untuk menjaganya tetap aman. Untuk mengamankannya, Anda harus memasukkan frasa sandi di bawah ini, yang akan digunakan untuk mengenkripsi data yang diekspor. Impor data hanya dapat dilakukan dengan menggunakan frasa sandi yang sama.",
             "export_title": "Ekspor kunci ruangan",
             "file_to_import": "File untuk diimpor",
-            "import_description_1": "Proses ini memungkinkan Anda untuk mengimpor kunci enkripsi yang sebelumnya telah Anda ekspor dari klien Matrix lain. Anda kemudian akan dapat mendekripsi pesan apa saja yang dapat didekripsi oleh klien lain.",
+            "import_description_1": "Proses ini memungkinkan Anda untuk mengimpor kunci enkripsi yang sebelumnya telah Anda ekspor dari klien SOC Connect lain. Anda kemudian akan dapat mendekripsi pesan apa saja yang dapat didekripsi oleh klien lain.",
             "import_description_2": "File yang diekspor akan dilindungi dengan sebuah frasa sandi. Anda harus memasukkan frasa sandinya di sini untuk mendekripsi filenya.",
             "import_title": "Impor kunci ruangan",
             "phrase_cannot_be_empty": "Frasa sandi harus tidak kosong",
@@ -2843,7 +2843,7 @@
             "time_heading": "Tampilkan waktu",
             "user_timezone": "Atur zona waktu"
         },
-        "prompt_invite": "Tanyakan sebelum mengirim undangan ke ID Matrix yang mungkin tidak absah",
+        "prompt_invite": "Tanyakan sebelum mengirim undangan ke ID SOC Connect yang mungkin tidak absah",
         "replace_plain_emoji": "Ganti emoji teks biasa secara otomatis",
         "security": {
             "analytics_description": "Bagikan data anonim untuk membantu kami mengenal masalah. Tidak ada yang pribadi. Tanpa pihak ketiga.",
@@ -2970,7 +2970,7 @@
             "unverified_session": "Sesi belum diverifikasi",
             "unverified_session_explainer_1": "Sesi ini tidak mendukung enkripsi dan tidak dapat diverifikasi.",
             "unverified_session_explainer_2": "Anda tidak akan dapat berpartisipasi dalam ruangan di mana enkripsi diaktifkan ketika menggunakan sesi ini.",
-            "unverified_session_explainer_3": "Untuk keamanan dan privasi yang terbaik, kami merekomendasikan menggunakan klien Matrix yang mendukung enkripsi.",
+            "unverified_session_explainer_3": "Untuk keamanan dan privasi yang terbaik, kami merekomendasikan menggunakan klien SOC Connect yang mendukung enkripsi.",
             "unverified_sessions": "Sesi belum diverifikasi",
             "unverified_sessions_explainer_1": "Sesi yang belum diverifikasi adalah sesi yang telah masuk dengan kredensial Anda tetapi belum diverifikasi secara silang.",
             "unverified_sessions_explainer_2": "Anda seharusnya yakin bahwa Anda mengenal sesi ini karena mereka dapat berarti bahwa seseorang telah menggunakan akun Anda tanpa diketahui.",
@@ -3008,7 +3008,7 @@
             "metaspaces_subsection": "Space yang ditampilkan",
             "metaspaces_video_rooms": "Ruangan dan konferensi video",
             "metaspaces_video_rooms_description": "Kelompokkan semua ruangan dan konferensi video privat.",
-            "metaspaces_video_rooms_description_invite_extension": "Dalam konferensi, Anda dapat mengundang orang-orang di luar Matrix.",
+            "metaspaces_video_rooms_description_invite_extension": "Dalam konferensi, Anda dapat mengundang orang-orang di luar SOC Connect.",
             "spaces_explainer": "Space adalah cara untuk mengelompokkan ruangan dan orang-orang. Di samping space yang Anda berada, Anda juga dapat menggunakan beberapa yang sudah dibuat sebelumnya.",
             "title": "Bilah Samping"
         },
@@ -3050,7 +3050,7 @@
         "permalink_message": "Tautan ke pesan yang dipilih",
         "permalink_most_recent": "Tautan ke pesan terkini",
         "share_call": "Tautan undangan konferensi",
-        "share_call_subtitle": "Tautan bagi pengguna eksternal untuk bergabung ke panggilan tanpa akun Matrix:",
+        "share_call_subtitle": "Tautan bagi pengguna eksternal untuk bergabung ke panggilan tanpa akun SOC Connect:",
         "title_link": "Bagikan Tautan",
         "title_message": "Bagikan Pesan Ruangan",
         "title_room": "Bagikan Ruangan",
@@ -3109,7 +3109,7 @@
         "part_unknown_alias": "Alamat ruangan tidak dikenal: %(roomAlias)s",
         "plain": "Mengirim pesan sebagai teks biasa, tanpa mengubahnya ke markdown",
         "query": "Membuka obrolan dengan pengguna yang dicantumkan",
-        "query_not_found_phone_number": "Tidak dapat menemukan ID Matrix untuk nomor telepon",
+        "query_not_found_phone_number": "Tidak dapat menemukan ID SOC Connect untuk nomor telepon",
         "rageshake": "Kirim laporan kutu dengan catatan",
         "rainbow": "Mengirim pesan dengan warna pelangi",
         "rainbowme": "Mengirim emote dengan warna pelangi",
@@ -3226,7 +3226,7 @@
             "network_dropdown_available_valid": "Kelihatannya bagus",
             "network_dropdown_remove_server_adornment": "Hapus server “%(roomServer)s”",
             "network_dropdown_required_invalid": "Masukkan sebuah nama server",
-            "network_dropdown_selected_label": "Tampilkan: ruangan Matrix",
+            "network_dropdown_selected_label": "Tampilkan: ruangan SOC Connect",
             "network_dropdown_selected_label_instance": "Tampilkan: %(instance)s ruangan (%(server)s)",
             "network_dropdown_your_server_description": "Server Anda"
         }
@@ -3799,7 +3799,7 @@
         "description": "Jika Anda lanjut, beberapa fitur dapat berhenti bekerja dan ada risiko kehilangan data di masa mendatang. Perbarui peramban Anda untuk terus menggunakan %(brand)s.",
         "title": "%(brand)s tidak mendukung peramban ini"
     },
-    "unsupported_server_description": "Server ini menjalankan sebuah versi Matrix yang lama. Tingkatkan ke Matrix %(version)s untuk menggunakan %(brand)s tanpa eror.",
+    "unsupported_server_description": "Server ini menjalankan sebuah versi SOC Connect yang lama. Tingkatkan ke SOC Connect %(version)s untuk menggunakan %(brand)s tanpa eror.",
     "unsupported_server_title": "Server Anda tidak didukung",
     "update": {
         "changelog": "Catatan perubahan",

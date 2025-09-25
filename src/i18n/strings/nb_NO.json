@@ -180,7 +180,7 @@
         "autodiscovery_generic_failure": "Kunne ikke hente autodiscovery-konfigurasjonen fra serveren",
         "autodiscovery_hs_incompatible": "Hjemmeserveren din er for gammel og støtter ikke minimum API-versjon som kreves. Ta kontakt med din servereier, eller oppgrader din server.",
         "autodiscovery_invalid": "Ugyldig svar på oppdagelse av hjemmeserver",
-        "autodiscovery_invalid_hs": "Hjemeserver-URL ser ikke ut til å være en gyldig Matrix-hjemmeserver",
+        "autodiscovery_invalid_hs": "Hjemeserver-URL ser ikke ut til å være en gyldig SOC Connect-hjemmeserver",
         "autodiscovery_invalid_hs_base_url": "Ugyldig base_url for m.homeserver",
         "autodiscovery_invalid_is": "URL-adressen til identitetsserveren ser ikke ut til å være en gyldig identitetsserver",
         "autodiscovery_invalid_is_base_url": "Ugyldig base_url for m.identity_server",
@@ -326,14 +326,14 @@
         "reset_password_button": "Glemt passordet?",
         "reset_password_email_field_description": "Bruk en E-postadresse til å gjenopprette kontoen din",
         "reset_password_email_field_required_invalid": "Skriv inn en E-postadresse (Påkrevd på denne hjemmeserveren)",
-        "reset_password_email_not_associated": "E-postadressen din ser ikke ut til å være knyttet til en Matrix ID på denne hjemmeserveren.",
+        "reset_password_email_not_associated": "E-postadressen din ser ikke ut til å være knyttet til en SOC Connect ID på denne hjemmeserveren.",
         "reset_password_email_not_found_title": "Denne e-postadressen ble ikke funnet",
         "reset_password_title": "Tilbakestill passordet ditt",
         "server_picker_custom": "Annen hjemmeserver",
-        "server_picker_description": "Du kan bruke de egendefinerte serveralternativene til å logge på andre Matrix-servere ved å angi en annen hjemmeserver-URL. Dette gjør at du kan bruke %(brand)s med en eksisterende Matrix-konto på en annen hjemmeserver.",
+        "server_picker_description": "Du kan bruke de egendefinerte serveralternativene til å logge på andre SOC Connect-servere ved å angi en annen hjemmeserver-URL. Dette gjør at du kan bruke %(brand)s med en eksisterende SOC Connect-konto på en annen hjemmeserver.",
         "server_picker_description_connect.socjsc.com": "Bli med millioner av mennesker gratis på den største offentlige serveren",
         "server_picker_dialog_title": "Bestem hvor kontoen din skal ligge",
-        "server_picker_explainer": "Bruk din foretrukne Matrix-hjemmeserver hvis du har en, eller host din egen.",
+        "server_picker_explainer": "Bruk din foretrukne SOC Connect-hjemmeserver hvis du har en, eller host din egen.",
         "server_picker_failed_validate_homeserver": "Kan ikke validere hjemmeserver",
         "server_picker_intro": "Vi kaller stedene der du kan hoste kontoen din for \"hjemmeservere\".",
         "server_picker_invalid_url": "Ugyldig URL",
@@ -433,7 +433,7 @@
         "introduction": "Hvis du har sendt inn en feil via GitHub, kan feilsøkingslogger hjelpe oss med å spore opp problemet. ",
         "log_request": "For å hjelpe oss med å forhindre dette i fremtiden, vennligst <a>send oss loggfiler</a>.",
         "logs_sent": "Loggbøkene ble sendt",
-        "matrix_security_issue": "For å rapportere inn et Matrix-relatert sikkerhetsproblem, vennligst less Connect.socjsc.com sine <a>Retningslinjer for sikkerhetspublisering</a>.",
+        "matrix_security_issue": "For å rapportere inn et SOC Connect-relatert sikkerhetsproblem, vennligst less Connect.socjsc.com sine <a>Retningslinjer for sikkerhetspublisering</a>.",
         "preparing_download": "Forbereder nedlasting av logger",
         "preparing_logs": "Forbereder sending av logger",
         "send_logs": "Send loggbøker",
@@ -519,7 +519,7 @@
         "loading": "Laster inn …",
         "location": "Lokasjon",
         "low_priority": "Lavprioritet",
-        "matrix": "Matrix",
+        "matrix": "SOC Connect",
         "message": "Melding",
         "message_layout": "Meldingsoppsett",
         "message_timestamp_invalid": "Ugyldig tidsstempel",
@@ -1325,7 +1325,7 @@
         "impossible_dialog_title": "Integreringer er ikke tillatt"
     },
     "invite": {
-        "ask_anyway_description": "Kan ikke finne profiler for Matrix ID-ene som er oppført nedenfor - vil du starte en DM likevel?",
+        "ask_anyway_description": "Kan ikke finne profiler for SOC Connect ID-ene som er oppført nedenfor - vil du starte en DM likevel?",
         "ask_anyway_label": "Start DM uansett",
         "ask_anyway_never_warn_label": "Start DM uansett og advar meg aldri igjen",
         "email_caption": "Inviter gjennom E-post",
@@ -1377,7 +1377,7 @@
         "to_space": "Inviter til %(spaceName)s",
         "transfer_dial_pad_tab": "Nummerpanel",
         "transfer_user_directory_tab": "Brukerkatalog",
-        "unable_find_profiles_description_default": "Kan ikke finne profiler for Matrix ID-ene som er oppført nedenfor - vil du invitere dem uansett?",
+        "unable_find_profiles_description_default": "Kan ikke finne profiler for SOC Connect ID-ene som er oppført nedenfor - vil du invitere dem uansett?",
         "unable_find_profiles_invite_label_default": "Inviter likevel",
         "unable_find_profiles_invite_never_warn_label_default": "Inviter likevel, og advar meg aldri igjen",
         "unable_find_profiles_title": "Følgende brukere eksisterer kanskje ikke",
@@ -1768,7 +1768,7 @@
         "moderator": "Moderator",
         "restricted": "Begrenset"
     },
-    "powered_by_matrix": "Drevet av Matrix",
+    "powered_by_matrix": "Drevet av SOC Connect",
     "powered_by_matrix_with_logo": "Desentralisert, kryptert chat og samarbeid drevet av $matrixLogo",
     "presence": {
         "away": "Borte",
@@ -2222,7 +2222,7 @@
             "room_version_section": "Romversjon",
             "space_predecessor": "Vis eldre versjon av %(spaceName)s.",
             "space_upgrade_button": "Oppgrader dette området til den anbefalte romversjonen",
-            "unfederated": "Dette rommet er ikke tilgjengelig fra eksterne Matrix-servere",
+            "unfederated": "Dette rommet er ikke tilgjengelig fra eksterne SOC Connect-servere",
             "upgrade_button": "Oppgrader dette rommet til versjon %(version)s",
             "upgrade_dialog_description": "Oppgradering av dette rommet krever å stenge den nåværende forekomsten av rommet og opprette et nytt rom i stedet. For å gi rommedlemmene den best mulige opplevelsen, vil vi:",
             "upgrade_dialog_description_1": "Opprett et nytt rom med samme navn, beskrivelse og avatar",
@@ -2483,7 +2483,7 @@
         "title": "Serveren svarer ikke"
     },
     "service_worker_error": {
-        "description": "%(brand)s krever en tjenestearbeider for å laste inn autentiserte medier fra Matrix-innholdslagre. Dette støttes ikke av nettleseren din, så du kan oppleve at media ikke lastes inn.",
+        "description": "%(brand)s krever en tjenestearbeider for å laste inn autentiserte medier fra SOC Connect-innholdslagre. Dette støttes ikke av nettleseren din, så du kan oppleve at media ikke lastes inn.",
         "title": "Kunne ikke laste inn servicearbeider"
     },
     "seshat": {
@@ -2751,11 +2751,11 @@
         "key_export_import": {
             "confirm_passphrase": "Bekreft passfrasen",
             "enter_passphrase": "Skriv inn passordfrase",
-            "export_description_1": "Denne prosessen lar deg eksportere nøklene for meldinger du har mottatt i krypterte rom til en lokal fil. Du vil da kunne importere filen til en annen Matrix-klient i fremtiden, slik at klienten også vil kunne dekryptere disse meldingene.",
+            "export_description_1": "Denne prosessen lar deg eksportere nøklene for meldinger du har mottatt i krypterte rom til en lokal fil. Du vil da kunne importere filen til en annen SOC Connect-klient i fremtiden, slik at klienten også vil kunne dekryptere disse meldingene.",
             "export_description_2": "Den eksporterte filen vil tillate alle som kan lese den å dekryptere eventuelle krypterte meldinger du kan se, så du bør være forsiktig med å holde den sikker. For å hjelpe med dette, bør du skrive inn en unik passordfrase nedenfor, som bare vil bli brukt til å kryptere de eksporterte dataene. Det vil bare være mulig å importere dataene ved å bruke samme passordfrase.",
             "export_title": "Eksporter romnøkler",
             "file_to_import": "Filen som skal importeres",
-            "import_description_1": "Denne prosessen lar deg importere krypteringsnøkler som du tidligere hadde eksportert fra en annen Matrix-klient. Du vil da kunne dekryptere eventuelle meldinger som den andre klienten kan dekryptere.",
+            "import_description_1": "Denne prosessen lar deg importere krypteringsnøkler som du tidligere hadde eksportert fra en annen SOC Connect-klient. Du vil da kunne dekryptere eventuelle meldinger som den andre klienten kan dekryptere.",
             "import_description_2": "Eksportfilen vil bli beskyttet med en passordfrase. Du bør skrive inn passordfrasen her, for å dekryptere filen.",
             "import_title": "Importer romnøkler",
             "phrase_cannot_be_empty": "Passfrasen kan ikke være tom",
@@ -2865,7 +2865,7 @@
             "time_heading": "Viser tid",
             "user_timezone": "Angi tidssone"
         },
-        "prompt_invite": "Si ifra før det sendes invitasjoner til potensielt ugyldige Matrix-ID-er",
+        "prompt_invite": "Si ifra før det sendes invitasjoner til potensielt ugyldige SOC Connect-ID-er",
         "replace_plain_emoji": "Bytt automatisk ut råtekst-emojier",
         "security": {
             "analytics_description": "Del anonyme data for å hjelpe oss med å identifisere problemer. Ikke noe personlig. Ingen tredjeparter.",
@@ -2992,7 +2992,7 @@
             "unverified_session": "Uverifisert sesjon",
             "unverified_session_explainer_1": "Denne sesjonen støtter ikke kryptering og kan derfor ikke verifiseres.",
             "unverified_session_explainer_2": "Du vil ikke kunne delta i rom der kryptering er aktivert når du bruker denne sesjonen.",
-            "unverified_session_explainer_3": "For best mulig sikkerhet og personvern anbefales det å bruke Matrix-klienter som støtter kryptering.",
+            "unverified_session_explainer_3": "For best mulig sikkerhet og personvern anbefales det å bruke SOC Connect-klienter som støtter kryptering.",
             "unverified_sessions": "Uverifiserte sesjoner",
             "unverified_sessions_explainer_1": "Ubekreftede sesjoner er sesjoner som har logget på med legitimasjonen din, men som ikke er kryssverifisert.",
             "unverified_sessions_explainer_2": "Du bør være spesielt sikker på at du gjenkjenner disse øktene, da de kan representere en uautorisert bruk av kontoen din.",
@@ -3131,7 +3131,7 @@
         "part_unknown_alias": "Ukjent romadresse: %(roomAlias)s",
         "plain": "Sender en melding som ren tekst, uten å tolke den som markdown",
         "query": "Åpner chat med den gitte brukeren",
-        "query_not_found_phone_number": "Kan ikke finne Matrix ID for telefonnummeret",
+        "query_not_found_phone_number": "Kan ikke finne SOC Connect ID for telefonnummeret",
         "rageshake": "Send en feilrapport med logger",
         "rainbow": "Sender gitte melding i regnbuens farger",
         "rainbowme": "Sender gitte emote i regnbuens farger",
@@ -3248,7 +3248,7 @@
             "network_dropdown_available_valid": "Ser bra ut",
             "network_dropdown_remove_server_adornment": "Fjern serveren \"%(roomServer)s\"",
             "network_dropdown_required_invalid": "Skriv inn et tjenernavn",
-            "network_dropdown_selected_label": "Vis: Matrix-rom",
+            "network_dropdown_selected_label": "Vis: SOC Connect-rom",
             "network_dropdown_selected_label_instance": "Vis: %(instance)s rom (%(server)s)",
             "network_dropdown_your_server_description": "Serveren din"
         }
@@ -3818,7 +3818,7 @@
         "description": "Hvis du fortsetter, kan noen funksjoner slutte å fungere, og det er en risiko for at du kan miste data i fremtiden. Oppdater nettleseren din for å fortsette å bruke%(brand)s.",
         "title": "%(brand)s støtter ikke denne nettleseren"
     },
-    "unsupported_server_description": "Denne serveren bruker en eldre versjon av Matrix. Oppgrader til Matrix %(version)s for å bruke %(brand)s uten feil.",
+    "unsupported_server_description": "Denne serveren bruker en eldre versjon av SOC Connect. Oppgrader til SOC Connect %(version)s for å bruke %(brand)s uten feil.",
     "unsupported_server_title": "Serveren din støttes ikke",
     "update": {
         "changelog": "Endringslogg",

@@ -330,11 +330,11 @@
         "reset_password_button": "Zabudnuté heslo?",
         "reset_password_email_field_description": "Použite e-mailovú adresu na obnovenie svojho konta",
         "reset_password_email_field_required_invalid": "Zadajte e-mailovú adresu (vyžaduje sa na tomto domovskom serveri)",
-        "reset_password_email_not_associated": "Zdá sa, že vaša emailová adresa nie je priradená k žiadnemu Matrix ID na tomto domovskom serveri.",
+        "reset_password_email_not_associated": "Zdá sa, že vaša emailová adresa nie je priradená k žiadnemu SOC Connect ID na tomto domovskom serveri.",
         "reset_password_email_not_found_title": "Túto emailovú adresu sa nepodarilo nájsť",
         "reset_password_title": "Obnovte svoje heslo",
         "server_picker_custom": "Iný domovský server",
-        "server_picker_description": "Môžete použiť nastavenia vlastného servera na prihlásenie sa na iné servery Matrix-u zadaním inej adresy URL domovského servera. To vám umožní používať %(brand)s s existujúcim účtom Matrix na inom domovskom serveri.",
+        "server_picker_description": "Môžete použiť nastavenia vlastného servera na prihlásenie sa na iné servery SOC Connect-u zadaním inej adresy URL domovského servera. To vám umožní používať %(brand)s s existujúcim účtom SOC Connect na inom domovskom serveri.",
         "server_picker_description_connect.socjsc.com": "Pripojte sa k mnohým používateľom najväčšieho verejného domovského servera zdarma",
         "server_picker_dialog_title": "Rozhodnite sa, kde bude váš účet hostovaný",
         "server_picker_explainer": "Použite preferovaný domovský server Matrixu, ak ho máte, alebo si vytvorte vlastný.",
@@ -437,7 +437,7 @@
         "introduction": "Ak ste odoslali chybu prostredníctvom služby GitHub, záznamy o ladení nám môžu pomôcť nájsť problém. ",
         "log_request": "Aby ste nám pomohli tomuto v budúcnosti zabrániť, pošlite nám prosím <a>záznamy o chybe</a>.",
         "logs_sent": "Záznamy boli odoslané",
-        "matrix_security_issue": "Ak chcete nahlásiť bezpečnostný problém týkajúci sa Matrix-u, prečítajte si, prosím, <a>zásady zverejňovania informácií o bezpečnosti Connect.socjsc.com</a>.",
+        "matrix_security_issue": "Ak chcete nahlásiť bezpečnostný problém týkajúci sa SOC Connect-u, prečítajte si, prosím, <a>zásady zverejňovania informácií o bezpečnosti Connect.socjsc.com</a>.",
         "preparing_download": "Príprava na prevzatie záznamov",
         "preparing_logs": "príprava odoslania záznamov",
         "send_logs": "Odoslať záznamy",
@@ -524,7 +524,7 @@
         "loading": "Načítavanie…",
         "location": "Poloha",
         "low_priority": "Nízka priorita",
-        "matrix": "Matrix",
+        "matrix": "SOC Connect",
         "message": "Správa",
         "message_layout": "Rozloženie správy",
         "message_timestamp_invalid": "Neplatná časová značka",
@@ -1339,7 +1339,7 @@
         "impossible_dialog_title": "Integrácie nie sú povolené"
     },
     "invite": {
-        "ask_anyway_description": "Nie je možné nájsť používateľské profily pre Matrix ID zobrazené nižšie - chcete aj tak začať priamu správu?",
+        "ask_anyway_description": "Nie je možné nájsť používateľské profily pre SOC Connect ID zobrazené nižšie - chcete aj tak začať priamu správu?",
         "ask_anyway_label": "Spustiť priamu správu aj tak",
         "ask_anyway_never_warn_label": "Spustiť priamu správu aj tak a nikdy ma už nevarovať",
         "email_caption": "Pozvať e-mailom",
@@ -1391,7 +1391,7 @@
         "to_space": "Pozvať do priestoru %(spaceName)s",
         "transfer_dial_pad_tab": "Číselník",
         "transfer_user_directory_tab": "Adresár používateľov",
-        "unable_find_profiles_description_default": "Nie je možné nájsť používateľský profil pre Matrix ID zobrazené nižšie. Chcete ich napriek tomu pozvať?",
+        "unable_find_profiles_description_default": "Nie je možné nájsť používateľský profil pre SOC Connect ID zobrazené nižšie. Chcete ich napriek tomu pozvať?",
         "unable_find_profiles_invite_label_default": "Napriek tomu pozvať",
         "unable_find_profiles_invite_never_warn_label_default": "Napriek tomu pozvať a viac neupozorňovať",
         "unable_find_profiles_title": "Nasledujúci používatelia pravdepodobne neexistujú",
@@ -1787,7 +1787,7 @@
         "moderator": "Moderátor",
         "restricted": "Obmedzené"
     },
-    "powered_by_matrix": "používa protokol Matrix",
+    "powered_by_matrix": "používa protokol SOC Connect",
     "powered_by_matrix_with_logo": "Decentralizované, šifrované konverzácie a spolupráca na platforme $matrixLogo",
     "presence": {
         "away": "Preč",
@@ -2242,7 +2242,7 @@
             "room_version_section": "Verzia miestnosti",
             "space_predecessor": "Zobraziť staršiu verziu %(spaceName)s.",
             "space_upgrade_button": "Aktualizovať tento priestor na odporúčanú verziu miestnosti",
-            "unfederated": "Táto miestnosť nie je prístupná zo vzdialených Matrix serverov",
+            "unfederated": "Táto miestnosť nie je prístupná zo vzdialených SOC Connect serverov",
             "upgrade_button": "Aktualizovať túto miestnosť na verziu %(version)s",
             "upgrade_dialog_description": "Aktualizácia tejto miestnosti vyžaduje zrušenie aktuálnej inštancie miestnosti a vytvorenie novej miestnosti na jej mieste. Aby sme členom miestnosti poskytli čo najlepšiu skúsenosť, budeme:",
             "upgrade_dialog_description_1": "Vznikne nová miestnosť s rovnakým názvom, témou a obrázkom",
@@ -2506,7 +2506,7 @@
         "title": "Server neodpovedá"
     },
     "service_worker_error": {
-        "description": "%(brand)s vyžaduje proces služby na načítanie overených médií z úložísk obsahu Matrix. Váš prehliadač to nepodporuje, takže sa môže vyskytnúť zlyhanie načítania médií.",
+        "description": "%(brand)s vyžaduje proces služby na načítanie overených médií z úložísk obsahu SOC Connect. Váš prehliadač to nepodporuje, takže sa môže vyskytnúť zlyhanie načítania médií.",
         "title": "Nepodarilo sa načítať proces služby"
     },
     "seshat": {
@@ -2774,11 +2774,11 @@
         "key_export_import": {
             "confirm_passphrase": "Potvrďte prístupovú frázu",
             "enter_passphrase": "Zadajte prístupovú frázu",
-            "export_description_1": "Tento proces vás prevedie exportom kľúčov určených na dešifrovanie správ, ktoré ste dostali v šifrovaných miestnostiach do lokálneho súboru. Tieto kľúče zo súboru môžete neskôr importovať do iného Matrix klienta, aby ste v ňom mohli dešifrovať vaše šifrované správy.",
+            "export_description_1": "Tento proces vás prevedie exportom kľúčov určených na dešifrovanie správ, ktoré ste dostali v šifrovaných miestnostiach do lokálneho súboru. Tieto kľúče zo súboru môžete neskôr importovať do iného SOC Connect klienta, aby ste v ňom mohli dešifrovať vaše šifrované správy.",
             "export_description_2": "Exportovaný súbor umožní každému, kto si ho môže prečítať, dešifrovať všetky zašifrované správy, ktoré môžete vidieť, preto by ste mali dbať na jeho zabezpečenie. Na pomoc by ste mali nižšie zadať jedinečnú prístupovú frázu, ktorá sa použije len na zašifrovanie exportovaných údajov. Údaje bude možné importovať len pomocou rovnakej prístupovej frázy.",
             "export_title": "Exportovať kľúče miestností",
             "file_to_import": "Importovať zo súboru",
-            "import_description_1": "Tento proces vás prevedie importom šifrovacích kľúčov, ktoré ste si v minulosti exportovali v inom Matrix klientovi. Po úspešnom importe budete v tomto klientovi môcť dešifrovať všetky správy, ktoré ste mohli dešifrovať v spomínanom klientovi.",
+            "import_description_1": "Tento proces vás prevedie importom šifrovacích kľúčov, ktoré ste si v minulosti exportovali v inom SOC Connect klientovi. Po úspešnom importe budete v tomto klientovi môcť dešifrovať všetky správy, ktoré ste mohli dešifrovať v spomínanom klientovi.",
             "import_description_2": "Exportovaný súbor bude chránený prístupovou frázou. Tu by ste mali zadať prístupovú frázu, aby ste súbor dešifrovali.",
             "import_title": "Importovať kľúče miestností",
             "phrase_cannot_be_empty": "Prístupová fráza nesmie byť prázdna",
@@ -2888,7 +2888,7 @@
             "time_heading": "Zobrazovanie času",
             "user_timezone": "Nastaviť časové pásmo"
         },
-        "prompt_invite": "Upozorniť pred odoslaním pozvánok na potenciálne neplatné Matrix ID",
+        "prompt_invite": "Upozorniť pred odoslaním pozvánok na potenciálne neplatné SOC Connect ID",
         "replace_plain_emoji": "Automaticky nahrádzať textové emotikony modernými",
         "security": {
             "analytics_description": "Zdieľajte anonymné údaje, ktoré nám pomôžu identifikovať problémy. Nič osobné. Žiadne tretie strany.",
@@ -3018,7 +3018,7 @@
             "unverified_session": "Neoverená relácia",
             "unverified_session_explainer_1": "Táto relácia nepodporuje šifrovanie, a preto ju nemožno overiť.",
             "unverified_session_explainer_2": "Pri používaní tejto relácie sa nebudete môcť zúčastňovať v miestnostiach, v ktorých je zapnuté šifrovanie.",
-            "unverified_session_explainer_3": "Pre čo najlepšie zabezpečenie a ochranu súkromia sa odporúča používať klientov Matrix, ktorí podporujú šifrovanie.",
+            "unverified_session_explainer_3": "Pre čo najlepšie zabezpečenie a ochranu súkromia sa odporúča používať klientov SOC Connect, ktorí podporujú šifrovanie.",
             "unverified_sessions": "Neoverené relácie",
             "unverified_sessions_explainer_1": "Neoverené relácie sú relácie, ktoré sa prihlásili pomocou vašich poverení, ale neboli krížovo overené.",
             "unverified_sessions_explainer_2": "Mali by ste si byť obzvlášť istí, že tieto relácie rozpoznávate, pretože by mohli predstavovať neoprávnené používanie vášho účtu.",
@@ -3157,7 +3157,7 @@
         "part_unknown_alias": "Nerozpoznaná adresa miestnosti: %(roomAlias)s",
         "plain": "Odošle správu ako obyčajný text bez interpretácie ako markdown",
         "query": "Otvorí konverzáciu s daným používateľom",
-        "query_not_found_phone_number": "Nemožnosť nájsť Matrix ID pre telefónne číslo",
+        "query_not_found_phone_number": "Nemožnosť nájsť SOC Connect ID pre telefónne číslo",
         "rageshake": "Zaslať chybové hlásenie so záznamami",
         "rainbow": "Odošle danú správu vo farbe dúhy",
         "rainbowme": "Odošle daný emotív sfarbený ako dúha",
@@ -3275,7 +3275,7 @@
             "network_dropdown_available_valid": "Vyzerá to super",
             "network_dropdown_remove_server_adornment": "Odstrániť server \"%(roomServer)s\"",
             "network_dropdown_required_invalid": "Zadajte názov servera",
-            "network_dropdown_selected_label": "Zobraziť: Matrix miestnosti",
+            "network_dropdown_selected_label": "Zobraziť: SOC Connect miestnosti",
             "network_dropdown_selected_label_instance": "Zobraziť: %(instance)s miestnosti (%(server)s)",
             "network_dropdown_your_server_description": "Váš server"
         }
@@ -3884,7 +3884,7 @@
         "description": "Ak budete pokračovať, niektoré funkcie môžu prestať fungovať a existuje riziko, že v budúcnosti stratíte údaje. Aktualizujte svoj prehliadač, aby ste mohli pokračovať v používaní aplikácie %(brand)s.",
         "title": "%(brand)s nepodporuje tento prehliadač"
     },
-    "unsupported_server_description": "Tento server používa staršiu verziu systému Matrix. Ak chcete používať %(brand)s bez chýb, aktualizujte na Matrix %(version)s.",
+    "unsupported_server_description": "Tento server používa staršiu verziu systému SOC Connect. Ak chcete používať %(brand)s bez chýb, aktualizujte na SOC Connect %(version)s.",
     "unsupported_server_title": "Váš server nie je podporovaný",
     "update": {
         "changelog": "Zoznam zmien",

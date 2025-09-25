@@ -184,7 +184,7 @@
         "autodiscovery_generic_failure": "Wedi methu cael ffurfweddiad awtoddarganfod o'r gweinydd",
         "autodiscovery_hs_incompatible": "Mae eich gweinydd cartref yn rhy hen ac nid yw'n cefnogi'r fersiwn API lleiaf sydd ei angen. Cysylltwch â pherchennog eich gweinydd, neu uwchraddiwch eich gweinydd.",
         "autodiscovery_invalid": "Ymateb darganfod gweinydd cartref annilys",
-        "autodiscovery_invalid_hs": "Nid yw'n ymddangos bod URL Gweinyddcartref yn weinydd cartref Matrix dilys",
+        "autodiscovery_invalid_hs": "Nid yw'n ymddangos bod URL Gweinyddcartref yn weinydd cartref SOC Connect dilys",
         "autodiscovery_invalid_hs_base_url": "base_url annilys ar gyfer m.homeserver",
         "autodiscovery_invalid_is": "Nid yw'n ymddangos bod URL gweinydd hunaniaeth yn weinydd adnabod dilys",
         "autodiscovery_invalid_is_base_url": "base_url annilys ar gyfer m.identity_server",
@@ -337,7 +337,7 @@
         "server_picker_description": "Gallwch ddefnyddio'r dewisiadau gweinydd arferol i fewngofnodi i weinyddion Matrics eraill trwy nodi URL gweinydd cartref gwahanol. Mae hyn yn eich galluogi i ddefnyddio %(brand)s gyda chyfrif Matrics presennol ar weinydd cartref gwahanol.",
         "server_picker_description_connect.socjsc.com": "Ymunwch â miliynau am ddim ar y gweinydd cyhoeddus mwyaf",
         "server_picker_dialog_title": "Penderfynwch ble mae'ch cyfrif yn cael ei gynnal",
-        "server_picker_explainer": "Defnyddiwch eich gweinydd cartref Matrix dewisol os oes gennych chi un, neu gwesteiwch un eich hun.",
+        "server_picker_explainer": "Defnyddiwch eich gweinydd cartref SOC Connect dewisol os oes gennych chi un, neu gwesteiwch un eich hun.",
         "server_picker_failed_validate_homeserver": "Methu dilysu'r gweinydd cartref",
         "server_picker_intro": "Rydyn ni'n galw'r gofodau lle gallwch chi gynnal eich cyfrif yn 'homeservers'.",
         "server_picker_invalid_url": "URL annilys",
@@ -437,7 +437,7 @@
         "introduction": "Os ydych chi wedi cyflwyno byg trwy GitHub, gall logiau dadfygio ein helpu i ddod o hyd i'r broblem. ",
         "log_request": "Er mwyn ein helpu i atal hyn yn y dyfodol, <a>anfonwch logiau atom</a>.",
         "logs_sent": "Logiau wedi'u hanfon",
-        "matrix_security_issue": "I roi gwybod am fater diogelwch yn ymwneud â Matrix, darllenwch y <a>Polisi Datgelu Diogelwch</a> Connect.socjsc.com .",
+        "matrix_security_issue": "I roi gwybod am fater diogelwch yn ymwneud â SOC Connect, darllenwch y <a>Polisi Datgelu Diogelwch</a> Connect.socjsc.com .",
         "preparing_download": "Paratoi i lwytho logiau i lawr",
         "preparing_logs": "Paratoi i anfon logiau",
         "send_logs": "Anfon logiau",
@@ -1788,7 +1788,7 @@
         "moderator": "Cymedrolwr",
         "restricted": "Cyfyngedig"
     },
-    "powered_by_matrix": "Wedi'i bweru gan Matrix",
+    "powered_by_matrix": "Wedi'i bweru gan SOC Connect",
     "powered_by_matrix_with_logo": "Sgwrs ddatganoledig, wedi'i hamgryptio &amp; cydweithrediad wedi'i bweru gan $matrixLogo",
     "presence": {
         "away": "I ffwrdd",
@@ -2294,7 +2294,7 @@
             "room_version_section": "Fersiwn ystafell",
             "space_predecessor": "Gweld fersiwn hŷn o %(spaceName)s.",
             "space_upgrade_button": "Uwchraddio'r gofod hwn i'r fersiwn ystafell sy'n cael ei hargymell",
-            "unfederated": "Nid yw gweinyddion Matrix pell yn hygyrch i'r ystafell hon",
+            "unfederated": "Nid yw gweinyddion SOC Connect pell yn hygyrch i'r ystafell hon",
             "upgrade_button": "Uwchraddio'r ystafell hon i fersiwn %(version)s",
             "upgrade_dialog_description": "Mae uwchraddio'r ystafell hon yn gofyn am gau'r enghraifft bresennol o'r ystafell a chreu ystafell newydd yn ei lle. Er mwyn rhoi’r profiad gorau posibl i aelodau’r ystafell, byddwn yn:",
             "upgrade_dialog_description_1": "Creu ystafell newydd gyda'r un enw, disgrifiad ac afatar",
@@ -2576,7 +2576,7 @@
         "title": "Nid yw'r gweinydd yn ymateb"
     },
     "service_worker_error": {
-        "description": "Mae angen gweithiwr gwasanaeth ar %(brand)s i lwytho cyfryngau dilys o storfeydd cynnwys Matrix. Nid yw hyn yn cael ei gefnogi gan eich porwr felly efallai y byddwch yn profi bod cyfryngau'n methu â llwytho.",
+        "description": "Mae angen gweithiwr gwasanaeth ar %(brand)s i lwytho cyfryngau dilys o storfeydd cynnwys SOC Connect. Nid yw hyn yn cael ei gefnogi gan eich porwr felly efallai y byddwch yn profi bod cyfryngau'n methu â llwytho.",
         "title": "Methwyd llwytho gweithiwr gwasanaeth"
     },
     "seshat": {
@@ -2849,7 +2849,7 @@
             "export_description_2": "Bydd y ffeil a allforir yn caniatáu i unrhyw un sy'n gallu ei darllen i ddadgryptio unrhyw negeseuon wedi'u hamgryptio y gallwch eu gweld, felly dylech fod yn ofalus i'w gadw'n ddiogel. I helpu gyda hyn, dylech nodi cyfrinair unigryw isod, a fydd ond yn cael ei ddefnyddio i amgryptio'r data a allforiwyd. Dim ond trwy ddefnyddio'r un cyfrinair y bydd modd mewnforio'r data.",
             "export_title": "Allforio allweddi ystafell",
             "file_to_import": "Ffeil i'w mewnforio",
-            "import_description_1": "Mae'r broses hon yn caniatáu i chi fewnforio allweddi amgryptio yr oeddech wedi'u hallforio o'r blaen o gleient Matrix arall. Yna byddwch yn gallu dadgryptio unrhyw negeseuon y gallai'r cleient arall eu dadgryptio.",
+            "import_description_1": "Mae'r broses hon yn caniatáu i chi fewnforio allweddi amgryptio yr oeddech wedi'u hallforio o'r blaen o gleient SOC Connect arall. Yna byddwch yn gallu dadgryptio unrhyw negeseuon y gallai'r cleient arall eu dadgryptio.",
             "import_description_2": "Bydd y ffeil allforio yn cael ei diogelu gyda chyfrinair. Dylech roi'r cyfrinair yma, i ddadgryptio'r ffeil.",
             "import_title": "Mewnforio allweddi ystafell",
             "phrase_cannot_be_empty": "Rhaid i gyfrinymadrodd beidio â bod yn wag",
@@ -3118,7 +3118,7 @@
             "unverified_session": "Sesiwn heb ei wirio",
             "unverified_session_explainer_1": "Nid yw'r sesiwn hon yn cefnogi amgryptio ac felly nid oes modd ei wirio.",
             "unverified_session_explainer_2": "Fyddwch chi ddim yn gallu cymryd rhan mewn ystafelloedd lle mae amgryptio wedi'i alluogi wrth ddefnyddio'r sesiwn hon.",
-            "unverified_session_explainer_3": "Ar gyfer y diogelwch a phreifatrwydd gorau, argymhellir defnyddio cleientiaid Matrix sy'n cefnogi amgryptio.",
+            "unverified_session_explainer_3": "Ar gyfer y diogelwch a phreifatrwydd gorau, argymhellir defnyddio cleientiaid SOC Connect sy'n cefnogi amgryptio.",
             "unverified_sessions": "Sesiynau heb eu gwirio",
             "unverified_sessions_explainer_1": "Mae sesiynau heb eu gwirio yn sesiynau sydd wedi mewngofnodi gyda'ch tystlythyrau ond nad ydynt wedi'u traws-wirio.",
             "unverified_sessions_explainer_2": "Dylech wneud yn arbennig o sicr eich bod yn adnabod y sesiynau hyn gan y gallent gynrychioli defnydd anawdurdodedig o'ch cyfrif.",
@@ -4061,7 +4061,7 @@
         "description": "Os byddwch yn parhau, efallai na fydd rhai nodweddion yn gweithio ac mae risg y gallech golli data yn y dyfodol. Diweddarwch eich porwr i barhau i ddefnyddio %(brand)s.",
         "title": "Nid yw %(brand)s yn cefnogi'r porwr hwn"
     },
-    "unsupported_server_description": "Mae'r gweinydd hwn yn defnyddio fersiwn hŷn o Matrix. Uwchraddiwch i Matrics %(version)s i ddefnyddio %(brand)s heb wallau.",
+    "unsupported_server_description": "Mae'r gweinydd hwn yn defnyddio fersiwn hŷn o SOC Connect. Uwchraddiwch i Matrics %(version)s i ddefnyddio %(brand)s heb wallau.",
     "unsupported_server_title": "Nid yw eich gweinydd yn cael ei gefnogi",
     "update": {
         "changelog": "Cofnod Newid",

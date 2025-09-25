@@ -213,7 +213,7 @@
         },
         "reset_password_email_field_description": "برای بازیابی حساب خود از آدرس ایمیل استفاده کنید",
         "reset_password_email_field_required_invalid": "آدرس ایمیل را وارد کنید (در این سرور اجباری است)",
-        "reset_password_email_not_associated": "به نظر نمی رسد آدرس ایمیل شما با شناسه Matrix در این سرور خانگی مرتبط باشد.",
+        "reset_password_email_not_associated": "به نظر نمی رسد آدرس ایمیل شما با شناسه SOC Connect در این سرور خانگی مرتبط باشد.",
         "reset_password_email_not_found_title": "این آدرس ایمیل یافت نشد",
         "server_picker_custom": "سرور دیگر",
         "server_picker_description_connect.socjsc.com": "به بزرگترین سرور عمومی با میلیون ها نفر کاربر بپیوندید",

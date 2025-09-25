@@ -66,7 +66,7 @@ export default class ElementPermalinkConstructor extends PermalinkConstructor {
     }
 
     /**
-     * Parses an app route (`(user|room)/identifier`) to a Matrix entity
+     * Parses an app route (`(user|room)/identifier`) to a SOC Connect entity
      * (room, user).
      * @param {string} route The app route
      * @returns {PermalinkParts}

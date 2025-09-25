@@ -246,7 +246,7 @@ export default abstract class BaseEventIndexManager {
      * loading events from. This is used only if fromEvent is used as well.
      *
      * @return {Promise<[IEventAndProfile]>} A promise that will resolve to an
-     * array of Matrix events that contain mxc URLs accompanied with the
+     * array of SOC Connect events that contain mxc URLs accompanied with the
      * historic profile of the sender.
      */
     public async loadFileEvents(args: ILoadArgs): Promise<IEventAndProfile[]> {

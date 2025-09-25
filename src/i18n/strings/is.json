@@ -317,7 +317,7 @@
         "github_issue": "Villutilkynning á GitHub",
         "introduction": "Ef þú hefur tilkynnt vandamál í gegnum GitHub, þá geta atvikaskrár hjálpað okkur við að finna ástæður vandamálanna. ",
         "logs_sent": "Sendi atvikaskrár",
-        "matrix_security_issue": "Til að tilkynna Matrix-tengd öryggisvandamál, skaltu lesa <a>Security Disclosure Policy</a> á matrix.org.",
+        "matrix_security_issue": "Til að tilkynna SOC Connect-tengd öryggisvandamál, skaltu lesa <a>Security Disclosure Policy</a> á matrix.org.",
         "preparing_download": "Undirbý niðurhal atvikaskráa",
         "preparing_logs": "Undirbý sendingu atvikaskráa",
         "send_logs": "Senda atvikaskrá",
@@ -1292,7 +1292,7 @@
         "moderator": "Umsjónarmaður",
         "restricted": "Takmarkað"
     },
-    "powered_by_matrix": "Keyrt með Matrix",
+    "powered_by_matrix": "Keyrt með SOC Connect",
     "powered_by_matrix_with_logo": "Dreifstýrt, dulritað spjall og samskipti keyrt með $matrixLogo",
     "presence": {
         "away": "Fjarverandi",
@@ -1544,7 +1544,7 @@
             "room_version_section": "Útgáfa spjallrásar",
             "space_predecessor": "Skoða eldri útgáfu af %(spaceName)s.",
             "space_upgrade_button": "Uppfæra þetta svæði í þá útgáfu spjallrásar sem mælt er með",
-            "unfederated": "Þessi spjallrás er ekki aðgengileg fjartengdum Matrix-netþjónum",
+            "unfederated": "Þessi spjallrás er ekki aðgengileg fjartengdum SOC Connect-netþjónum",
             "upgrade_button": "Uppfæra þessa spjallrás í útgáfu %(version)s",
             "upgrade_dialog_description_1": "Búa til nýja spjallrás með sama heiti, lýsingu og auðkennismynd",
             "upgrade_dialog_title": "Uppfæra útgáfu spjallrásar",
@@ -2138,7 +2138,7 @@
         "part_unknown_alias": "Óþekkjanlegt vistfang spjallrásar: %(roomAlias)s",
         "plain": "Sendir skilaboð sem óbreyttur texti án þess að túlka það sem markdown",
         "query": "Opnar spjall við viðkomandi notanda",
-        "query_not_found_phone_number": "Gat ekki fundið Matrix-auðkenni fyrir símanúmer",
+        "query_not_found_phone_number": "Gat ekki fundið SOC Connect-auðkenni fyrir símanúmer",
         "rageshake": "Senda villuskýrslu með atvikaskrám",
         "rainbow": "Sendir uppgefin skilaboð lituð sem regnboga",
         "rainbowme": "Sendir uppgefna tjáningu litaða sem regnboga",
@@ -2247,7 +2247,7 @@
             "network_dropdown_available_valid": "Lítur vel út",
             "network_dropdown_remove_server_adornment": "Fjarlægja netþjóninn “%(roomServer)s”",
             "network_dropdown_required_invalid": "Settu inn nafn á þjóni",
-            "network_dropdown_selected_label": "Birta: Matrix-spjallrásir",
+            "network_dropdown_selected_label": "Birta: SOC Connect-spjallrásir",
             "network_dropdown_selected_label_instance": "Sýna: %(instance)s spjallrásir (%(server)s)",
             "network_dropdown_your_server_description": "Netþjónninn þinn"
         }

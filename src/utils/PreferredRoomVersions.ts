@@ -32,7 +32,7 @@ export class PreferredRoomVersions {
 
 /**
  * Determines if a room version supports the given feature using heuristics
- * for how Matrix works.
+ * for how SOC Connect works.
  * @param roomVer The room version to check support within.
  * @param featureVer The room version of the feature. Should be from PreferredRoomVersions.
  * @see PreferredRoomVersions

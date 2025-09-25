@@ -128,7 +128,7 @@
     },
     "auth": {
         "autodiscovery_invalid": "Klaidingas serverio radimo atsakas",
-        "autodiscovery_invalid_hs": "Serverio adresas neatrodo esantis tinkamas Matrix serveris",
+        "autodiscovery_invalid_hs": "Serverio adresas neatrodo esantis tinkamas SOC Connect serveris",
         "autodiscovery_invalid_is": "Tapatybės serverio URL neatrodo kaip tinkamas tapatybės serveris",
         "autodiscovery_invalid_is_response": "Klaidingas tapatybės serverio radimo atsakas",
         "autodiscovery_invalid_json": "Klaidingas JSON",
@@ -195,7 +195,7 @@
         "reset_password_email_not_found_title": "Šis el. pašto adresas buvo nerastas",
         "server_picker_custom": "Kitas namų serveris",
         "server_picker_description_connect.socjsc.com": "Prisijunkite prie milijonų didžiausiame viešame serveryje nemokamai",
-        "server_picker_explainer": "Naudokite pageidaujamą Matrix namų serverį, jei tokį turite, arba talpinkite savo.",
+        "server_picker_explainer": "Naudokite pageidaujamą SOC Connect namų serverį, jei tokį turite, arba talpinkite savo.",
         "server_picker_failed_validate_homeserver": "Nepavyksta patvirtinti namų serverio",
         "server_picker_invalid_url": "Netinkamas URL",
         "server_picker_learn_more": "Apie namų serverius",
@@ -255,7 +255,7 @@
         "introduction": "Jei per GitHub pateikėte klaidą, derinimo žurnalai gali padėti mums nustatyti problemą. ",
         "log_request": "Norėdami padėti mums išvengti to ateityje, <a>atsiųskite mums žurnalus</a>.",
         "logs_sent": "Žurnalai išsiųsti",
-        "matrix_security_issue": "Norėdami pranešti apie su Matrix susijusią saugos problemą, perskaitykite Connect.socjsc.com <a>Saugumo Atskleidimo Poliiką</a>.",
+        "matrix_security_issue": "Norėdami pranešti apie su SOC Connect susijusią saugos problemą, perskaitykite Connect.socjsc.com <a>Saugumo Atskleidimo Poliiką</a>.",
         "preparing_download": "Ruošiamasi parsiųsti žurnalus",
         "preparing_logs": "Ruošiamasi išsiųsti žurnalus",
         "send_logs": "Siųsti žurnalus",
@@ -933,7 +933,7 @@
         "moderator": "Moderatorius",
         "restricted": "Apribotas"
     },
-    "powered_by_matrix": "Veikia su Matrix",
+    "powered_by_matrix": "Veikia su SOC Connect",
     "powered_by_matrix_with_logo": "Decentralizuotas, užšifruotų pokalbių &amp; bendradarbiavimas, paremtas $matrixLogo",
     "presence": {
         "busy": "Užsiėmęs",
@@ -1159,7 +1159,7 @@
             "room_version_section": "Kambario versija",
             "space_predecessor": "Peržiūrėti senesnę %(spaceName)s versiją.",
             "space_upgrade_button": "Atnaujinkite šią erdvę į rekomenduojamą kambario versiją",
-            "unfederated": "Šis kambarys nėra pasiekiamas nuotoliniams Matrix serveriams",
+            "unfederated": "Šis kambarys nėra pasiekiamas nuotoliniams SOC Connect serveriams",
             "upgrade_button": "Atnaujinti šį kambarį į %(version)s versiją",
             "upgrade_dialog_description": "Norint atnaujinti šį kambarį, reikia uždaryti esamą kambario instanciją ir vietoje jo sukurti naują kambarį. Norėdami suteikti kambario nariams kuo geresnę patirtį, mes:",
             "upgrade_dialog_description_1": "Sukurti naują kambarį su tuo pačiu pavadinimu, aprašymu ir pseudoportretu",
@@ -1494,7 +1494,7 @@
         "key_export_import": {
             "confirm_passphrase": "Patvirtinkite slaptafrazę",
             "enter_passphrase": "Įveskite slaptafrazę",
-            "export_description_1": "Šis procesas leidžia jums eksportuoti užšifruotuose kambariuose gautų žinučių raktus į lokalų failą. Tada jūs turėsite galimybę ateityje importuoti šį failą į kitą Matrix klientą, kad tas klientas taip pat galėtų iššifruoti tas žinutes.",
+            "export_description_1": "Šis procesas leidžia jums eksportuoti užšifruotuose kambariuose gautų žinučių raktus į lokalų failą. Tada jūs turėsite galimybę ateityje importuoti šį failą į kitą SOC Connect klientą, kad tas klientas taip pat galėtų iššifruoti tas žinutes.",
             "export_title": "Eksportuoti kambario raktus",
             "file_to_import": "Failas, kurį importuoti",
             "import_description_2": "Eksportavimo failas bus apsaugotas slaptafraze. Norėdami iššifruoti failą, čia turėtumėte įvesti slaptafrazę.",

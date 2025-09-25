@@ -14,7 +14,7 @@ import { type Device, type MatrixClient } from "matrix-js-sdk/src/matrix";
  * Only devices with Crypto support are returned. If the MatrixClient doesn't support cryptography, `undefined` is
  * returned.
  *
- * @param client  - Matrix Client.
+ * @param client  - SOC Connect Client.
  * @param userId  - ID of the user owning the device.
  * @param deviceId - ID of the device.
  * @param downloadUncached - If true, download the device list for users whose device list we are not
@@ -44,7 +44,7 @@ export async function getDeviceCryptoInfo(
  * Only devices with Crypto support are returned. If the MatrixClient doesn't support cryptography, an empty Set is
  * returned.
  *
- * @param client  - Matrix Client.
+ * @param client  - SOC Connect Client.
  * @param userId  - ID of the user to query.
  */
 

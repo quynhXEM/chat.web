@@ -182,7 +182,7 @@
         "autodiscovery_generic_failure": "Nie udało się uzyskać konfiguracji autodiscovery z serwera",
         "autodiscovery_hs_incompatible": "Twój serwer domowy jest za stary i nie obsługuje wymaganej minimalnej wersji API. Skontaktuj się z właścicielem serwera lub zaktualizuj swój serwer.",
         "autodiscovery_invalid": "Nieprawidłowa odpowiedź na wykrycie serwera domowego",
-        "autodiscovery_invalid_hs": "URL serwera domowego nie wygląda na prawidłowy serwer domowy Matrix",
+        "autodiscovery_invalid_hs": "URL serwera domowego nie wygląda na prawidłowy serwer domowy SOC Connect",
         "autodiscovery_invalid_hs_base_url": "Nieprawidłowy base_url dla m.homeserver",
         "autodiscovery_invalid_is": "URL serwera tożsamości nie wydaje się być prawidłowym serwerem tożsamości",
         "autodiscovery_invalid_is_base_url": "Nieprawidłowy base_url dla m.identity_server",
@@ -328,14 +328,14 @@
         "reset_password_button": "Nie pamiętasz hasła?",
         "reset_password_email_field_description": "Użyj adresu e-mail, aby odzyskać swoje konto",
         "reset_password_email_field_required_invalid": "Wprowadź adres e-mail (wymagane na tym serwerze domowym)",
-        "reset_password_email_not_associated": "Twój adres e-mail nie wydaje się być związany z ID Matrix na tym serwerze domowym.",
+        "reset_password_email_not_associated": "Twój adres e-mail nie wydaje się być związany z ID SOC Connect na tym serwerze domowym.",
         "reset_password_email_not_found_title": "Podany adres e-mail nie został znaleziony",
         "reset_password_title": "Resetuj swoje hasło",
         "server_picker_custom": "Inne serwery domowe",
-        "server_picker_description": "Możesz użyć niestandardowych opcji serwera, aby zalogować się na inny serwer Matrix, wprowadzając inny adres URL serwera. Umożliwi Ci to na korzystanie z %(brand)s z istniejącym już kontem Matrix na innym serwerze domowym.",
+        "server_picker_description": "Możesz użyć niestandardowych opcji serwera, aby zalogować się na inny serwer SOC Connect, wprowadzając inny adres URL serwera. Umożliwi Ci to na korzystanie z %(brand)s z istniejącym już kontem SOC Connect na innym serwerze domowym.",
         "server_picker_description_connect.socjsc.com": "Dołącz do milionów za darmo na największym publicznym serwerze",
         "server_picker_dialog_title": "Decyduj, gdzie Twoje konto jest hostowane",
-        "server_picker_explainer": "Korzystaj z wybranego przez Ciebie serwera domowego Matrix lub hostuj swój własny.",
+        "server_picker_explainer": "Korzystaj z wybranego przez Ciebie serwera domowego SOC Connect lub hostuj swój własny.",
         "server_picker_failed_validate_homeserver": "Nie można zweryfikować serwera domowego",
         "server_picker_intro": "Kontaktujemy się z miejscami, gdzie możesz założyć swoje konto tzw. 'serwery domowe'.",
         "server_picker_invalid_url": "Nieprawidłowy URL",
@@ -522,7 +522,7 @@
         "loading": "Wczytywanie…",
         "location": "Lokalizacja",
         "low_priority": "Niski priorytet",
-        "matrix": "Matrix",
+        "matrix": "SOC Connect",
         "message": "Wiadomość",
         "message_layout": "Wygląd wiadomości",
         "message_timestamp_invalid": "Nieprawidłowy znacznik czasu",
@@ -1334,7 +1334,7 @@
         "impossible_dialog_title": "Integracje nie są dozwolone"
     },
     "invite": {
-        "ask_anyway_description": "Nie znaleziono profilów dla identyfikatorów Matrix wymienionych poniżej - czy chcesz rozpocząć wiadomość prywatną mimo to?",
+        "ask_anyway_description": "Nie znaleziono profilów dla identyfikatorów SOC Connect wymienionych poniżej - czy chcesz rozpocząć wiadomość prywatną mimo to?",
         "ask_anyway_label": "Rozpocznij wiadomość prywatną mimo to",
         "ask_anyway_never_warn_label": "Rozpocznij wiadomość prywatną mimo to i nie ostrzegaj ponownie",
         "email_caption": "Zaproś przez e-mail",
@@ -1382,7 +1382,7 @@
         "to_space": "Zaproś do %(spaceName)s",
         "transfer_dial_pad_tab": "Klawiatura numeryczna",
         "transfer_user_directory_tab": "Katalog użytkownika",
-        "unable_find_profiles_description_default": "Nie znaleziono profilów dla identyfikatorów Matrix wymienionych poniżej - czy chcesz rozpocząć wiadomość prywatną mimo to?",
+        "unable_find_profiles_description_default": "Nie znaleziono profilów dla identyfikatorów SOC Connect wymienionych poniżej - czy chcesz rozpocząć wiadomość prywatną mimo to?",
         "unable_find_profiles_invite_label_default": "Zaproś mimo to",
         "unable_find_profiles_invite_never_warn_label_default": "Zaproś mimo to i nie ostrzegaj ponownie",
         "unable_find_profiles_title": "Wymienieni użytkownicy mogą nie istnieć",
@@ -1771,7 +1771,7 @@
         "moderator": "Moderator",
         "restricted": "Ograniczony"
     },
-    "powered_by_matrix": "Zasilane przez Matrix",
+    "powered_by_matrix": "Zasilane przez SOC Connect",
     "powered_by_matrix_with_logo": "Zdecentralizowany czat szyfrowany i współpraca oparta na $matrixLogo",
     "presence": {
         "away": "Z dala od urządzenia",
@@ -2214,7 +2214,7 @@
             "room_version_section": "Wersja pokoju",
             "space_predecessor": "Wyświetl starsze wersje %(spaceName)s.",
             "space_upgrade_button": "Zaktualizuj tą przestrzeń do zalecanej wersji pokoju",
-            "unfederated": "Ten pokój nie jest dostępny na zdalnych serwerach Matrix",
+            "unfederated": "Ten pokój nie jest dostępny na zdalnych serwerach SOC Connect",
             "upgrade_button": "Uaktualnij ten pokój do wersji %(version)s",
             "upgrade_dialog_description": "Ulepszenie tego pokoju wymaga zamknięcia bieżącej instancji pokoju i utworzenie nowego w jego miejsce. Aby zapewnić użytkownikom najlepsze możliwe doświadczenia:",
             "upgrade_dialog_description_1": "Utwórz nowy pokój o tej samej nazwie, opisie i awatarze",
@@ -2475,7 +2475,7 @@
         "title": "Serwer nie odpowiada"
     },
     "service_worker_error": {
-        "description": "%(brand)s wymaga workera usługi, aby móc załadować zabezpieczone media z repozytoriów Matrix. Ta funkcja nie jest obsługiwana przez Twoją przeglądarkę, więc niektóre media mogą się nie załadować.",
+        "description": "%(brand)s wymaga workera usługi, aby móc załadować zabezpieczone media z repozytoriów SOC Connect. Ta funkcja nie jest obsługiwana przez Twoją przeglądarkę, więc niektóre media mogą się nie załadować.",
         "title": "Nie udało się załadować workera usługi"
     },
     "seshat": {
@@ -2743,11 +2743,11 @@
         "key_export_import": {
             "confirm_passphrase": "Potwierdź hasło szyfrujące",
             "enter_passphrase": "Wpisz frazę",
-            "export_description_1": "Ten proces pozwala na eksport kluczy do wiadomości otrzymanych w zaszyfrowanych pokojach do pliku lokalnego. Wtedy będzie można importować plik do innego klienta Matrix w przyszłości, tak aby ów klient także mógł rozszyfrować te wiadomości.",
+            "export_description_1": "Ten proces pozwala na eksport kluczy do wiadomości otrzymanych w zaszyfrowanych pokojach do pliku lokalnego. Wtedy będzie można importować plik do innego klienta SOC Connect w przyszłości, tak aby ów klient także mógł rozszyfrować te wiadomości.",
             "export_description_2": "Eksportowany plik zezwoli każdemu, kto go odczyta na szyfrowanie i rozszyfrowanie wiadomości, które widzisz. By usprawnić proces, wprowadź hasło poniżej, które posłuży do szyfrowania eksportowanych danych. Importowanie danych będzie możliwe wyłącznie za pomocą tego hasła.",
             "export_title": "Eksportuj klucze pokoju",
             "file_to_import": "Plik do importu",
-            "import_description_1": "Ten proces pozwala na import zaszyfrowanych kluczy, które wcześniej zostały eksportowane z innego klienta Matrix. Będzie można odszyfrować każdą wiadomość, którą ów inny klient mógł odszyfrować.",
+            "import_description_1": "Ten proces pozwala na import zaszyfrowanych kluczy, które wcześniej zostały eksportowane z innego klienta SOC Connect. Będzie można odszyfrować każdą wiadomość, którą ów inny klient mógł odszyfrować.",
             "import_description_2": "Eksportowany plik będzie chroniony hasłem szyfrującym. Aby odszyfrować plik, wpisz hasło szyfrujące tutaj.",
             "import_title": "Importuj klucze pokoju",
             "phrase_cannot_be_empty": "Hasło szyfrujące nie może być puste",
@@ -2984,7 +2984,7 @@
             "unverified_session": "Sesja niezweryfikowana",
             "unverified_session_explainer_1": "Ta sesja nie wspiera szyfrowania, dlatego nie może zostać zweryfikowana.",
             "unverified_session_explainer_2": "Nie będziesz w stanie uczestniczyć w pokojach, gdzie szyfrowane jest włączone.",
-            "unverified_session_explainer_3": "Dla najlepszego bezpieczeństwa i prywatności zaleca się korzystania z klientów Matrix, które wspierają szyfrowanie.",
+            "unverified_session_explainer_3": "Dla najlepszego bezpieczeństwa i prywatności zaleca się korzystania z klientów SOC Connect, które wspierają szyfrowanie.",
             "unverified_sessions": "Sesje niezweryfikowane",
             "unverified_sessions_explainer_1": "Sesje niezweryfikowane to sesje, w których zalogowano się za pomocą Twoich danych, lecz nie zostały zweryfikowane inną sesją.",
             "unverified_sessions_explainer_2": "W tym przypadku dokładnie się upewnij, że rozpoznajesz takie sesje, ponieważ mogą ujawnić nieautoryzowane użycie Twojego konta.",
@@ -3123,7 +3123,7 @@
         "part_unknown_alias": "Nieznany adres pokoju: %(roomAlias)s",
         "plain": "Wysyła wiadomość jako zwykły tekst, bez jego interpretacji jako markdown",
         "query": "Otwiera czat z wybranym użytkownikiem",
-        "query_not_found_phone_number": "Nie można znaleźć ID Matrix dla numeru telefonu",
+        "query_not_found_phone_number": "Nie można znaleźć ID SOC Connect dla numeru telefonu",
         "rageshake": "Wyślij raport błędu z logami",
         "rainbow": "Wysyła podaną wiadomość w kolorach tęczy",
         "rainbowme": "Wysyła podaną emotkę w kolorach tęczy",
@@ -3240,7 +3240,7 @@
             "network_dropdown_available_valid": "Wygląda dobrze",
             "network_dropdown_remove_server_adornment": "Usuń serwer “%(roomServer)s”",
             "network_dropdown_required_invalid": "Wprowadź nazwę serwera",
-            "network_dropdown_selected_label": "Pokaż: Pokoje Matrix",
+            "network_dropdown_selected_label": "Pokaż: Pokoje SOC Connect",
             "network_dropdown_selected_label_instance": "Pokaż: Pokoje %(instance)s (%(server)s)",
             "network_dropdown_your_server_description": "Twój serwer"
         }
@@ -3819,7 +3819,7 @@
         "description": "Jeśli kontynuujesz, niektóre funkcje mogą przestać działać, jak i istnieje ryzyko utraty danych w przyszłości. Zaktualizuj przeglądarkę, aby nadal używać %(brand)s.",
         "title": "%(brand)s nie wspiera tej przeglądarki"
     },
-    "unsupported_server_description": "Ten serwer używa starszej wersji Matrix. Zaktualizuj do Matrix%(version)s, aby używać %(brand)s bez błędów.",
+    "unsupported_server_description": "Ten serwer używa starszej wersji SOC Connect. Zaktualizuj do SOC Connect%(version)s, aby używać %(brand)s bez błędów.",
     "unsupported_server_title": "Twój serwer nie jest wspierany",
     "update": {
         "changelog": "Dziennik zmian",

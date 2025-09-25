@@ -313,7 +313,7 @@ test.describe("Login", () => {
                 await page.getByRole("button", { name: "Can't confirm?" }).click();
 
                 // Then click outside the dialog and restart
-                await page.getByRole("link", { name: "Powered by Matrix" }).click({ force: true });
+                await page.getByRole("link", { name: "Powered by Nobody Network" }).click({ force: true });
                 await page.getByRole("button", { name: "Can't confirm?" }).click();
 
                 // Finally we actually continue

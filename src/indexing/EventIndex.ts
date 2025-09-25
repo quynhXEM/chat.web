@@ -520,7 +520,7 @@ export default class EventIndex extends EventEmitter {
                 continue;
             }
 
-            // Convert the plain JSON events into Matrix events so they get
+            // Convert the plain JSON events into SOC Connect events so they get
             // decrypted if necessary.
             const matrixEvents = res.chunk.map(eventMapper);
             let stateEvents: MatrixEvent[] = [];
