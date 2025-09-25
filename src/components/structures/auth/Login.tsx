@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2021 The Matrix.org Foundation C.I.C.
+Copyright 2015-2021 The connect.socjsc.com Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -77,6 +77,7 @@ interface IState {
     serverIsAlive: boolean;
     serverErrorIsFatal: boolean;
     serverDeadError?: ReactNode;
+    loading: boolean;
 }
 
 type OnPasswordLogin = {
@@ -109,6 +110,7 @@ export default class LoginComponent extends React.PureComponent<IProps, IState> 
             serverIsAlive: true,
             serverErrorIsFatal: false,
             serverDeadError: "",
+            loading: true,
         };
 
         // map from login step type to a function which will render a control
@@ -209,7 +211,7 @@ export default class LoginComponent extends React.PureComponent<IProps, IState> 
                     busyLoggingIn: false,
                     errorText,
                     // 401 would be the sensible status code for 'incorrect password'
-                    // but the login API gives a 403 https://matrix.org/jira/browse/SYN-744
+                    // but the login API gives a 403 https://connect.socjsc.com/jira/browse/SYN-744
                     // mentions this (although the bug is for UI auth which is not this)
                     // We treat both as an incorrect password
                     loginIncorrect: error.httpStatus === 401 || error.httpStatus === 403,
@@ -534,7 +536,6 @@ export default class LoginComponent extends React.PureComponent<IProps, IState> 
                 <AuthBody>
                     <h1>
                         {_t("action|sign_in")}
-                        {loader}
                     </h1>
                     {errorTextSection}
                     {serverDeadSection}
@@ -542,8 +543,10 @@ export default class LoginComponent extends React.PureComponent<IProps, IState> 
                         serverConfig={this.props.serverConfig}
                         onServerConfigChange={this.props.onServerConfigChange}
                         disabled={this.isBusy()}
+                        onLoading={(status: boolean) => this.setState({loading: status})}
                     />
-                    {this.renderLoginComponentForFlows()}
+                    <div className="" style={{ display: this.isBusy() ? "flex" : "none", flexDirection: "column", alignItems: "center", justifyContent: "center", marginBottom: this.isBusy() ? '20px' : '0px'}}>{loader}</div>
+                    {!this.state.loading && !this.isBusy() && this.renderLoginComponentForFlows()}
                     {footer}
                 </AuthBody>
             </AuthPage>

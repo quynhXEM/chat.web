@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2021 The Matrix.org Foundation C.I.C.
+Copyright 2015-2021 The connect.socjsc.com Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -123,6 +123,7 @@ interface IState {
     // the OIDC native login flow, when supported and enabled
     // if present, must be used for registration
     oidcNativeFlow?: OidcNativeFlow;
+    loading: boolean;
 }
 
 export default class Registration extends React.Component<IProps, IState> {
@@ -145,6 +146,7 @@ export default class Registration extends React.Component<IProps, IState> {
             serverIsAlive: true,
             serverErrorIsFatal: false,
             serverDeadError: "",
+            loading: true,
         };
 
         const { hsUrl, isUrl, delegatedAuthentication } = this.props.serverConfig;
@@ -600,7 +602,7 @@ export default class Registration extends React.Component<IProps, IState> {
             return (
                 <React.Fragment>
                     {ssoSection}
-                    <RegistrationForm
+                    {!this.state.loading && <RegistrationForm
                         defaultUsername={this.state.formVals.username}
                         defaultEmail={this.state.formVals.email}
                         defaultPhoneCountry={this.state.formVals.phoneCountry}
@@ -612,7 +614,7 @@ export default class Registration extends React.Component<IProps, IState> {
                         canSubmit={!this.state.serverErrorIsFatal}
                         matrixClient={this.state.matrixClient}
                         mobileRegister={this.props.mobileRegister}
-                    />
+                    />}
                 </React.Fragment>
             );
         }
@@ -635,32 +637,6 @@ export default class Registration extends React.Component<IProps, IState> {
                 mx_Login_serverErrorNonFatal: !this.state.serverErrorIsFatal,
             });
             serverDeadSection = <div className={classes}>{this.state.serverDeadError}</div>;
-        }
-
-        const signIn = (
-            <span className="mx_AuthBody_changeFlow">
-                {_t(
-                    "auth|sign_in_instead_prompt",
-                    {},
-                    {
-                        a: (sub) => (
-                            <AccessibleButton kind="link_inline" onClick={this.onLoginClick}>
-                                {sub}
-                            </AccessibleButton>
-                        ),
-                    },
-                )}
-            </span>
-        );
-
-        // Only show the 'go back' button if you're not looking at the form
-        let goBack;
-        if (this.state.doingUIAuth) {
-            goBack = (
-                <AccessibleButton kind="link" className="mx_AuthBody_changeFlow" onClick={this.onGoToFormClicked}>
-                    {_t("action|go_back")}
-                </AccessibleButton>
-            );
         }
 
         let body;
@@ -748,6 +724,7 @@ export default class Registration extends React.Component<IProps, IState> {
                                     onServerConfigChange={
                                         this.state.doingUIAuth ? undefined : this.props.onServerConfigChange
                                     }
+                                    onLoading={(status: boolean) => this.setState({loading: status})}
                                 />
                             }
                         >
@@ -757,8 +734,9 @@ export default class Registration extends React.Component<IProps, IState> {
                         {this.renderRegisterComponent()}
                     </div>
                     <div className="mx_Register_footerActions">
-                        {goBack}
-                        {signIn}
+                        <AccessibleButton kind="link" onClick={this.onLoginClick}>
+                            {_t("auth|sign_in_instead")}
+                        </AccessibleButton>
                     </div>
                 </Fragment>
             );

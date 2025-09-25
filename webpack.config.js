@@ -1,3 +1,4 @@
+/* eslint-disable matrix-org/require-copyright-header */
 /* eslint-disable quote-props */
 
 const dotenv = require("dotenv");
