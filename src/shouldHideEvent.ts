@@ -50,16 +50,14 @@ function memberEventDiff(ev: MatrixEvent): IDiff {
  *     hitting the settings store
  */
 export default function shouldHideEvent(ev: MatrixEvent, ctx?: IRoomState): boolean {
+    // Ẩn hoàn toàn mọi event đã bị xóa (redacted)
+    if (ev.isRedacted()) return true;
+    
     // Accessing the settings store directly can be expensive if done frequently,
     // so we should prefer using cached values if a RoomContext is available
     const isEnabled = ctx
         ? (name: keyof IRoomState) => ctx[name]
         : (name: SettingKey) => SettingsStore.getValue(name, ev.getRoomId());
-
-    // Hide redacted events
-    // Deleted events with a thread are always shown regardless of user preference
-    // to make sure that a thread can be accessible even if the root message is deleted
-    if (ev.isRedacted() && !isEnabled("showRedactions") && !ev.getThread()) return true;
 
     // Hide replacement events since they update the original tile (if enabled)
     if (ev.isRelation(RelationType.Replace)) return true;
