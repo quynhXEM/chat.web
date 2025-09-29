@@ -2571,7 +2571,7 @@
         "you_are_presenting": "Vi prezentas"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s sur %(osName)s",
-    "welcome_to_element": "Bonvenon al SOC Connect",
+    "welcome_to_element": "Bonvenon al",
     "widget": {
         "added_by": "Fenestraĵon aldonis",
         "capabilities_dialog": {

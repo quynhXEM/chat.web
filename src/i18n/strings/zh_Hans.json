@@ -3162,7 +3162,7 @@
         "you_are_presenting": "你正在展示"
     },
     "web_default_device_name": "%(appName)s：%(browserName)s在%(osName)s",
-    "welcome_to_element": "欢迎来到 SOC Connect",
+    "welcome_to_element": "欢迎来到",
     "widget": {
         "added_by": "挂件添加者",
         "capabilities_dialog": {

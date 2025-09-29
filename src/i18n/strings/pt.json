@@ -3907,7 +3907,7 @@
         "you_are_presenting": "Estás a apresentar"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s em %(osName)s",
-    "welcome_to_element": "Bem-vindo ao SOC Connect",
+    "welcome_to_element": "Bem-vindo ao",
     "widget": {
         "added_by": "Widget adicionado por",
         "capabilities_dialog": {

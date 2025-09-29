@@ -4073,7 +4073,7 @@
         "you_are_presenting": "Prezentujete"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s na %(osName)s",
-    "welcome_to_element": "Vítá vás SOC Connect",
+    "welcome_to_element": "Vítá vás",
     "widget": {
         "added_by": "Widget přidal",
         "capabilities_dialog": {

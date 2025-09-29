@@ -4058,7 +4058,7 @@
         "skip_lobby_toggle_option": "Join immediately"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s trên %(osName)s",
-    "welcome_to_element": "Chào mừng tới SOC Connect",
+    "welcome_to_element": "Chào mừng tới",
     "widget": {
         "added_by": "widget được thêm bởi",
         "capabilities_dialog": {

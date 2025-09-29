@@ -4298,7 +4298,7 @@
         "you_are_presenting": "Rydych chi'n cyflwyno"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s ar %(osName)s",
-    "welcome_to_element": "Croeso i SOC Connect",
+    "welcome_to_element": "Croeso i",
     "widget": {
         "added_by": "Ychwanegwyd teclyn gan",
         "capabilities_dialog": {

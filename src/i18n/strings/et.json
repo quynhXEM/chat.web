@@ -4058,7 +4058,7 @@
         "you_are_presenting": "Sina esitad"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s operatsioonisüsteemis %(osName)s",
-    "welcome_to_element": "Tere tulemast kasutama suhtlusrakendust SOC Connect",
+    "welcome_to_element": "Tere tulemast kasutama suhtlusrakendust",
     "widget": {
         "added_by": "Vidina lisaja",
         "capabilities_dialog": {

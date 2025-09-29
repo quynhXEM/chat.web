@@ -31,8 +31,6 @@ import { parseQs } from "./url_utils";
 import { getInitialScreenAfterLogin, getScreenFromLocation, init as initRouting, onNewScreen } from "./routing";
 import { UserFriendlyError } from "../languageHandler";
 
-logger.log(`Application is running in ${process.env.NODE_ENV} mode`);
-
 window.matrixLogger = logger;
 
 function onTokenLoginCompleted(): void {
@@ -48,7 +46,6 @@ function onTokenLoginCompleted(): void {
     url.searchParams.delete("state");
     url.searchParams.delete("code");
 
-    logger.log(`Redirecting to ${url.href} to drop delegated authentication params from queryparams`);
     window.history.replaceState(null, "", url.href);
 }
 
@@ -85,7 +82,6 @@ export async function loadApp(fragParams: QueryDict, matrixChatRef: React.Ref<Ma
         autoRedirect = true;
     }
     if (!hasPossibleToken && !isReturningFromSso && autoRedirect) {
-        logger.log("Bypassing app load to redirect to SSO");
         const tempCli = createClient({
             baseUrl: config.validated_server_config!.hsUrl,
             idBaseUrl: config.validated_server_config!.isUrl,
@@ -196,64 +192,65 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
         .then(data => data.json())
         .then(data => data.data);
 
+    // Helpers cập nhật thẻ trong <head>
+    const upsertMeta = (key: string, content?: string, attr: "name" | "property" = "name"): void => {
+        if (!content) return;
+        let el = document.head.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
+        if (!el) {
+            el = document.createElement("meta");
+            el.setAttribute(attr, key);
+            document.head.appendChild(el);
+        }
+        el.setAttribute("content", String(content));
+    };
+    const setFavicon = (href?: string): void => {
+        if (!href) return;
+        let icon = document.head.querySelector('link[rel="icon"]') as HTMLLinkElement | null;
+        if (!icon) {
+            icon = document.createElement("link");
+            icon.rel = "icon";
+            document.head.appendChild(icon);
+        }
+        icon.href = href;
+
+        let shortcut = document.head.querySelector('link[rel="shortcut icon"]') as HTMLLinkElement | null;
+        if (!shortcut) {
+            shortcut = document.createElement("link");
+            shortcut.rel = "shortcut icon";
+            document.head.appendChild(shortcut);
+        }
+        shortcut.href = href;
+
+        // Đồng bộ og:image nếu chưa có
+        upsertMeta("og:image", href, "property");
+    };
+    const getAssetUrl = (id?: string): string | undefined => {
+        if (!id) return undefined;
+        return `${process.env.REACT_APP_API_URL || ""}/assets/${id}`;
+    };
+
+    // Thiết lập favicon/title/description/theme-color từ metadata
+    const faviconUrl = getAssetUrl(metadata?.icon_raster_webp || metadata?.icon);
+    setFavicon(faviconUrl);
+    if (metadata?.name) document.title = metadata.name;
+    // Lấy ngôn ngữ hiện tại của trang, ưu tiên <html lang="...">
+    const currentLang = (document.documentElement.getAttribute("lang") || navigator.languages?.[0] || navigator.language || metadata?.default_language || "en").toString();
+    const langLc = currentLang.toLowerCase();
+    const langPrefix = langLc.split("-")[0];
+    const translations = Array.isArray(metadata?.translation) ? metadata.translation : [];
+    const findByLang = (code?: string): any | undefined => translations.find((t: any) => String(t?.language_code || "").toLowerCase() === String(code || "").toLowerCase());
+    const findByPrefix = (prefix?: string): any | undefined => translations.find((t: any) => String(t?.language_code || "").toLowerCase().split("-")[0] === String(prefix || "").toLowerCase());
+    const tExact = findByLang(langLc);
+    const tByPrefix = tExact ? undefined : findByPrefix(langPrefix);
+    const desc: string | undefined = tExact?.description || tByPrefix?.description || metadata?.description || translations?.[0]?.description;
+    if (desc) upsertMeta("description", desc);
+    if (metadata?.theme_color) upsertMeta("theme-color", metadata.theme_color);
+
     const servers = await fetch(`${process.env.DEV_API_URL || ""}/api/servers`)
         .then(data => data.json())
         .then(data => data.data);
     
     const serverDefault = servers.find((server: any) => server.is_default);
-
-    // {
-    //     "id": "af9508c5-70df-453e-9033-4064d0d8930a",
-    //     "status": "active",
-    //     "name": "SOC Connect",
-    //     "short_name": "Connect",
-    //     "description": "Giao tiếp tin cậy & bảo mật",
-    //     "type": "mobile",
-    //     "icon": "8f65b32f-bfd1-41fd-b87c-8915990131b7",
-    //     "url": null,
-    //     "background_color": null,
-    //     "theme_color": null,
-    //     "app_store_url": null,
-    //     "play_store_url": null,
-    //     "sort": 3,
-    //     "date_created": "2025-07-17T07:19:33.717Z",
-    //     "date_updated": "2025-09-29T08:05:47.010Z",
-    //     "user_created": "7f00c4b0-ab6e-474b-beb4-c21cbf026474",
-    //     "user_updated": "7f00c4b0-ab6e-474b-beb4-c21cbf026474",
-    //     "tagline": null,
-    //     "package_name": null,
-    //     "version": null,
-    //     "smtp_host": null,
-    //     "smtp_port": null,
-    //     "smtp_secure": null,
-    //     "smtp_reply_to": null,
-    //     "smtp_username": null,
-    //     "smtp_password": null,
-    //     "smtp_from_email": null,
-    //     "smtp_from_name": null,
-    //     "google_service_account": null,
-    //     "custom_fields": null,
-    //     "user_id": "66206d6d-093d-4db6-8d4b-1c5c5e3cc3e6",
-    //     "monitor_enabled": false,
-    //     "monitor_interval_hours": 4,
-    //     "monitor_next_check_at": null,
-    //     "monitor_collections": null,
-    //     "default_language": "vi-VN",
-    //     "icon_raster_webp": "f783d4fa-0bae-496b-a183-5a0a992a4eb9",
-    //     "translation": [
-    //         {
-    //             "id": 30,
-    //             "app_id": "af9508c5-70df-453e-9033-4064d0d8930a",
-    //             "language_code": "en-US",
-    //             "name": "SOC Connect",
-    //             "short_name": "Connect",
-    //             "description": "Reliable & secure communication",
-    //             "tagline": null
-    //         }
-    //     ],
-    //     "device_token": []
-    // }
-    // Add the newly built config to the actual config for use by the app
 
     SdkConfig.add({ validated_server_config: validatedConfig });
     SdkConfig.add({
@@ -271,6 +268,10 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
             android: metadata.play_store_url,
             fdroid: metadata.play_store_url,
             ios: metadata.app_store_url,
+        },
+        branding: {
+            auth_header_logo_url: getAssetUrl(metadata.icon_raster_webp),
+            welcome_background_url: metadata.url
         },
         default_theme: metadata.theme_color,
         default_country_code: metadata.default_language,
