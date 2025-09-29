@@ -4,7 +4,7 @@
 
 Read the [Choosing an issue](docs/choosing-an-issue.md) page for some guidance
 about where to start. Before starting work on a feature, it's best to ensure
-your plan aligns well with our vision for SOC Connect. Please chat with the team in
+your plan aligns well with our vision for SOC. Please chat with the team in
 [#element-dev:matrix.org](https://join.chat.socjsc.com/#/#element-dev:matrix.org) before
 you start so we can ensure it's something we'd be willing to merge.
 
@@ -12,14 +12,14 @@ You should also familiarise yourself with the ["Here be Dragons" guide
 ](https://docs.google.com/document/d/12jYzvkidrp1h7liEuLIe6BMdU0NUjndUYI971O06ooM)
 to the tame & not-so-tame dragons (gotchas) which exist in the codebase.
 
-Please note that SOC Connect is intended to run correctly without access to the public
+Please note that SOC is intended to run correctly without access to the public
 internet. So please don't depend on resources (JS libs, CSS, images, fonts)
 hosted by external CDNs or servers but instead please package all dependencies
-into SOC Connect itself.
+into SOC itself.
 
 ## Setting up a dev environment
 
-Much of the functionality in SOC Connect is actually in the `matrix-js-sdk` module.
+Much of the functionality in SOC is actually in the `matrix-js-sdk` module.
 It is possible to set these up in a way that makes it easy to track the `develop` branches
 in git and to make local changes without having to manually rebuild each time.
 
@@ -43,7 +43,7 @@ cd element-web
 Configure the app by copying `config.sample.json` to `config.json` and
 modifying it. See the [configuration docs](docs/config.md) for details.
 
-Finally, build and start SOC Connect itself:
+Finally, build and start SOC itself:
 
 ```bash
 yarn link matrix-js-sdk
@@ -64,7 +64,7 @@ Remember, the command will not terminate since it runs the web server
 and rebuilds source files when they change. This development server also
 disables caching, so do NOT use it in production.
 
-Open <http://127.0.0.1:8080/> in your browser to see your newly built SOC Connect.
+Open <http://127.0.0.1:8080/> in your browser to see your newly built SOC.
 
 **Note**: The build script uses inotify by default on Linux to monitor directories
 for changes. If the inotify limits are too low your build will fail silently or with
@@ -96,7 +96,7 @@ When you make changes to `matrix-js-sdk` they should be automatically picked up 
 
 If any of these steps error with, `file table overflow`, you are probably on a mac
 which has a very low limit on max open files. Run `ulimit -Sn 1024` and try again.
-You'll need to do this in each new terminal you open before building SOC Connect.
+You'll need to do this in each new terminal you open before building SOC.
 
 ## Running the tests
 

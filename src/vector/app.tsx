@@ -108,19 +108,19 @@ export async function loadApp(fragParams: QueryDict, matrixChatRef: React.Ref<Ma
 
     return (
         <wrapperOpts.Wrapper>
-            <StrictMode>
-                <MatrixChat
-                    ref={matrixChatRef}
-                    onNewScreen={onNewScreen}
-                    config={config}
-                    realQueryParams={params}
-                    startingFragmentQueryParams={fragParams}
-                    enableGuest={!config.disable_guests}
-                    onTokenLoginCompleted={onTokenLoginCompleted}
-                    initialScreenAfterLogin={initialScreenAfterLogin}
-                    defaultDeviceDisplayName={defaultDeviceName}
-                />
-            </StrictMode>
+                <StrictMode>
+                    <MatrixChat
+                        ref={matrixChatRef}
+                        onNewScreen={onNewScreen}
+                        config={config}
+                        realQueryParams={params}
+                        startingFragmentQueryParams={fragParams}
+                        enableGuest={!config.disable_guests}
+                        onTokenLoginCompleted={onTokenLoginCompleted}
+                        initialScreenAfterLogin={initialScreenAfterLogin}
+                        defaultDeviceDisplayName={defaultDeviceName}
+                    />
+                </StrictMode>
         </wrapperOpts.Wrapper>
     );
 }

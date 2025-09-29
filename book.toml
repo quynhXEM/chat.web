@@ -1,8 +1,8 @@
 # Documentation for possible options in this file is at
 # https://rust-lang.github.io/mdBook/format/config.html
 [book]
-title = "SOC Connect Web & Desktop"
-authors = ["New Vector Ltd.", "The SOC Connect Foundation C.I.C."]
+title = "SOC Web & Desktop"
+authors = ["New Vector Ltd.", "The SOC Foundation C.I.C."]
 language = "en"
 multilingual = false
 
