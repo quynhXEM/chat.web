@@ -108,19 +108,19 @@ export async function loadApp(fragParams: QueryDict, matrixChatRef: React.Ref<Ma
 
     return (
         <wrapperOpts.Wrapper>
-                <StrictMode>
-                    <MatrixChat
-                        ref={matrixChatRef}
-                        onNewScreen={onNewScreen}
-                        config={config}
-                        realQueryParams={params}
-                        startingFragmentQueryParams={fragParams}
-                        enableGuest={!config.disable_guests}
-                        onTokenLoginCompleted={onTokenLoginCompleted}
-                        initialScreenAfterLogin={initialScreenAfterLogin}
-                        defaultDeviceDisplayName={defaultDeviceName}
-                    />
-                </StrictMode>
+            <StrictMode>
+                <MatrixChat
+                    ref={matrixChatRef}
+                    onNewScreen={onNewScreen}
+                    config={config}
+                    realQueryParams={params}
+                    startingFragmentQueryParams={fragParams}
+                    enableGuest={!config.disable_guests}
+                    onTokenLoginCompleted={onTokenLoginCompleted}
+                    initialScreenAfterLogin={initialScreenAfterLogin}
+                    defaultDeviceDisplayName={defaultDeviceName}
+                />
+            </StrictMode>
         </wrapperOpts.Wrapper>
     );
 }
@@ -128,7 +128,6 @@ export async function loadApp(fragParams: QueryDict, matrixChatRef: React.Ref<Ma
 async function verifyServerConfig(): Promise<IConfigOptions> {
     let validatedConfig: ValidatedServerConfig;
     try {
-        logger.log("Verifying homeserver configuration");
 
         // Note: the query string may include is_url and hs_url - we only respect these in the
         // context of email validation. Because we don't respect them otherwise, we do not need
@@ -156,12 +155,6 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
         }
 
         if (hsUrl) {
-            logger.log("Config uses a default_hs_url - constructing a default_server_config using this information");
-            logger.warn(
-                "DEPRECATED CONFIG OPTION: In the future, default_hs_url will not be accepted. Please use " +
-                    "default_server_config instead.",
-            );
-
             wkConfig = {
                 "m.homeserver": {
                     base_url: hsUrl,
@@ -176,46 +169,113 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
 
         let discoveryResult: ClientConfig | undefined;
         if (!serverName && wkConfig) {
-            logger.log("Config uses a default_server_config - validating object");
             discoveryResult = await AutoDiscovery.fromDiscoveryConfig(wkConfig);
         }
 
         if (serverName) {
-            logger.log("Config uses a default_server_name - doing .well-known lookup");
-            logger.warn(
-                "DEPRECATED CONFIG OPTION: In the future, default_server_name will not be accepted. Please " +
-                    "use default_server_config instead.",
-            );
             discoveryResult = await AutoDiscovery.findClientConfig(serverName);
             if (discoveryResult["m.homeserver"].base_url === null && wkConfig) {
-                logger.log("Finding base_url failed but a default_server_config was found - using it as a fallback");
                 discoveryResult = await AutoDiscovery.fromDiscoveryConfig(wkConfig);
             }
         }
+
+
 
         validatedConfig = await AutoDiscoveryUtils.buildValidatedConfigFromDiscovery(serverName, discoveryResult, true);
     } catch (e) {
         const { hsUrl, isUrl, userId } = await Lifecycle.getStoredSessionVars();
         if (hsUrl && userId) {
-            logger.error(e);
-            logger.warn("A session was found - suppressing config error and using the session's homeserver");
-
-            logger.log("Using pre-existing hsUrl and isUrl: ", { hsUrl, isUrl });
             validatedConfig = await AutoDiscoveryUtils.validateServerConfigWithStaticUrls(hsUrl, isUrl, true);
         } else {
             // the user is not logged in, so scream
             throw e;
         }
     }
-
     validatedConfig.isDefault = true;
+    const metadata = await fetch(`${process.env.DEV_API_URL || ""}/api/metadata`)
+        .then(data => data.json())
+        .then(data => data.data);
 
-    // Just in case we ever have to debug this
-    logger.log("Using homeserver config:", validatedConfig);
+    const servers = await fetch(`${process.env.DEV_API_URL || ""}/api/servers`)
+        .then(data => data.json())
+        .then(data => data.data);
+    
+    const serverDefault = servers.find((server: any) => server.is_default);
 
+    // {
+    //     "id": "af9508c5-70df-453e-9033-4064d0d8930a",
+    //     "status": "active",
+    //     "name": "SOC Connect",
+    //     "short_name": "Connect",
+    //     "description": "Giao tiếp tin cậy & bảo mật",
+    //     "type": "mobile",
+    //     "icon": "8f65b32f-bfd1-41fd-b87c-8915990131b7",
+    //     "url": null,
+    //     "background_color": null,
+    //     "theme_color": null,
+    //     "app_store_url": null,
+    //     "play_store_url": null,
+    //     "sort": 3,
+    //     "date_created": "2025-07-17T07:19:33.717Z",
+    //     "date_updated": "2025-09-29T08:05:47.010Z",
+    //     "user_created": "7f00c4b0-ab6e-474b-beb4-c21cbf026474",
+    //     "user_updated": "7f00c4b0-ab6e-474b-beb4-c21cbf026474",
+    //     "tagline": null,
+    //     "package_name": null,
+    //     "version": null,
+    //     "smtp_host": null,
+    //     "smtp_port": null,
+    //     "smtp_secure": null,
+    //     "smtp_reply_to": null,
+    //     "smtp_username": null,
+    //     "smtp_password": null,
+    //     "smtp_from_email": null,
+    //     "smtp_from_name": null,
+    //     "google_service_account": null,
+    //     "custom_fields": null,
+    //     "user_id": "66206d6d-093d-4db6-8d4b-1c5c5e3cc3e6",
+    //     "monitor_enabled": false,
+    //     "monitor_interval_hours": 4,
+    //     "monitor_next_check_at": null,
+    //     "monitor_collections": null,
+    //     "default_language": "vi-VN",
+    //     "icon_raster_webp": "f783d4fa-0bae-496b-a183-5a0a992a4eb9",
+    //     "translation": [
+    //         {
+    //             "id": 30,
+    //             "app_id": "af9508c5-70df-453e-9033-4064d0d8930a",
+    //             "language_code": "en-US",
+    //             "name": "SOC Connect",
+    //             "short_name": "Connect",
+    //             "description": "Reliable & secure communication",
+    //             "tagline": null
+    //         }
+    //     ],
+    //     "device_token": []
+    // }
     // Add the newly built config to the actual config for use by the app
-    logger.log("Updating SdkConfig with validated discovery information");
-    SdkConfig.add({ validated_server_config: validatedConfig });
 
+    SdkConfig.add({ validated_server_config: validatedConfig });
+    SdkConfig.add({
+        brand: metadata.name,
+        room_directory: {
+            servers: servers.map((server: any) => server.domain)
+        },
+        default_server_config: {
+            "m.homeserver" : {
+                base_url: `https://${serverDefault.domain}`,
+                server_name: serverDefault.domain,
+            }
+        },
+        mobile_builds: {
+            android: metadata.play_store_url,
+            fdroid: metadata.play_store_url,
+            ios: metadata.app_store_url,
+        },
+        default_theme: metadata.theme_color,
+        default_country_code: metadata.default_language,
+        default_device_display_name: metadata.name,
+    });
+    
     return SdkConfig.get();
 }

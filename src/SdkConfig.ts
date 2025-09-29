@@ -17,7 +17,7 @@ import { type DeepReadonly, type Defaultize } from "./@types/common";
 
 // see element-web config.md for docs, or the IConfigOptions interface for dev docs
 export const DEFAULTS: DeepReadonly<IConfigOptions> = {
-    brand: "SOC Connect",
+    brand: "",
     help_url: "https://element.io/help",
     help_encryption_url: "https://element.io/help#encryption",
     integrations_ui_url: "https://scalar.vector.im/",
@@ -139,8 +139,6 @@ export default class SdkConfig {
     }
 
     public static add(cfg: Partial<ConfigOptions>): void {
-        
-        console.log("SdkConfig.add", cfg);
         
         SdkConfig.put(mergeConfig(SdkConfig.get(), cfg));
     }

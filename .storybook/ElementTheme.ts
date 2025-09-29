@@ -21,7 +21,7 @@ export default create({
     // Toolbar
     barBg: "#ffffff",
 
-    brandTitle: "SOC Connect",
+    brandTitle: "Chat Web Connect",
     brandUrl: "https://www.nobody.network/",
     brandImage: "https://www.nobody.network/default/theme/assets-custom/img/nobody-icon-darkmode.png?height=44",
     brandTarget: "_self",
