@@ -226,7 +226,7 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
     };
     const getAssetUrl = (id?: string): string | undefined => {
         if (!id) return undefined;
-        return `${process.env.REACT_APP_API_URL || ""}/assets/${id}`;
+        return `https://soc.socjsc.com/assets/${id}`;
     };
 
     // Thiết lập favicon/title/description/theme-color từ metadata
