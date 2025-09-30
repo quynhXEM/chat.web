@@ -9,10 +9,12 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type ReactElement } from "react";
 
+import SdkConfig from "../../../SdkConfig";
+
 const AuthFooter = (): ReactElement => {
     return (
         <footer className="mx_AuthFooter" role="contentinfo">
-            <a href="https://socjsc.com" style={{ cursor: "default"}} target="_blank" rel="noreferrer noopener">Copyright © <span  style={{ color: "white", cursor: "pointer" }}>SOC JSC</span></a>
+            <a href={window.location.origin} style={{ cursor: "default"}} target="_blank" rel="noreferrer noopener">Copyright © <span  style={{ color: "white", cursor: "pointer" }}>{SdkConfig.get().brand}</span></a>
         </footer>
     );
 };

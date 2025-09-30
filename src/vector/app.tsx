@@ -251,7 +251,7 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
         .then(data => data.data);
     
     const serverDefault = servers.find((server: any) => server.is_default);
-    console.log(metadata, serverDefault);
+    // console.log(metadata, serverDefault);
     
 
     SdkConfig.add({ validated_server_config: validatedConfig });
@@ -273,7 +273,6 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
         },
         branding: {
             auth_header_logo_url: getAssetUrl(metadata.icon_raster_webp),
-            welcome_background_url: "https://i.imgur.com/2kHFHnU.jpeg"
         },
         default_theme: metadata.theme_color,
         default_country_code: metadata.default_language,
