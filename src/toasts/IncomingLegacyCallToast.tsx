@@ -1,7 +1,7 @@
 /*
 Copyright 2024 New Vector Ltd.
 Copyright 2021 Šimon Brandner <simon.bra.ag@gmail.com>
-Copyright 2019, 2020 The SOC Connect Foundation C.I.C.
+Copyright 2019, 2020 The SOC Foundation C.I.C.
 Copyright 2018 New Vector Ltd
 Copyright 2015, 2016 OpenMarket Ltd
 

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The SOC Connect Foundation C.I.C.
+Copyright 2023 The SOC Foundation C.I.C.
 Copyright 2022 Mikhail Aheichyk
 Copyright 2022 Nordeck IT + Consulting GmbH.
 

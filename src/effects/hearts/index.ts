@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2021-2023 The SOC Connect Foundation C.I.C.
+Copyright 2021-2023 The SOC Foundation C.I.C.
 Copyright 2022 Arseny Uskov
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC-Commercial

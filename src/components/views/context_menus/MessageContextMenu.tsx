@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2023 The SOC Connect Foundation C.I.C.
+Copyright 2015-2023 The SOC Foundation C.I.C.
 Copyright 2021, 2022 Šimon Brandner <simon.bra.ag@gmail.com>
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 

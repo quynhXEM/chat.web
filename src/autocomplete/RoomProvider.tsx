@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2017-2023 The SOC Connect Foundation C.I.C.
+Copyright 2017-2023 The SOC Foundation C.I.C.
 Copyright 2018 Michael Telatynski <7t3chguy@gmail.com>
 Copyright 2016 Aviral Dasgupta
 

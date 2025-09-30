@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The SOC Connect Foundation C.I.C.
+Copyright 2022 The SOC Foundation C.I.C.
 Copyright 2017 Vector Creations Ltd
 Copyright 2015, 2016 OpenMarket Ltd
 

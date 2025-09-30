@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019, 2020 The SOC Connect Foundation C.I.C.
+Copyright 2019, 2020 The SOC Foundation C.I.C.
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 Copyright 2017, 2018 Vector Creations Ltd
 Copyright 2015, 2016 OpenMarket Ltd

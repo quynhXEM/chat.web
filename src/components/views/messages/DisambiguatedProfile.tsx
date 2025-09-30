@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022, 2023 The SOC Connect Foundation C.I.C.
+Copyright 2022, 2023 The SOC Foundation C.I.C.
 Copyright 2021 Šimon Brandner <simon.bra.ag@gmail.com>
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC-Commercial

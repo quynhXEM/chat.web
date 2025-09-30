@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2020 The SOC Connect Foundation C.I.C.
+Copyright 2020 The SOC Foundation C.I.C.
 Copyright 2018 New Vector Ltd
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC-Commercial

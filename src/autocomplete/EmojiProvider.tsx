@@ -1,7 +1,7 @@
 /*
 Copyright 2024 New Vector Ltd.
 Copyright 2022 Ryan Browne <code@commonlawfeature.com>
-Copyright 2019 The SOC Connect Foundation C.I.C.
+Copyright 2019 The SOC Foundation C.I.C.
 Copyright 2017, 2018 New Vector Ltd
 Copyright 2017 Vector Creations Ltd
 Copyright 2016 Aviral Dasgupta

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019 The SOC Connect Foundation C.I.C.
+Copyright 2019 The SOC Foundation C.I.C.
 Copyright 2017 Travis Ralston
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-SOC-Commercial
