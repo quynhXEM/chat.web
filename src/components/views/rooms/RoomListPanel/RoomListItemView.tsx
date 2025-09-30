@@ -121,7 +121,7 @@ export const RoomListItemView = memo(function RoomListItemView({
                     </div>
                     {vm.messagePreview && (
                         <div className="mx_RoomListItemView_messagePreview" title={vm.messagePreview}>
-                            {vm.messagePreview}
+                            {vm.messagePreview.substring(0, 20)}...
                         </div>
                     )}
                 </div>
