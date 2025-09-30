@@ -20,10 +20,10 @@ module.exports = async (req, res) => {
       },
     });
 
-    const text = await upstream.json();
+    const text = await upstream.text();
     res
       .status(upstream.status)
-      .type(upstream.headers.get("content-type") || "application/json")
+      .setHeader("Content-Type", upstream.headers.get("content-type") || "application/json")
       .send(text);
   } catch (err) {
     console.error("Proxy error:", err);
