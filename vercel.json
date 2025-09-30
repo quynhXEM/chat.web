@@ -3,10 +3,12 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "webapp" } },
      { "src": "api/servers.js", "use": "@vercel/node", "config": { "tsconfig": "tsconfig.api.json" } }
+     { "src": "api/metadata.js", "use": "@vercel/node", "config": { "tsconfig": "tsconfig.api.json" } }
   ],
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/api/servers", "destination": "/api/servers.js" },
+    { "source": "/api/metadata", "destination": "/api/metadata.js" },
     { "source": "/((?!api|_next|.*\\..*).*)", "destination": "/webapp/index.html" }
   ],
   "headers": [
