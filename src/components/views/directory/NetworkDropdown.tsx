@@ -254,7 +254,7 @@ export const NetworkDropdown: React.FC<IProps> = ({ protocols, config, setConfig
                 option?.key
                     ? _t("spotlight|public_rooms|network_dropdown_selected_label_instance", {
                           server: option.key.roomServer,
-                          instance: option.key.instanceId ? option.label : "Matrix",
+                          instance: option.key.instanceId ? option.label : "",
                       })
                     : _t("spotlight|public_rooms|network_dropdown_selected_label")
             }

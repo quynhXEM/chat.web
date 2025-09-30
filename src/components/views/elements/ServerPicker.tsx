@@ -103,6 +103,7 @@ const ServerPicker: React.FC<IProps> = ({ title, dialogTitle, serverConfig, onSe
     }
 
     let serverName: React.ReactNode = serverConfig.isNameResolvable ? serverConfig.hsName : serverConfig.hsUrl;
+
     useEffect(() => {
         if (servers.length == 0) return;
         const defaultServer = servers.find((server: any) => server.isDefault);

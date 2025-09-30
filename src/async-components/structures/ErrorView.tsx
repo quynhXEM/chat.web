@@ -29,13 +29,16 @@ interface IProps {
 }
 
 export const ErrorView: React.FC<IProps> = ({ title, messages, footer, children }) => {
+    const config = SdkConfig.get();
+    const brand = config.brand ?? "Chat Web Connect";
+    const logo = config.branding?.auth_header_logo_url ?? "themes/element/img/logos/element-app-logo.png";
     return (
         <div className="mx_ErrorView cpd-theme-light">
             <img
                 className="mx_ErrorView_logo"
                 height="160"
-                src="themes/element/img/logos/element-app-logo.png"
-                alt="SOC Connect"
+                src={logo}
+                alt={brand}
             />
             <div className="mx_ErrorView_container">
                 <Heading size="md" weight="semibold">

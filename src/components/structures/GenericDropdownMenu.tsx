@@ -129,20 +129,20 @@ export function GenericDropdownMenu<T>({
         .find((option) => calculateKey(option.key, toKey) === valueKey);
     let contextMenuOptions: JSX.Element;
     if (options && isGenericDropdownMenuGroupArray(options)) {
+        console.log(options);
+        
         contextMenuOptions = (
             <>
                 {options.map((group) => (
                     <GenericDropdownMenuGroup
                         key={calculateKey(group.key, toKey)}
                         label={group.label}
-                        description={group.description}
                         adornment={group.adornment}
                     >
                         {group.options.map((option) => (
                             <GenericDropdownMenuOption
                                 key={calculateKey(option.key, toKey)}
-                                label={option.label}
-                                description={option.description}
+                                label={group.label}
                                 onClick={(ev: ButtonEvent) => {
                                     onChange(option.key);
                                     closeMenu();
