@@ -438,7 +438,8 @@
         "username": "Uzantonomo",
         "verification_cancelled": "Kontrolo nuliĝis",
         "view_message": "Montri mesaĝon",
-        "warning": "Averto"
+        "warning": "Averto",
+        "getting_server": "Ricevante liston de serviloj..."
     },
     "composer": {
         "autocomplete": {

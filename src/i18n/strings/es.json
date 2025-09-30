@@ -509,7 +509,8 @@
         "video": "Vídeo",
         "video_room": "Sala de vídeo",
         "view_message": "Ver mensaje",
-        "warning": "Advertencia"
+        "warning": "Advertencia",
+        "getting_server": "Obteniendo lista de servidores..."
     },
     "composer": {
         "autocomplete": {

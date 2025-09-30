@@ -529,7 +529,8 @@
         "video": "Βίντεο",
         "video_room": "Αίθουσα βίντεο",
         "view_message": "Προβολή μηνύματος",
-        "warning": "Προειδοποίηση"
+        "warning": "Προειδοποίηση",
+        "getting_server": "Λήψη λίστας διακομιστών..."
     },
     "composer": {
         "autocomplete": {

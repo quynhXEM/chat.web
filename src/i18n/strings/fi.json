@@ -568,7 +568,8 @@
         "video": "Video",
         "video_room": "Videohuone",
         "view_message": "Näytä viesti",
-        "warning": "Varoitus"
+        "warning": "Varoitus",
+        "getting_server": "Palvelinten luettelon hakeminen..."
     },
     "composer": {
         "autocomplete": {

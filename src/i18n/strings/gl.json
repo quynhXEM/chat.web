@@ -467,7 +467,8 @@
         "video": "Vídeo",
         "video_room": "Sala de vídeo",
         "view_message": "Ver mensaxe",
-        "warning": "Aviso"
+        "warning": "Aviso",
+        "getting_server": "Obtendo lista de servidores..."
     },
     "composer": {
         "autocomplete": {

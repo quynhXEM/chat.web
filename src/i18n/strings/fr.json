@@ -604,7 +604,8 @@
         "video": "Vidéo",
         "video_room": "Salon vidéo",
         "view_message": "Afficher le message",
-        "warning": "Attention"
+        "warning": "Attention",
+        "getting_server": "Récupération de la liste des serveurs..."
     },
     "composer": {
         "autocomplete": {

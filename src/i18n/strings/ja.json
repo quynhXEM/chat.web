@@ -515,7 +515,8 @@
         "video": "動画",
         "video_room": "ビデオ通話ルーム",
         "view_message": "メッセージを表示",
-        "warning": "警告"
+        "warning": "警告",
+        "getting_server": "サーバーリストを取得しています..."
     },
     "composer": {
         "autocomplete": {

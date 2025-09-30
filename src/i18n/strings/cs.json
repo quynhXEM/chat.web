@@ -606,7 +606,8 @@
         "video": "Video",
         "video_room": "Video místnost",
         "view_message": "Zobrazit zprávu",
-        "warning": "Upozornění"
+        "warning": "Upozornění",
+        "getting_server": "Získávání seznamu serverů..."
     },
     "composer": {
         "autocomplete": {

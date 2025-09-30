@@ -604,7 +604,8 @@
         "video": "Video",
         "video_room": "Videochat",
         "view_message": "Nachricht anzeigen",
-        "warning": "Warnung"
+        "warning": "Warnung",
+        "getting_server": "Serverliste wird abgerufen..."
     },
     "composer": {
         "autocomplete": {

@@ -609,7 +609,8 @@
         "video": "Fideo",
         "video_room": "Ystafell fideo",
         "view_message": "Gweld neges",
-        "warning": "Rhybudd"
+        "warning": "Rhybudd",
+        "getting_server": "Yn cael y rhestr o gweinyddion..."
     },
     "composer": {
         "autocomplete": {

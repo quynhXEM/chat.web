@@ -604,7 +604,8 @@
         "video": "Video",
         "video_room": "Videotuba",
         "view_message": "Vaata sõnumit",
-        "warning": "Hoiatus"
+        "warning": "Hoiatus",
+        "getting_server": "Serverite loendi saamine..."
     },
     "composer": {
         "autocomplete": {

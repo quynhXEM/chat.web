@@ -606,7 +606,8 @@
         "video": "Відео",
         "video_room": "Відеокімната",
         "view_message": "Переглянути повідомлення",
-        "warning": "Попередження"
+        "warning": "Попередження",
+        "getting_server": "Отримання списку серверів..."
     },
     "composer": {
         "autocomplete": {

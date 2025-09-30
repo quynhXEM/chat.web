@@ -421,7 +421,8 @@
         "verification_cancelled": "تأیید هویت لغو شد",
         "video": "ویدئو",
         "view_message": "مشاهده پیام",
-        "warning": "هشدار"
+        "warning": "هشدار",
+        "getting_server": "دریافت لیست سرورها..."
     },
     "composer": {
         "autocomplete": {
