@@ -35,10 +35,10 @@ const QuickThemeSwitcher: React.FC<Props> = ({ requestClose }) => {
     const { systemThemeActivated } = themeState;
 
     const themeOptions = [
-        {
-            id: MATCH_SYSTEM_THEME_ID,
-            name: _t("theme|match_system"),
-        },
+        // {
+        //     id: MATCH_SYSTEM_THEME_ID,
+        //     name: _t("theme|match_system"),
+        // },
         ...orderedThemes,
     ];
 
