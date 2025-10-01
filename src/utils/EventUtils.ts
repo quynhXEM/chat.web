@@ -226,7 +226,7 @@ export async function fetchInitialEvent(
         const eventData = await client.fetchRoomEvent(roomId, eventId);
         initialEvent = new MatrixEvent(eventData);
     } catch {
-        logger.warn("Could not find initial event: " + eventId);
+        // logger.warn("Could not find initial event: " + eventId);
         initialEvent = null;
     }
 
@@ -238,7 +238,7 @@ export async function fetchInitialEvent(
         try {
             room?.createThread(threadId, rootEvent, [initialEvent], true);
         } catch {
-            logger.warn("Could not find root event: " + threadId);
+            // logger.warn("Could not find root event: " + threadId);
         }
     }
 

@@ -362,7 +362,7 @@ export function replaceByRegexes(text: string, mapping: IVariables | Tags): stri
                 // in counterpart
                 regexpString !== "%\\(locale\\)s"
             ) {
-                console.log(`Could not find ${regexp} in ${text}`);
+                // console.log(`Could not find ${regexp} in ${text}`);
             }
         }
     }

@@ -83,7 +83,7 @@ export const RoomListItemView = memo(function RoomListItemView({
 
     const content = (
         <Flex
-            as="button"
+            as="div"
             ref={ref}
             className={classNames("mx_RoomListItemView", {
                 mx_RoomListItemView_hover: showHoverDecoration,
