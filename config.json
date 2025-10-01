@@ -37,7 +37,7 @@
         "https://connect.socjsc.com": true,
         "https://matrix-client.connect.socjsc.com": false
     },
-    "setting_defaults": true,
+    "setting_defaults": false,
     "jitsi": {
         "preferred_domain": "meet.element.io"
     },
