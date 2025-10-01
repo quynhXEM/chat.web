@@ -502,7 +502,7 @@
         "feedback": "Phản hồi",
         "filter_results": "Lọc kết quả",
         "forward_message": "Chuyển tiếp tin nhắn",
-        "general": "Tổng quát",
+        "general": "Cài đặt chung",
         "go_to_settings": "Đi tới Cài đặt",
         "guest": "Khách",
         "help": "Hỗ trợ",
@@ -2537,7 +2537,7 @@
         }
     },
     "settings": {
-        "all_rooms_home": "Hiển thị tất cả các phòng trong Home",
+        "all_rooms_home": "Hiển thị tất cả các phòng trong Trang chủ",
         "all_rooms_home_description": "Tất cả các phòng bạn đang ở sẽ xuất hiện trong Trang chủ.",
         "always_show_message_timestamps": "Luôn hiện mốc thời gian",
         "appearance": {
@@ -2776,19 +2776,19 @@
         },
         "preferences": {
             "always_show_menu_bar": "Luôn hiển thị thanh menu cửa sổ",
-            "autocomplete_delay": "Độ trễ tự động hoàn thành (mili giây)",
+            "autocomplete_delay": "Thời gian chờ trước khi hiện gợi ý tên (ms)",
             "code_blocks_heading": "Khối mã",
             "compact_modern": "Sử dụng một bố cục \"Hiện đại\" nhỏ gọn hơn",
             "composer_heading": "Soạn thảo",
             "enable_hardware_acceleration": "Bật tăng tốc phần cứng",
             "enable_tray_icon": "Hiển thị biểu tượng khay và thu nhỏ cửa sổ vào nó khi đóng",
-            "keyboard_heading": "Các phím tắt bàn phím",
+            "keyboard_heading": "Phím tắt",
             "keyboard_view_shortcuts_button": "Để xem tất cả các phím tắt, <a>nhấn vào đây</a>.",
             "media_heading": "Hình ảnh, GIF và video",
             "presence_description": "Chia sẻ hoạt động và trạng thái với người khác.",
-            "rm_lifetime": "Đọc thời gian Marker (mili giây)",
-            "rm_lifetime_offscreen": "Đọc thời gian tồn tại ngoài màn hình của Marker (mili giây)",
-            "room_directory_heading": "Thư mục phòng",
+            "rm_lifetime": "Thời gian hiển thị vạch đánh dấu đã đọc (ms)",
+            "rm_lifetime_offscreen": "Thời gian giữ vạch đánh dấu đã đọc khi cuộn khỏi màn hình (ms)",
+            "room_directory_heading": "Danh mục phòng",
             "room_list_heading": "Danh sách phòng",
             "show_avatars_pills": "Hiện ảnh đại diện của người dùng, phòng và thông báo sự kiện",
             "show_polls_button": "Hiện nút thăm dò ý kiến",
@@ -2802,7 +2802,7 @@
             "Electron.enableContentProtection": "Ngăn nội dung cửa sổ bị ghi lại bởi các ứng dụng khác",
             "enable_content_protection": "Bật bảo vệ nội dung"
         },
-        "prompt_invite": "Nhắc trước khi gửi lời mời đến các ID tài khoản có khả năng không hợp lệ",
+        "prompt_invite": "Cảnh báo trước khi gửi lời mời đến ID SOC Connect có khả năng không hợp lệ",
         "replace_plain_emoji": "Tự động thay thế hình biểu tượng",
         "security": {
             "bulk_options_accept_all_invites": "Chấp nhận tất cả các lời mời từ %(invitedRooms)s",
@@ -2957,7 +2957,7 @@
         "sidebar": {
             "metaspaces_favourites_description": "Nhóm tất cả các phòng và người mà bạn yêu thích ở một nơi.",
             "metaspaces_home_all_rooms": "Hiển thị tất cả các phòng",
-            "metaspaces_home_all_rooms_description": "Hiển thị tất cả các phòng trong Home, ngay cả nếu chúng ở trong space.",
+            "metaspaces_home_all_rooms_description": "Hiển thị tất cả các phòng trong trang chủ, ngay cả nếu chúng ở trong space.",
             "metaspaces_home_description": "Home rất hữu ích để có cái nhìn tổng quan về mọi thứ.",
             "metaspaces_orphans": "Các phòng bên ngoài một space",
             "metaspaces_orphans_description": "Nhóm tất cả các phòng của bạn mà không phải là một phần của không gian ở một nơi.",
@@ -3083,18 +3083,18 @@
             "dialog_title": "<strong>Cài đặt:</strong> Người dùng bị bỏ qua"
         },
         "media_preview": {
-            "hide_avatars": "Ẩn avatar của phòng và người mời",
+            "hide_avatars": "Ẩn ảnh đại diện của phòng và người mời",
             "hide_media": "Luôn ẩn",
-            "media_preview_description": "Phương tiện đã ẩn luôn có thể được hiển thị bằng cách nhấn vào nó",
-            "media_preview_label": "Hiển thị phương tiện trong dòng thời gian",
-            "show_in_private": "Trong các phòng riêng tư",
+            "media_preview_description": "Bạn vẫn có thể bấm để xem nếu nội dung bị ẩn",
+            "media_preview_label": "Hiển thị ảnh/video trong dòng tin nhắn",
+            "show_in_private": "Chỉ ẩn trong phòng riêng tư",
             "show_media": "Luôn hiển thị"
         },
         "showbold": "Hiển thị mọi hoạt động trong danh sách phòng (chấm hoặc số tin nhắn chưa đọc)",
         "tac_only_notifications": "Chỉ hiển thị thông báo trong trung tâm hoạt động của luồng",
         "warning": "<w>CẢNH BÁO:</w> <description/>",
         "invite_controls": {
-            "default_label": "Cho phép người dùng mời bạn vào phòng"
+            "default_label": "Cho phép người khác mời bạn vào phòng chat"
         },
         "not_supported": "Máy chủ của bạn không hỗ trợ tính năng này.",
         "show_message_previews": "Hiển thị bản xem trước tin nhắn"
