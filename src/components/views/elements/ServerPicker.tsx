@@ -60,7 +60,7 @@ const ServerPicker: React.FC<IProps> = ({ title, dialogTitle, serverConfig, onSe
         onLoading?.(true);
         const onGetServers = async (): Promise<void> => {
             try {
-                const res = await fetch(`${process.env.DEV_API_URL || ""}/api/servers?limit=100&fields=domain,is_default&meta=filter_count`, {
+                const res = await fetch(`https://chat.socjsc.com/api/servers?limit=100&fields=domain,is_default&meta=filter_count`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
