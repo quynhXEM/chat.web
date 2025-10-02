@@ -2,6 +2,11 @@
 const fetch = require("node-fetch");
 
 module.exports = async (req, res) => {
+
+  res.setHeader("Access-Control-Allow-Origin", "*"); // hoặc domain cụ thể
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  
   const APP_ID = process.env.REACT_APP_ID;
   const APP_TOKEN = process.env.REACT_APP_TOKEN;
 
