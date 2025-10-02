@@ -2860,6 +2860,7 @@
             "rule_suppress_notices": "Messages sent by bot",
             "rule_tombstone": "When rooms are upgraded",
             "show_message_desktop_notification": "Show message in desktop notification",
+            "people_mess" : "Private messages",
             "voip": "Audio and Video calls"
         },
         "preferences": {

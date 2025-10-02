@@ -106,13 +106,13 @@ export default class LabsUserSettingsTab extends React.Component<EmptyObject> {
 
         return (
             <SettingsTab>
-                <SettingsSection heading={_t("labs|beta_section")}>
+                {/* <SettingsSection heading={_t("labs|beta_section")}>
                     <SettingsSubsectionText>
                         {_t("labs|beta_description", { brand: SdkConfig.get("brand") })}
                     </SettingsSubsectionText>
-                    {betaSection}
-                </SettingsSection>
-
+                    
+                </SettingsSection> */}
+                {betaSection}
                 {labsSections && (
                     <SettingsSection heading={_t("labs|experimental_section")}>
                         <SettingsSubsectionText>

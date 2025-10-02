@@ -70,7 +70,6 @@ export default class SetIntegrationManager extends React.Component<EmptyObject, 
                 <div className="mx_SettingsFlag">
                     <div className="mx_SetIntegrationManager_heading_manager">
                         <Heading size="3">{_t("integration_manager|manage_title")}</Heading>
-                        <Heading size="4">{managerName}</Heading>
                     </div>
                 </div>
                 <SettingsSubsectionText>{bodyText}</SettingsSubsectionText>
