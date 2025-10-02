@@ -111,23 +111,23 @@ export default class HelpUserSettingsTab extends React.Component<EmptyObject, IS
             <SettingsSubsection heading={_t("common|credits")}>
                 <SettingsSubsectionText>
                     <ul>
-                        <li>
+                        {/* <li>
                             {_t(
                                 "credits|default_cover_photo",
                                 {},
                                 {
-                                    // photo: (sub) => (
-                                    //     <ExternalLink
-                                    //         href="themes/element/img/backgrounds/lake.jpg"
-                                    //         rel="noreferrer noopener"
-                                    //         target="_blank"
-                                    //     >
-                                    //         {sub}
-                                    //     </ExternalLink>
-                                    // ),
-                                    // author: (sub) => (
-                                    //     <ExternalLink href="https://www.flickr.com/golan">{sub}</ExternalLink>
-                                    // ),
+                                    photo: (sub) => (
+                                        <ExternalLink
+                                            href="themes/element/img/backgrounds/lake.jpg"
+                                            rel="noreferrer noopener"
+                                            target="_blank"
+                                        >
+                                            {sub}
+                                        </ExternalLink>
+                                    ),
+                                    author: (sub) => (
+                                        <ExternalLink href="https://www.flickr.com/golan">{sub}</ExternalLink>
+                                    ),
                                     terms: (sub) => (
                                         <ExternalLink
                                             href="https://creativecommons.org/licenses/by-sa/4.0/"
@@ -139,7 +139,7 @@ export default class HelpUserSettingsTab extends React.Component<EmptyObject, IS
                                     ),
                                 },
                             )}
-                        </li>
+                        </li> */}
                         <li>
                             {_t(
                                 "credits|twemoji_colr",

@@ -1270,7 +1270,7 @@
         "change_server_prompt": "Nếu bạn không muốn sử dụng <server /> để khám phá và có thể phát hiện ra bởi các liên hệ hiện có mà bạn biết, hãy nhập một máy chủ nhận dạng khác bên dưới.",
         "checking": "Kiểm tra máy chủ",
         "description_connected": "Bạn hiện đang sử dụng <server></server> để khám phá và có thể khám phá những liên hệ hiện có mà bạn biết. Bạn có thể thay đổi máy chủ nhận dạng của mình bên dưới.",
-        "description_disconnected": "Bạn hiện không sử dụng máy chủ nhận dạng. Để khám phá và có thể khám phá các địa chỉ liên hệ hiện có mà bạn biết, hãy thêm một địa chỉ liên hệ bên dưới.",
+        "description_disconnected": "Bạn hiện không sử dụng máy chủ định danh. Để khám phá và có thể khám phá các địa chỉ liên hệ hiện có mà bạn biết, hãy thêm một địa chỉ máy chủ liên hệ bên dưới.",
         "description_optional": "Sử dụng máy chủ định danh là tùy chọn. Nếu bạn chọn không sử dụng máy chủ định danh, bạn sẽ không thể bị phát hiện bởi những người dùng khác và bạn sẽ không thể mời người khác qua thư điện tử hoặc số điện thoại.",
         "disconnect": "Ngắt kết nối máy chủ định danh",
         "disconnect_anyway": "Vẫn ngắt kết nối",
@@ -1289,7 +1289,7 @@
         "suggestions_2": "liên hệ với quản trị viên của máy chủ nhận dạng <idserver />",
         "suggestions_3": "đợi và thử lại sau",
         "url": "Máy chủ định danh (%(server)s)",
-        "url_field_label": "Nhập một máy chủ nhận dạng mới",
+        "url_field_label": "Nhập một máy chủ định danh mới",
         "url_not_https": "URL máy chủ định danh phải là HTTPS",
         "changed": "Máy chủ định danh của bạn đã được thay đổi"
     },
@@ -1320,7 +1320,7 @@
         "connecting": "Đang kết nối tới quản lý tích hợp…",
         "error_connecting": "Trình quản lý tích hợp đang ngoại tuyến hoặc không thể kết nối với Máy chủ của bạn.",
         "error_connecting_heading": "Không thể kết nối với trình quản lý tích hợp",
-        "explainer": "Người quản lý tích hợp nhận dữ liệu cấu hình và có thể sửa đổi các tiện ích, gửi lời mời vào phòng và đặt mức năng lượng thay mặt bạn.",
+        "explainer": "Trình quản lý tích hợp nhận dữ liệu cấu hình và có thể sửa đổi các tiện ích, gửi lời mời vào phòng và cấp quyền hoạt động thay mặt bạn.",
         "manage_title": "Quản lý các tích hợp",
         "use_im": "Sử dụng trình quản lý tích hợp để quản lý bot, tiện ích và gói sticker cảm xúc.",
         "use_im_default": "Sử dụng trình quản lý tích hợp <b>(%(serverName)s)</b> để quản lý bot, tiện ích và gói sticker cảm xúc.",
@@ -2528,7 +2528,7 @@
             "brand_version": "Phiên bản %(brand)s:",
             "clear_cache_reload": "Xóa bộ nhớ cache và tải lại",
             "help_link": "Để được trợ giúp về cách sử dụng %(brand)s, hãy nhấp vào đây <a>here</a>.",
-            "homeserver": "Máy chủ nhà là <code>%(homeserverUrl)s</code>",
+            "homeserver": "Máy chủ hiện tại: <code>%(homeserverUrl)s</code>",
             "identity_server": "Máy chủ định danh là <code>%(identityServerUrl)s</code>",
             "title": "Trợ giúp & Giới thiệu",
             "versions": "Phiên bản",
@@ -3005,7 +3005,7 @@
             "title": "Tài khoản"
         },
         "discovery": {
-            "title": "Cách để tìm thấy bạn"
+            "title": "Cách để mọi người tìm thấy bạn"
         },
         "encryption": {
             "advanced": {
@@ -3032,7 +3032,7 @@
                 "breadcrumb_title_cant_confirm": "Bạn cần đặt lại danh tính của mình"
             },
             "confirm_key_storage_off": "Bạn có chắc chắn muốn giữ việc tắt lưu trữ khóa?",
-            "confirm_key_storage_off_description": "Nếu bạn đăng xuất khỏi tất cả thiết bị, bạn sẽ mất lịch sử tin nhắn và cần xác minh lại tất cả các liên hệ hiện có. <a>Tìm hiểu thêm</a>",
+            "confirm_key_storage_off_description": "Nếu bạn đăng xuất khỏi tất cả thiết bị, bạn sẽ mất lịch sử tin nhắn và cần xác minh lại tất cả các liên hệ hiện có.",
             "delete_key_storage": {
                 "breadcrumb_page": "Xóa lưu trữ khóa",
                 "confirm": "Xóa lưu trữ khóa",
@@ -3046,9 +3046,9 @@
             "device_not_verified_title": "Thiết bị chưa được xác minh",
             "dialog_title": "<strong>Cài đặt:</strong> Mã hóa",
             "key_storage": {
-                "allow_key_storage": "Cho phép lưu trữ khóa",
-                "description": "Lưu trữ danh tính mật mã và khóa tin nhắn của bạn an toàn trên máy chủ. Điều này sẽ cho phép bạn xem lịch sử tin nhắn trên bất kỳ thiết bị mới nào. <a>Tìm hiểu thêm</a>",
-                "title": "Lưu trữ khóa"
+                "allow_key_storage": "Cho phép lưu trữ khóa tin nhắn",
+                "description": "Lưu trữ danh tính mật mã và khóa tin nhắn của bạn an toàn trên máy chủ. Điều này sẽ cho phép bạn xem lịch sử tin nhắn trên bất kỳ thiết bị mới nào.",
+                "title": "Lưu trữ khóa tin nhắn"
             },
             "recovery": {
                 "change_recovery_confirm_button": "Xác nhận khóa khôi phục mới",
@@ -3077,7 +3077,7 @@
             "title": "Mã hóa"
         },
         "labs": {
-            "dialog_title": "<strong>Cài đặt:</strong> Labs"
+            "dialog_title": "<strong>Cài đặt:</strong> Chức năng thí nghiệm"
         },
         "labs_mjolnir": {
             "dialog_title": "<strong>Cài đặt:</strong> Người dùng bị bỏ qua"
