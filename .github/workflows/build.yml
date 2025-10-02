@@ -15,7 +15,8 @@ permissions:
 jobs:
   build:
     name: Build webapp và gói phát hành
-    runs-on: ubuntu-latest
+    runs-on: 
+      group: ubuntu-runners
     steps:
       - name: Checkout
         uses: actions/checkout@v4
