@@ -18,7 +18,7 @@
     /* Remove button default style */
     background: unset;
     border: none;
-    padding: 0;
+    padding-left: 12px;
     text-align: unset;
 
     cursor: pointer;
@@ -60,6 +60,10 @@
 
 .mx_RoomListItemView_hover {
     background-color: var(--cpd-color-bg-action-secondary-hovered);
+
+    .mx_RoomListItemView_messagePreview {
+        display: none;
+    }
 }
 
 .mx_RoomListItemView_menu_open .mx_RoomListItemView_content {
