@@ -83,7 +83,7 @@ export const RoomListItemView = memo(function RoomListItemView({
 
     const content = (
         <Flex
-            as="div"
+            as="button"
             ref={ref}
             className={classNames("mx_RoomListItemView", {
                 mx_RoomListItemView_hover: showHoverDecoration,
@@ -121,7 +121,7 @@ export const RoomListItemView = memo(function RoomListItemView({
                     </div>
                     {vm.messagePreview && (
                         <div className="mx_RoomListItemView_messagePreview" title={vm.messagePreview}>
-                            {vm.messagePreview.substring(0, 15)}...
+                            {vm.messagePreview}
                         </div>
                     )}
                 </div>
