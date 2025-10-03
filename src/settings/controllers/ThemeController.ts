@@ -20,7 +20,7 @@ export default class ThemeController extends SettingController {
         calculatedValue: any,
         calculatedAtLevel: SettingLevel | null,
     ): any {
-        if (!calculatedValue) return null; // Don't override null themes
+        if (!calculatedValue) return "dark"; // Don't override null themes
 
         if (ThemeController.isLogin) return "light";
 

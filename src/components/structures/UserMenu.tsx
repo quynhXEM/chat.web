@@ -200,7 +200,7 @@ export default class UserMenu extends React.Component<IProps, IState> {
         // Disable system theme matching if the user hits this button
         SettingsStore.setValue("use_system_theme", null, SettingLevel.DEVICE, false);
 
-        let newTheme = this.state.isDarkTheme ? "light" : "dark";
+        let newTheme = this.state.isDarkTheme ? "dark" : "light";
         if (this.state.isHighContrast) {
             const hcTheme = findHighContrastTheme(newTheme);
             if (hcTheme) {

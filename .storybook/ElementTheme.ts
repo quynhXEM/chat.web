@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 import { create } from "storybook/theming";
 
 export default create({
-    base: "light",
+    base: "dark",
 
     // Colors
     textColor: "#1b1d22",

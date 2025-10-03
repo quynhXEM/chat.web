@@ -945,7 +945,7 @@ export const SETTINGS: Settings = {
     },
     "theme": {
         supportedLevels: LEVELS_ACCOUNT_SETTINGS,
-        default: "light",
+        default: "dark",
         controller: new ThemeController(),
     },
     "custom_themes": {
