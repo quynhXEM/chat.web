@@ -1003,6 +1003,9 @@
             "prompt_unencrypted": "Trong các phòng mã hóa, xác thực tất cả người dùng để đảm bảo an toàn.",
             "qr_or_sas": "%(qrCode)s hay %(emojiCompare)s",
             "qr_prompt": "Quét mã duy nhất này",
+            "qr_reciprocate_check_again_device": "Kiểm tra lại trên thiết bị khác để hoàn thành xác thực.",
+            "qr_reciprocate_no": "Không, tôi không thấy lá chắn xanh",
+            "qr_reciprocate_yes": "Đúng, tôi thấy lá chắn xanh",
             "qr_reciprocate_same_shield_user": "Sắp xong rồi! %(displayName)s có hiển thị cùng một lá chắn không?",
             "request_toast_decline_counter": "Ẩn (%(counter)s)",
             "request_toast_start_verification": "Bắt đầu xác thực",
@@ -2640,6 +2643,7 @@
             "allow_spellcheck": "Cho phép kiểm tra chính tả",
             "application_language": "Ngôn ngữ ứng dụng",
             "application_language_reload_hint": "Ứng dụng sẽ tải lại sau khi chọn ngôn ngữ khác",
+            "avatar_open_menu": "Mở menu ảnh đại diện",
             "avatar_remove_progress": "Đang xóa hình ảnh...",
             "avatar_save_progress": "Đang tải hình ảnh lên...",
             "avatar_upload_error_text": "Định dạng tệp không được hỗ trợ hoặc hình ảnh lớn hơn %(size)s.",
@@ -2752,6 +2756,10 @@
             "rule_roomnotif": "Tin nhắn chứa @room",
             "rule_suppress_notices": "Tin nhắn được gửi bởi bot",
             "rule_tombstone": "Khi phòng được nâng cấp phiên bản",
+            "sounds_release_announcement": {
+                "description": "Thông báo và âm thanh cuộc gọi của bạn đã được cập nhật rõ ràng hơn, nhanh hơn và ít gây phiền hà hơn",
+                "title": "Chúng tôi đã cập nhật âm thanh của bạn"
+            },
             "show_message_desktop_notification": "Hiển thị tin nhắn trong thông báo trên màn hình",
             "default_setting_section": "Tôi muốn được thông báo về (Cài đặt mặc định)",
             "desktop_notification_message_preview": "Hiển thị xem trước tin nhắn trong thông báo trên máy tính",
@@ -3675,6 +3683,7 @@
                 "other": "đã bị cấm %(count)s lần"
             },
             "changed_avatar": {
+                "one": "%(oneUser)sđã thay đổi ảnh đại diện của họ",
                 "other": "%(oneUser)sđã thay đổi ảnh đại diện của họ%(count)s lần"
             },
             "changed_name": {
