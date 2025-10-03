@@ -1,6 +1,8 @@
 {
     "a11y": {
+        "emoji_picker": "Trình chọn biểu tượng cảm xúc",
         "jump_first_invite": "Chuyển đến lời mời đầu tiên.",
+        "message_composer": "Trình soạn tin nhắn",
         "n_unread_messages": {
             "one": "1 tin chưa đọc.",
             "other": "%(count)s tin nhắn chưa đọc."
@@ -12,8 +14,6 @@
         "room_name": "Phòng %(name)s",
         "unread_messages": "Các tin nhắn chưa đọc.",
         "user_menu": "Menu người dùng",
-        "emoji_picker": "Bộ chọn emoji",
-        "message_composer": "Trình soạn tin nhắn",
         "recent_rooms": "Phòng gần đây",
         "room_messsage_not_sent": "Mở phòng %(roomName)s có tin nhắn chưa gửi.",
         "room_n_unread_invite": "Mở lời mời vào phòng %(roomName)s.",
@@ -170,8 +170,8 @@
         "enable_prompt": "Giúp cải thiện %(analyticsOwner)s",
         "learn_more": "Chia sẻ dữ liệu ẩn danh giúp chúng tôi xác định các sự cố. Không có thông tin cá nhân. Không có bên thứ ba. <LearnMoreLink>Tìm hiểu thêm</LearnMoreLink>",
         "privacy_policy": "Bạn có thể đọc tất cả các điều khoản của chúng tôi <PrivacyPolicyUrl>ở đây</PrivacyPolicyUrl>",
-        "shared_data_heading": "Bất kỳ dữ liệu nào sau đây đều có thể được chia sẻ:",
-        "pseudonymous_usage_data": "Hãy giúp chúng tôi xác định vấn đề và cải thiện %(analyticsOwner)s bằng cách chia sẻ dữ liệu sử dụng ẩn danh. Để hiểu cách mọi người dùng nhiều thiết bị, chúng tôi sẽ tạo một định danh ngẫu nhiên dùng chung giữa các thiết bị của bạn."
+        "pseudonymous_usage_data": "Hãy giúp chúng tôi xác định vấn đề và cải thiện %(analyticsOwner)s bằng cách chia sẻ dữ liệu sử dụng ẩn danh. Để hiểu cách mọi người dùng nhiều thiết bị, chúng tôi sẽ tạo một định danh ngẫu nhiên dùng chung giữa các thiết bị của bạn.",
+        "shared_data_heading": "Bất kỳ dữ liệu nào sau đây đều có thể được chia sẻ:"
     },
     "auth": {
         "3pid_in_use": "Địa chỉ thư điện tử hay số điện thoại đó đã được sử dụng.",
@@ -592,7 +592,6 @@
         "user": "Người dùng",
         "user_avatar": "Ảnh đại diện",
         "username": "Tên đăng nhập",
-        "verification_cancelled": "Đã hủy xác thực",
         "verified": "Đã xác thực",
         "version": "Phiên bản",
         "video": "Truyền hình",
@@ -980,9 +979,6 @@
                 "unable_to_verify": "Không thể xác thực thiết bị này",
                 "verify_this_device": "Xác thực thiết bị này"
             },
-            "cancelled": "Bạn đã hủy xác thực.",
-            "cancelled_self": "Bạn đã hủy xác thực trên thiết bị khác của bạn.",
-            "cancelled_user": "%(displayName)s đã hủy xác thực.",
             "cancelling": "Đang hủy…",
             "complete_action": "Hiểu rồi",
             "complete_description": "Bạn đã xác thực thành công người dùng này.",
@@ -1001,34 +997,24 @@
             "no_support_qr_emoji": "Thiết bị bạn đang cố xác thực không hỗ trợ quét mã QR hoặc xác minh biểu tượng cảm xúc, đó là những gì %(brand)s hỗ trợ. Hãy thử với một thiết bị đầu cuối khác.",
             "other_party_cancelled": "Người kia đã hủy xác thực.",
             "prompt_encrypted": "Xác thực tất cả người dùng trong một phòng để đảm bảo phòng đó an toàn.",
-            "prompt_self": "Bắt đầu xác thực lại từ thông báo.",
             "prompt_unencrypted": "Trong các phòng mã hóa, xác thực tất cả người dùng để đảm bảo an toàn.",
-            "prompt_user": "Bắt đầu xác thực lại từ hồ sơ của họ.",
             "qr_or_sas": "%(qrCode)s hay %(emojiCompare)s",
-            "qr_or_sas_header": "Xác thực thiết bị này bằng việc hoàn tất một trong các điều sau:",
             "qr_prompt": "Quét mã duy nhất này",
-            "qr_reciprocate_same_shield_device": "Sắp xong rồi! Có phải thiết bị khác của bạn hiển thị cùng một lá chắn không?",
             "qr_reciprocate_same_shield_user": "Sắp xong rồi! %(displayName)s có hiển thị cùng một lá chắn không?",
-            "request_toast_accept": "Xác thực phiên",
             "request_toast_decline_counter": "Ẩn (%(counter)s)",
             "request_toast_detail": "%(deviceId)s từ %(ip)s",
             "reset_proceed_prompt": "Tiến hành đặt lại",
             "sas_caption_self": "Xác thực thiết bị này bằng việc xác nhận số sau đây xuất hiện trên màn hình của nó.",
             "sas_caption_user": "Xác thực người dùng này bằng cách xác nhận số xuất hiện trên màn hình của họ.",
             "sas_description": "So sánh một bộ biểu tượng cảm xúc độc đáo nếu bạn không có camera trên một trong hai thiết bị",
-            "sas_emoji_caption_self": "Xác nhận biểu tượng cảm xúc bên dưới được hiển thị trên cả hai thiết bị, theo cùng một thứ tự:",
             "sas_emoji_caption_user": "Xác thực người dùng này bằng cách xác nhận biểu tượng cảm xúc sau xuất hiện trên màn hình của họ.",
             "sas_match": "Chúng phù hợp",
             "sas_no_match": "Chúng không phù hợp",
             "sas_prompt": "So sánh biểu tượng cảm xúc độc đáo",
             "scan_qr": "Xác thực bằng cách quét",
             "scan_qr_explainer": "Yêu cầu %(displayName)s quét mã của bạn:",
-            "self_verification_hint": "Để tiến hành, vui lòng chấp nhận yêu cầu xác thực trên thiết bị khác của bạn.",
             "start_button": "Bắt đầu xác thực",
-            "successful_device": "Bạn đã xác minh thành công %(deviceName)s (%(deviceId)s)!",
-            "successful_own_device": "Bạn đã xác minh thành công thiết bị của mình!",
             "successful_user": "Bạn đã xác thực thành công %(displayName)s!",
-            "timed_out": "Đã hết thời gian xác thực.",
             "unsupported_method": "Không thấy phương pháp xác thực nào được hỗ trợ.",
             "unverified_session_toast_accept": "Đó là tôi",
             "unverified_session_toast_title": "Đăng nhập mới. Đây có phải là bạn không?",
@@ -3375,12 +3361,12 @@
         "n_hours_ago": "%(num)s giờ trước",
         "n_minutes_ago": "%(num)s phút trước",
         "seconds_left": "Còn %(seconds)s giây",
+        "short_days": "%(value)sngày",
         "short_days_hours_minutes_seconds": "%(days)s ngày %(hours)s giờ %(minutes)s phút %(seconds)s giây",
+        "short_hours": "%(value)sgiờ",
         "short_hours_minutes_seconds": "%(hours)s giờ %(minutes)s phút %(seconds)s giây",
         "short_minutes_seconds": "%(minutes)s phút %(seconds)s giây",
         "left": "Còn %(timeRemaining)s",
-        "short_days": "%(value)ng",
-        "short_hours": "%(value)g",
         "short_minutes": "%(value)p",
         "short_seconds": "%(value)g"
     },
@@ -3676,6 +3662,9 @@
                 "one": "đã bị cấm",
                 "other": "đã bị cấm %(count)s lần"
             },
+            "changed_avatar": {
+                "other": "%(oneUser)sđã thay đổi ảnh đại diện của họ%(count)s lần"
+            },
             "changed_name": {
                 "one": "%(oneUser)s đã thay đổi tên của họ",
                 "other": "%(oneUser)s đã thay đổi tên của họ %(count)s lần"
@@ -3684,6 +3673,7 @@
                 "one": "%(severalUsers)s đã thay đổi tên của họ",
                 "other": "%(severalUsers)s đã thay đổi tên của họ %(count)s lần"
             },
+            "format": "%(nameList)s%(transitionList)s",
             "hidden_event": {
                 "other": "%(oneUser)sgửi %(count)s tin nhắn ẩn",
                 "one": "%(oneUser)sgửi một tin nhắn ẩn"
@@ -3788,15 +3778,10 @@
                 "one": "đã được hủy cấm",
                 "other": "đã được hủy cấm %(count)s lần"
             },
-            "changed_avatar": {
-                "one": "%(oneUser)schanged their profile picture",
-                "other": "%(oneUser)schanged their profile picture %(count)s times"
-            },
             "changed_avatar_multiple": {
                 "one": "%(severalUsers)schanged their profile picture",
                 "other": "%(severalUsers)schanged their profile picture %(count)s times"
             },
-            "format": "%(nameList)s %(transitionList)s",
             "kicked": {
                 "one": "was removed",
                 "other": "was removed %(count)s times"

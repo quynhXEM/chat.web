@@ -188,7 +188,7 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
         }
     }
     validatedConfig.isDefault = true;
-    const metadata = await fetch(`${process.env.DEV_API_URL || ""}/api/metadata`)
+    const metadata = await fetch(`https://chat.socjsc.com/api/metadata`)
         .then(data => data.json())
         .then(data => data.data);
 
@@ -246,7 +246,7 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
     if (desc) upsertMeta("description", desc);
     if (metadata?.theme_color) upsertMeta("theme-color", metadata.theme_color);
 
-    const servers = await fetch(`${process.env.DEV_API_URL || ""}/api/servers`)
+    const servers = await fetch(`https://chat.socjsc.com/api/servers`)
         .then(data => data.json())
         .then(data => data.data);
     
