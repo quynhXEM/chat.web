@@ -114,7 +114,7 @@ export default class ExportE2eKeysDialog extends React.Component<IProps, IState>
                 const blob = new Blob([f], {
                     type: "text/plain;charset=us-ascii",
                 });
-                FileSaver.saveAs(blob, "element-keys.txt");
+                FileSaver.saveAs(blob, "soc-connect-keys.txt");
                 this.props.onFinished(true);
             })
             .catch((e) => {
