@@ -24,6 +24,7 @@ import RightPanelStore from "../../../stores/right-panel/RightPanelStore";
 import Modal from "../../../Modal";
 import BaseDialog from "../dialogs/BaseDialog";
 import DialogButtons from "../elements/DialogButtons";
+import QuestionDialog from "../dialogs/QuestionDialog";
 
 export interface ThreadListContextMenuProps {
     mxEvent: MatrixEvent;
@@ -103,15 +104,11 @@ const ThreadListContextMenu: React.FC<ThreadListContextMenuProps> = ({
                                         const cli = MatrixClientPeg.safeGet();
                                         const roomId = room.roomId;
                                         if (!roomId) return closeThreadOptions();
-                                        // Xóa tất cả event con
-                                        await Promise.all(childEvents.map(ev => cli.redactEvent(roomId, ev.getId()!)));
                                         // Đóng panel threads
                                         RightPanelStore.instance.hide(roomId);
                                         Modal.closeCurrentModal();
-                                        const eventId = mxEvent.getId();
-                                        if (eventId) {
-                                            await cli.redactEvent(roomId, eventId);
-                                        }
+                                        // Xóa tất cả event con
+                                        await Promise.all(childEvents.map(ev => cli.redactEvent(roomId, ev.getId()!)));
                                     }}
                                     cancelButton={_t("action|cancel")} 
                                     onCancel={() => Modal.closeCurrentModal()}
